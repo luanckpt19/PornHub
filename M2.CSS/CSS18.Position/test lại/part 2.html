@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+      ul{
+       list-style: none;
+          padding: 0;
+          margin: 0;
+      }
+        .container{
+            width: 1000px;
+            margin: 50px auto;
+            background: orange;
+        }
+        ul.main-menu{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul.main-menu > li{
+            float: left;
+            padding: 10px;
+            background: orange;
+        }
+        ul.main-menu > li a{
+            color: white;
+            text-decoration: none;
+        }
+        ul.main-menu ul{
+            display: none;
+        }
+        ul.main-menu li:hover > ul{
+            display: block;
+        }
+        ul.main-menu li{
+            position: relative;
+            background: orange;
+        }
+        ul.main-menu li > ul{
+            position: absolute;
+            width: 200px;
+            top: 40px;
+            left: 0px;
+        }
+        ul.main-menu ul li {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1> Khi  muốn đặt vị trí của 1 khối html vào khối html khác
+     thì mình sủ dụng position cho thẻ mẹ là relative<br>
+và sử dụng position cho thẻ con là absolute<br>
+sau đó đặt các thuôc tính top, left hay right , bottom cho thẻ con</h1>
+<div class="container">
+    <div class=" row">
+        <nav>
+        <ul class="main-menu">
+            <li>
+                <a href="#"> Pháp luật</a>
+                <ul>
+                    <li><a href="#">Vụ án</a></li>
+                    <li><a href="#">Tiêu điểm</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"> Thế giới</a>
+                 <ul>
+                     <li><a href="#">Tin vắn</a></li>
+                     <li><a href="#">Chuyện lạ</a></li>
+                     <li><a href="#">hehe</a></li>
+                 </ul>
+            </li>
+            <li>
+                <a href="#"> Thể thao</a>
+                <ul>
+                    <li><a href="#">Barcelona</a></li>
+                    <li><a href="#">C1</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"> chính trị</a>
+                <ul>
+                    <li><a href="#"> Sao thế</a></li>
+                </ul>
+            </li>
+            <li><a href="#"> Kinh tế</a></li>
+        </ul>
+        </nav>
+    </div>
+</div>
+</body>
+</html>

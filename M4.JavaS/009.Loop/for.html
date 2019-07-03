@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre>
+    Vòng lặp là quá trình lặp đi lặp đi lặp lại
+    có bắt đầu
+    có kết thức
+    và nó sự thay đổi sau mỗi vòng lặp
+    1-for
+    2-whilte
+    3-do..while
+
+    for( bước khởi đầu; điều kiện vòng lặp ; sự thay đổi sau mỗi vòng lặp){
+        // code thực thi vòng lặp
+    }
+
+</pre>
+<script type="text/javascript">
+    for(var i=0; i<10;i++){
+        console.log(i);
+    }
+    console.log("--------------------");
+
+    //cách 1
+    for(var i=0;i<10;i+=2){
+        console.log(i);
+    }
+    console.log("-----------");
+    //cách 2
+
+    for(var i=0;i<10;i++){
+        if ((i%2)==0){
+            console.log(i);
+        }
+
+    }
+    console.log("----------------");
+
+    var students = ["nguyen a","nguyen b","nguyen c"];
+    for(var i=0;i<students.length;i++){
+        console.log(students[i]);
+    }
+</script>
+</body>
+</html>

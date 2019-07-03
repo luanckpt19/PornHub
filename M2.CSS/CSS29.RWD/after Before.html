@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css"/>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            overflow: auto;
+        }
+        .row {
+            overflow: auto;
+            background: violet;
+            padding: 30px 0;
+        }
+        .row::before {
+            content: "BEFORE INNER CONTENT";
+            background: red;
+        }
+        .row::after {
+            content: "AFTER INNER CONTENT";
+            background: blueviolet;
+        }
+        .col {
+            min-height: 300px;
+            padding: 30px;
+        }
+        .col-1 {
+            width: 33%;
+            background: wheat;
+            color: brown;
+            float: left;
+            font-style: italic;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .col-2 {
+            width: 67%;
+            background: yellow;
+            color:#BAEBB1;
+            float: right;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-1">Column 1</div>
+        <div class="col col-2">Column 2</div>
+    </div>
+</div>
+
+</body>
+</html>

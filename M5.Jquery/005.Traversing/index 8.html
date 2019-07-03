@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>thao tác bằng jquery trên cây DOM</h1>
+
+<div class="container">
+    <nav>
+        <ul>
+            <li class="home"><a href="#">Trang chủ</a></li>
+            <li class="new"><a href="#">Wikipedia</a></li>
+            <li class="introl"><a href="#">Sản phẩm</a></li>
+            <li class="contact"><a href="#">Diễn đàn</a></li>
+            <li class="product"><a href="#">Hỏi đáp</a></li>
+        </ul>
+    </nav>
+</div>
+<div style="margin-top: 30px">
+    <button id="control0">first</button>
+    <button id="control1">last</button>
+    <button id="control2">eq(1)</button>
+    <button id="control3">filter</button>
+    <button id="control4">not()</button>
+</div>
+
+<pre style="padding: 20px">
+    1-first(): lấy ra fiter đầu tiên
+    2-last(): lấy ra filter cuối cùng
+    3-eq(chỉ sô): lấy ra filter chỉ số tương ứng
+    4-filter("bộ lọc): filter theo bộ lọc
+    5-not("bộ loc"): phủ định lại bộ lọc
+</pre>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#control0").on("click",function () {
+            $("li").first().css("border","2px solid violet").css("padding","20px");
+        });
+
+    });
+
+    $(document).ready(function () {
+        $("#control1").on("click",function () {
+            $("li").last().css("border","2px solid aqua").css("padding","20px");
+        });
+
+    });
+
+    $(document).ready(function () {
+        $("#control2").on("click",function () {
+            $("li").eq(4).css("border","2px solid violet").css("padding","20px");
+        });
+
+    });
+
+    $(document).ready(function () {
+        $("#control3").on("click",function () {
+            $("li").filter(".contact").css("border","2px solid violet").css("padding","20px");
+        });
+
+    });
+
+    $(document).ready(function () {
+        $("#control4").on("click",function () {
+            $("li").not(".contact").css("border","2px solid violet").css("padding","20px");
+        });
+
+    });
+</script>
+</body>
+</html>
+</html>

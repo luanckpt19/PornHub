@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre>
+        từ khóa LIMIT MYSQL
+        trong các bản ghi khi sử dụng LIMIT
+        các bản ghi đếm thứ tự từ 0
+        từ khóa LIMIT thường được sử dụng để phân trang
+        CÚ pháp :
+        LIMIT start,limit
+        SELECT tên cột FROM tên bảng WHERE điều kiện LIMIT bắt đầu từ bản ghi,số bản ghi lấy ra
+        ví du 1:
+        lấy ra 5 khách hàng đầu tiên
+        SELECT * FROM customers LIMIT 0,5
+        ví dụ 2 :
+        lấy ra 5 khách hàng đầu tiên
+        SELECT * FROM customers LIMIT 0,10
+        ví dụ 3 :
+        lấy ra 5 khách hàng đầu tiên từ khách hàng thứ 2
+        SELECT * FROM customers LIMIT 1,5
+        ví dụ 4 :
+        lấy ra 5 khách hàng đầu tiên từ khách hàng thứ 6
+        SELECT * FROM customers LIMIT 5,5
+    </pre>
+</body>
+</html>

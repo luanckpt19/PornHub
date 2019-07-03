@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .container{
+            font-weight: bold;
+            font-family: sans-serif;
+            background: orange;
+            padding: 0;
+            margin: 0;
+        }
+        .container ul {
+            list-style: none;
+            text-align: center;
+            background: orange;
+        }
+        .container ul li{
+            float: left;
+            color: white;
+            height: 40px;
+            line-height: 40px;
+            width: 120px;
+            background: orange;
+            position: relative;
+        }
+        .container ul li > a{
+            text-decoration: none;
+            color: white;
+        }
+        .container ul li > a:hover{
+            background: white;
+            color:brown;
+            display: block;
+        }
+        .container ul li .main-menu{
+            display: none;
+            position: absolute;
+        }
+        .container ul li:hover .main-menu{
+            display: block;
+;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div class="container" >
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Trang chủ</a>
+                <ul class="main-menu">
+                    <li><a href="#">trang 1</a></li>
+                    <li><a href="#">trang 2</a></li>
+                    <li><a href="#">trang 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Giới thiệu</a>
+                <ul class="main-menu">
+                    <li><a href="#">part 1</a></li>
+                    <li><a href="#">part 2</a></li>
+                    <li><a href="#">part 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Thời sư</a>
+                <ul class="main-menu">
+                    <li><a href="#"> trong nước</a></li>
+                    <li><a href="#"> ngoài nước</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Thời trang</a></li>
+            <li><a href="#">Thời tiết</a></li>
+        </ul>
+    </nav>
+</div>
+</body>
+</html>

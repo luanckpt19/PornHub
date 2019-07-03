@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kim So Hyun</title>
+    <meta name="description" content=" Thực hành tạo layout bằng HTML và CSS"/>
+    <meta name="keyword" content="Tài liệu làm website ">
+    <link type="text/css" rel="stylesheet" href="normalize.css">  <!--Reset CSS-->
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+           -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+        body{
+            font-family: Arial,sans-serif;
+            font-weight: 300;
+            color: #333333;
+            line-height: 1.254;
+            padding: 0;
+            margin: 0;
+        }
+        a{
+          text-decoration: none;
+            color: #3b8bba;
+            transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+        }
+        a:hover{
+            color:  #0818D0;
+        }
+
+        /*Chia cột website*/
+        #container{
+            padding-left: 150px;
+            position: relative;
+            left: 0;
+            width: 100%;
+        }
+        #menu{
+            position: fixed;
+            background: #191414;
+            height: 100%;
+            width: 150px;
+            left: 0;
+        }
+        #menu ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #menu ul li{
+            line-height: 2.9em;
+            height: 2.9em;
+            position: relative;
+            transition: all 1s;
+            -moz-transition: all 1s;
+            -webkit-transition: all 1s;
+        }
+        #menu ul li a{
+            padding: 0 1em;
+            border-bottom: 1px solid #333333;
+            color: #fff;
+            display: block;
+        }
+        #menu ul li:hover{
+            background: #454545;
+        }
+        #menu ul li .sub-menu{
+            display: none;
+            position: absolute;
+        }
+       #menu ul li:hover .sub-menu{
+           width: 150px;
+           display: block;
+           left: 150px;
+           top: 0;
+           background: #333333;
+       }
+        #content{
+            padding: 1em 8em;
+        }
+        #header,.call-to-action{
+            text-align: center;
+        }
+        #header #slogan{
+            color: #454545;
+            font-size: 0.8em;
+        }
+        .call-to-action{
+            padding: 1.5em 20%;
+            background: #CCCCCC;
+            border: 1px solid #e8e8e8;
+
+        }
+        .row{
+            overflow: hidden;
+            margin: 1.5em auto;
+        }
+        .row .col{
+            float: left;
+            width: 30%;
+            margin-right: 1em;
+        }
+        .row img{
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="menu">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li>
+                <a href="#">Wikipedia</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Sơ yếu lý lịch</a></li>
+                    <li><a href="#">Phim đã đóng</a></li>
+                    <li><a href="#">Giải thưởng</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Diễn đàn</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Chia sẻ</a></li>
+                    <li><a href="#">Thông tin</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Hỏi đáp</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Hỏi cái gì</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="header">
+            <div id="logo">
+                <img src="free_horizontal_on_white_by_logaster.png">
+             </div>
+            <div id="slogan">
+                <p>Kim So Hyun</p>
+            </div>
+        </div>
+        <div class="call-to-action">
+            <h3> What is Lorem Ipsum?</h3>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+        </div>
+        <div class="row">
+            <div id="box1" class="col">
+                <img src="twitter.png" alt="Twitter">
+                <p>It is a long established fact that a reader will be distracted by the readable content .
+                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                    as opposed to using 'Content here, content here', making it look like readable English.</p>
+            </div>
+            <div id="box2" class="col">
+                <img src="instagram%20(2).png" alt="IG">
+                <p>It is a long established fact that a reader will be distracted by the readable content . 
+                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                    as opposed to using 'Content here, content here', making it look like readable English.</p>
+            </div>
+            <div id="box3" class="col">
+                <img src="skype.png" alt="Skype">
+                <p>It is a long established fact that a reader will be distracted by the readable content .
+                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                    as opposed to using 'Content here, content here', making it look like readable English.</p>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</div>
+
+</body>
+</html>

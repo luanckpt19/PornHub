@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .container{
+            background: orange;
+            font-family: sans-serif;
+            font-weight: bold;
+            padding: 0;
+            margin: 0;
+        }
+        .container ul{
+            text-align: center;
+            list-style: none;
+            background: orange;
+        }
+        .container ul li{
+            float: left;
+            background: orange;
+            color: white;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            position: relative;
+        }
+        .container ul li > a{
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+        .container ul li .main-menu{
+            display: none;
+        }
+        .container ul li:hover .main-menu{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 42px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container" >
+    <nav>
+    <ul>
+        <li>
+            <a href="#">Trang chủ</a>
+            <ul class="main-menu">
+                <li><a href="#">trang 1</a></li>
+                <li><a href="#">trang 2</a></li>
+                <li><a href="#">trang 3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Giới thiệu</a>
+            <ul class="main-menu">
+                <li><a href="#">part 1</a></li>
+                <li><a href="#">part 2</a></li>
+                <li><a href="#">part 3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Thời sư</a>
+            <ul class="main-menu">
+                <li><a href="#"> trong nước</a></li>
+                <li><a href="#"> ngoài nước</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Thời trang</a></li>
+        <li><a href="#">Thời tiết</a></li>
+    </ul>
+    </nav>
+</div>
+</body>
+</html>

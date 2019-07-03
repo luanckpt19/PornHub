@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        h1{
+            color: violet;
+            background: #FFFF00;
+            border: 2px solid green;
+            margin: 50px;
+            padding: 10px;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 1000px;
+            margin: 50px;
+            background: orange;
+        }
+        ul.main-menu li{
+            background: orange;
+
+        }
+        ul.main-menu > li{
+            float: left;
+            padding: 10px;
+            margin: 0;
+        }
+        ul.main-menu li>a{
+            text-decoration: none;
+            background: orange;
+            color: white;
+        }
+        ul.main-menu li>ul{
+            display: none;
+        }
+        ul.main-menu li:hover>ul{
+            display: block;
+        }
+        ul.main-menu li {
+            position: relative;
+
+        }
+        ul.main-menu li>ul{
+            position: absolute;
+            width: 250px;
+            top: 40px;
+            left: 0px;
+
+
+        }
+        ul.main-menu ul li{
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+<h1> Khi muốn đặt vị trí của 1 khối html vào khối html khác thì mình sử dụng position cho thẻ mẹ là relative
+ và sử dụng position cho thẻ con là ablolute
+sau đó đặt có thuộc tính top, left, right, bottom cho thẻ con</h1>
+<div class="container">
+    <div class="row">
+        <nav>
+            <ul class="main-menu">
+                <li>
+                    <a href="#"> Chính trị</a>
+                    <ul>
+                        <li><a href="#">Trong Nước</a></li>
+                        <li><a href="#">Ngoài Nước</a></li>
+                        <li><a href="#">Thế giới</a></li>
+                        <li><a href="#">Việt Nam</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"> văn hóa</a>
+                    <ul>
+                       <li><a href="#">Bản sắc</a></li>
+                       <li><a href="#">Dân tộc</a></li>
+                       <li><a href="#">Vùng miền</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"> Giáo dục</a>
+                    <ul>
+                        <li><a href="#">Toán Học</a></li>
+                        <li><a href="#">Tin Học</a></li>
+                        <li><a href="#">văn học</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"> Kinh tế</a>
+                    <ul>
+                        <li><a href="#">Tăng trưởng</a></li>
+                        <li><a href="#">Thụt lùi</a></li>
+                        <li><a href="#">Thị trường</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"> Quân sự</a>
+                    <ul>
+                        <li><a href="#">Quân đội</a></li>
+                        <li><a href="#">Công an</a></li>
+                        <li><a href="#">Cậu vàng</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"> Cách mạng</a></li>
+                <li>
+                    <a href="#"> Lịch sử</a>
+                    <ul>
+                        <li><a href="#">Bác Hồ</a></li>
+                        <li><a href="#">Quê Bác</a></li>
+                        <li><a href="#">Tiều sử về Bác</a></li>
+                        <li><a href="#">Bác Hồ vĩ Đại</a></li>
+                        <li><a href="#">Lăng Bác -.-</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"> Thể thao</a></li>
+                <li><a href="#"> Thời sự</a></li>
+                <li><a href="#"> Thời trang</a></li>
+                <li><a href="#"> three gold</a></li>
+                <li><a href="#"> Tin vắn</a></li>
+                <li>
+                    <a href="#"> Hết rồi</a>
+                    <ul>
+                        <li><a href="#">Không Nhìn À</a></li>
+                        <li><a href="#">Bảo Hết Rồi Còn Hover</a></li>
+                        <li><a href="#">Chán Thanh Niên </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+</div>
+</body>
+</html>

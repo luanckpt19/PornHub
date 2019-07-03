@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .container-clearfix{
+            background: violet;
+        }
+        img{
+            max-width: 250px;
+        }
+        .col1{
+            float: right;
+        }
+        .col2{
+            width: 200px;
+            float: right;
+        }
+        .col3{
+            float: left;
+        }
+    </style>
+
+</head>
+<body>
+<h1> Clear Fix</h1>
+<p>khi nào sử dụng kỹ thuật clearfix</p>
+<p>khi thẻ mẹ chứa thẻ con mà thẻ con có chiều cao lớn hơn thẻ mẹ
+Đồng thời thẻ con bị float:left hay float:right</p>
+<p>=>> suy ra thẻ con bị trượt thẻ mẹ . nói cách khác thẻ mẹ không chứa thẻ con</p>
+<p> để fix có 3 cách phổ biến</p>
+<ul>
+    <li>Cách 1: cho thẻ mẹ thuộc tính overflow:hidden. Cách nàu có nhược đểm là nết thẻ bên trong có nội dung lớn hơn thẻ mẹ thì nội dung cần hiện sẽ bị ẩn đi do thuộc tính overflow: hidden tác động/li>
+    <li> Cách 2: là để 1 thẻ con rỗng ví dụ như thẻ div hay thẻ p không có nội dung
+sau đó đặt thẻ nfay thuộc tính clear:both . Cách fix này có nhược điểm là tạo ra 1 thẻ rỗng</li>
+    <li> Cách 3: là sử dụng 1 kỹ thuật clearfix
+    . thêm class clearfix cho thẻ mẹ để thẻ mẹ chứa được thẻ con khi thẻ con float.
+    Cách này tránh các nhược điểm của cách 1 vào cách 2</li>
+</ul>
+
+<div class="container-clearfix">
+    <div class="col1">
+        <img src="cat.jpg">
+    </div>
+    <div class="col2">
+        Khi so sánh với display: inline , điều khác biệt chính với display: inline-block cho phép đặt chiều rộng và cao cho 1 thẻ .
+        inline không làm được điều này
+        Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.
+
+        Với display: inline-block margin và padding theo 2 hướng trên và dưới sẽ được áp dụng nhưng với display:inline thì không
+
+
+        Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element,
+        so the element can sit next to other elements.
+
+        So sánh với display: block sự khác biệt chính với display: inline-block là block sẽ xuất hiện trên 1 hàng mới còn inline-block
+        thì nằm cùng 1 hàng
+
+        Khi so sánh với display: inline , điều khác biệt chính với display: inline-block cho phép đặt chiều rộng và cao cho 1 thẻ .
+        inline không làm được điều này
+        Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.
+
+        Với display: inline-block margin và padding theo 2 hướng trên và dưới sẽ được áp dụng nhưng với display:inline thì không
+
+
+        Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element,
+        so the element can sit next to other elements.
+
+        So sánh với display: block sự khác biệt chính với display: inline-block là block sẽ xuất hiện trên 1 hàng mới còn inline-block
+        thì nằm cùng 1 hàng
+
+        Khi so sánh với display: inline , điều khác biệt chính với display: inline-block cho phép đặt chiều rộng và cao cho 1 thẻ .
+        inline không làm được điều này
+        Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.
+
+        Với display: inline-block margin và padding theo 2 hướng trên và dưới sẽ được áp dụng nhưng với display:inline thì không
+
+
+        Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element,
+        so the element can sit next to other elements.
+
+        So sánh với display: block sự khác biệt chính với display: inline-block là block sẽ xuất hiện trên 1 hàng mới còn inline-block
+        thì nằm cùng 1 hàng
+
+    </div>
+    <div class="col3">
+        <img src="dog.jpg">
+    </div>
+</div>
+
+</body>
+</html>

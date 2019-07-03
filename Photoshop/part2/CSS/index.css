@@ -1,0 +1,185 @@
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.header {
+    box-sizing: border-box;
+    height: 170px;
+    max-height: 170px;
+    padding: 50px 0;
+}
+
+.header.logo {
+
+}
+
+.header nav.main-menu {
+    font-family: "Times New Roman", "Tempus Sans ITC", Serif;
+
+}
+
+.header nav.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.header nav.main-menu li {
+    float: left;
+}
+
+.header nav.main-menu a {
+    display: inline-block;
+    padding: 10px;
+    font-size: 18px;
+    color: #a0a0a0;
+}
+
+/*-------------------------------------------------------------banner*/
+.banner {
+    background-image: url("vtf-005-resume-website-template_022.jpg");
+    background-repeat: no-repeat;
+}
+.banner img{
+ width: 300px;
+}
+.banner h1,h3,p {
+    padding-left: 110px;
+}
+.banner p{
+    color: #07aaf5;
+}
+.banner h1{
+    font-weight: bold;
+    font-size: 80px;
+}
+.banner h3{
+    color: #777777;
+}
+/*---------------------------------------------form-sidebar*/
+.form-sidebar{
+    background: #fafafa;
+    height: 645px;
+}
+.form-sidebar .col-sm-5{
+    float: left;
+}
+.form-sidebar .col-sm-7{
+    float: right;
+}
+.form-sidebar .col-sm-7 img{
+    padding-top: 50px;
+    padding-left: 18px;
+}
+
+/*-------------------------------------------contact info*/
+.sidebar{
+    padding: 119px 0;
+}
+.container.contact-info {
+    overflow: auto;
+    margin: 1.5em auto;
+}
+.contact-info h3 {
+    text-align: center;
+    font-size: 40px;
+}
+.contact-info span{
+    color: #07aaf5;
+    font-size: 60px;
+}
+.contact-info .col{
+    float: left;
+    width: 31.5%;
+    background: white;
+    height: 107px;
+    text-align: center;
+}
+.contact-info i{
+    float: left;
+    font-size: 50px;
+
+}
+.contact-info i , p{
+    padding-top: 30px;
+}
+.contact-info .Phone, .Home{
+    margin-right: 25px;
+}
+.contact-info .Gmail{
+    margin-right: 0px;
+}
+/*--------------------------------------------------------------------content-form*/
+.content-form {
+    box-sizing: border-box;
+    padding: 60px;
+    margin-top: 138px;
+    margin-right: 100px;
+}
+input[type = text],textarea {
+    border: 20px solid #f6f7f8;
+    width: 100%;
+    padding: 12px;
+    resize: vertical;
+    outline: none;
+}
+.first-row input {
+    width: 48%;
+}
+
+.first-row:after {
+    content: '';
+    clear: both;
+}
+
+.first-row input[name="email"] {
+    float: right;
+}
+input[type=submit] {
+    width: 165px;
+    background: #0aaefa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    float: right;
+}
+input[type=submit]:hover{
+    background: #6EB6F4;
+}
+/*-------------------------------------------------------------------footer*/
+footer{
+    background: #f6f7f8;
+}
+footer .social-icon{
+    height: 245px;
+    background: #363642;
+    text-align: center;
+    padding-top: 120px;
+}
+footer .social-icon i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #464652;
+    text-align: center;
+    color: white;
+    margin-right: 20px;
+}
+footer .social-icon i:hover{
+    background: #0aaefa;
+}
+.social-icon p{
+    color: #838383;
+}
+
+

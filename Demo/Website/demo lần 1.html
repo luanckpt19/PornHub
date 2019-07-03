@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+     *{
+         font-family: Arial,sans-serif;
+         box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         -webkit-box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+     }
+        a{
+            color: #3B8BBA;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #007bff;
+        }
+        #container{
+            padding-left: 150px;
+            position: relative;
+            width: 100%;
+        }
+        #menu{
+            position: fixed;
+            left: 0;
+            height: 100%;
+            width: 150px;
+            background: #333;
+        }
+        #menu ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #menu ul li{
+            height: 50px;
+            line-height: 50px;
+            position: relative;
+            transition: all 1s;
+            -moz-transition: all 1s;
+            -webkit-transition: all 1s;
+        }
+        #menu ul li a{
+            padding: 0 1em;
+            display: block;
+            color: white;
+            border-bottom: 1px solid #5a6268;
+        }
+        #menu ul li:hover > a{
+            background: #5a6268;
+            color: white;
+        }
+        #menu ul li > .sup-menu{
+            display: none;
+            position: absolute;
+        }
+        #menu ul li:hover> .sup-menu{
+            width: 150px;
+            display: block;
+            left: 150px;
+            top: 0;
+            background: #333;
+        }
+        #content{
+            padding: 1em 8em;
+            text-align: center;
+        }
+        #content #slogan{
+            font-size: 10px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        #content .call-to-action{
+            width: 800px;
+            height: 200px;
+            background: #DFE5EA;
+            padding-top:20px ;
+        }
+        #content #row{
+            overflow: auto;
+            margin: 1.5em auto;
+        }
+           #row .col{
+              float: left;
+               width: 29%;
+               margin-right: 20px;
+               background: wheat;
+               color: brown;
+           }
+        .footer{
+            font-size: 20px;
+            border-top: 1px solid #5a6268;
+            color: violet;
+            padding: 16px 32px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="menu">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li>
+                <a href="#">Giới Thiệu</a>
+                 <ul class="sup-menu">
+                     <li><a href="#">Mở Đầu</a></li>
+                     <li><a href="#">Hành Trình</a></li>
+                     <li><a href="#">Kết Thúc</a></li>
+                 </ul>
+            </li>
+            <li>
+                <a href="#">Sản Phẩm</a>
+                <ul class="sup-menu">
+                    <li><a href="#">Xuất Bản</a></li>
+                    <li><a href="#">Quốc Gia</a></li>
+                    <li><a href="#">Thời Gian</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Diễn Đàn</a>
+                <ul class="sup-menu">
+                    <li><a href="#">Liên Hệ</a></li>
+                    <li><a href="#">Thông Tin</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Hỏi Đáp</a>
+                <ul class="sup-menu">
+                    <li><a href="#">Call:0968842599</a></li>
+                    <li><a href="#">fb:Thành Luân</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="header">
+            <div id="logo">
+                <img src="free_horizontal_on_white_by_logaster.png" alt="Kim So Hyun">
+            </div>
+            <div id="slogan">
+                <p>Website của riêng tôi thôi</p>
+            </div>
+
+        </div>
+        <div class="call-to-action">
+            <h3>Nguyễn Thành Luân</h3>
+            <p>Project Things is graduating from its early experimental phase and from now on will be known as Mozilla WebThings.</p>
+        </div>
+        <div id="row">
+            <div class="col" id="box1">
+                <p>Fluent is a family of localization specifications,
+                    implementations and good practices developed by Mozilla.
+                    With Fluent, translators can create expressive translations that sound great in their language.
+                    Today we’re announcing version 1.0 of the Fluent file format specification.
+                    We’re inviting translation tool authors to try it out and provide feedback. ...</p>
+            </div>
+            <div class="col" id="box2">
+                <p>Fluent is a family of localization specifications,
+                    implementations and good practices developed by Mozilla.
+                    With Fluent, translators can create expressive translations that sound great in their language.
+                    Today we’re announcing version 1.0 of the Fluent file format specification.
+                    We’re inviting translation tool authors to try it out and provide feedback. ...</p>
+            </div>
+            <div class="col" id="box3">
+                <p>Fluent is a family of localization specifications,
+                    implementations and good practices developed by Mozilla.
+                    With Fluent, translators can create expressive translations that sound great in their language.
+                    Today we’re announcing version 1.0 of the Fluent file format specification.
+                    We’re inviting translation tool authors to try it out and provide feedback. ...</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p> www.&copy0812tluan.commm.vn</p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

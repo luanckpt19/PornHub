@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> IN: cho phép bạn chỉ định nhiều giá trị trong mệnh đề WHERE</h1>
+<pre>
+    Câu lệnh IN là cách viết rút gọn của OR
+    Ví dụ thay vì viết câu lệnh OR để lấy ra các khách hàng có id là 1 hoặc 2 hoặc 3
+
+    SELECT * FROM customers WHERE id = 1 OR id= 2 OR id =3
+
+    Ta viết rút gọn bằng lệnh IN
+
+    SELECT * FROM customers WHERE id IN(1,2,3)
+</pre>
+</body>
+</html>

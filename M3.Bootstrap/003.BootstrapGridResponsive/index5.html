@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style type="text/css">
+        [class*="row"] {
+            margin-top: 20px;
+        }
+        [class*="col"] {
+            background: gold;
+            color: white;
+            border-left: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<h1> chứ ý</h1>
+<p>trong 1 class row thì các thẻ col sẽ tự động sắp xếp theo lưới 12 cột
+khi số đơn vị lưới>12 thì cột đó sẽ tự động xuống hàng nhưng vẫn nằm trong class row đó</p>
+
+<p>Khi các cột nằm trong các class row khác nhau thì chắc chắn các cột đó sẽ thuộc các hàng khác nhau</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>cột 1</h1>
+            <p>cột 1 thuộc row 1</p>
+        </div>
+    </div>
+
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <h1>cột1</h1>
+                <p>cột 1 thuộc row 2</p>
+            </div>
+        </div>
+</div>
+</body>
+</html>

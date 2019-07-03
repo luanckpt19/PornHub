@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="normalize.css" />
+
+    <style type="text/css">
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            width: 1000px;
+            margin: 50px auto;
+            background: #CCCCCC;
+        }
+        ul.main-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul.main-menu > li {
+            float: left;
+            padding: 10px;
+            background: orange;
+        }
+        ul.main-menu > li a {
+            color: white;
+            text-decoration: none;
+        }
+        ul.main-menu ul {
+            display: none;
+        }
+        ul.main-menu li:hover > ul {
+            display: block;
+        }
+        ul.main-menu li {
+            position: relative;
+            background: orange;
+        }
+        ul.main-menu li > ul {
+            position: absolute;
+            left: 0px;
+            top: 40px;
+            width: 250px;
+        }
+        ul.main-menu ul li {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body style="min-height: 1000px">
+
+<h1>Khi muốn đặt vị trí của 1 khối html dựa vào 1 khối html khác</h1>
+<h1>Thì mình sử dụng position cho thẻ mẹ là relative</h1>
+<h1>và sử dụng position cho thẻ con là absolute</h1>
+<h1>Sau đó đặt các thuộc tính top , left hay right , bottom cho thẻ con</h1>
+<p>Trong ví dụ bên dưới thì mình đặt position:relative cho thẻ li</p>
+<p>và đặt position:absolute cho thẻ ul nằm trực tiếp trong thẻ li</p>
+<p>và đặt thuộc tính top , left cho thẻ ul này</p>
+
+<div class="container">
+    <div class="row">
+        <nav>
+            <ul class="main-menu">
+                <li>
+                    <a href="#">Thời sự</a>
+                    <ul>
+                        <li><a href="#">Chính trị</a></li>
+                        <li><a href="#">Giao thông</a></li>
+                        <li><a href="#">Đô thị</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Pháp luật</a>
+                    <ul>
+                        <li><a href="#">Pháp đình</a></li>
+                        <li><a href="#">Vụ án</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Thế giới</a>
+                    <ul>
+                        <li><a href="#">Quân sự</a></li>
+                        <li><a href="#">Tư liệu</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Kinh doanh</a></li>
+                <li><a href="#">Công nghệ</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+</body>
+</html>

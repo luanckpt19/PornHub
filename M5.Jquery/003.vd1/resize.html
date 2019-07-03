@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<h1>Sự kiện thay đổi kích cỡ cửa sổ trình duyệt </h1>
+<p></p>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // láy chiều rộng và chiều cao khi trình duyệt mở ra
+        var w = $(window).width();
+        var h = $(window).height();
+        $("p").html("độ rộng " + w + " " + "chiều cao " + h);
+        // chạy khi browser thay đổi kích thước
+        $(window).resize(function () {
+            var w = $(window).width();
+            var h = $(window).height();
+            $("p").html("độ rộng " + w + " " + "chiều cao " + h);
+        });
+    });
+</script>
+</body>
+</html>

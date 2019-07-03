@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>thao tác bằng jquery trên cây DOM</h1>
+
+<div class="container">
+    <nav>
+        <ul>
+            <li class="home"><a href="#">Trang chủ</a></li>
+            <li class="new"><a href="#">Wikipedia</a></li>
+            <li class="introl"><a href="#">Sản phẩm</a></li>
+            <li class="contact"><a href="#">Diễn đàn</a></li>
+            <li c class="product"><a href="#">Hỏi đáp</a></li>
+        </ul>
+    </nav>
+</div>
+<div style="margin-top: 30px">
+    <button id="control">Tìm parents()</button>
+</div>
+
+<pre style="padding: 20px">
+    Các phương thức tìm hậu duệ
+    children() : trả về tất cả các thẻ nằm bên trong là con trực tiếp của selector
+    filter cho children(filter) chọn ra con trực tiếp của selector phù hợp filter
+    được truyền vào
+</pre>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+      $("#control").on("click",function () {
+          $("ul").children(".introl").css("border","2px solid violet").css("padding","20px");
+      });
+
+    });
+</script>
+</body>
+</html>
+</html>

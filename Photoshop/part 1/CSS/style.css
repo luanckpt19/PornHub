@@ -1,0 +1,174 @@
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.header {
+    box-sizing: border-box;
+    height: 170px;
+    max-height: 170px;
+    padding: 50px 0;
+}
+
+.header.logo {
+
+}
+
+.header nav.main-menu {
+
+}
+
+.header nav.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.header nav.main-menu li {
+    float: left;
+}
+
+.header nav.main-menu a {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    color: #9a9a9a;
+}
+
+.banner {
+    margin-top: -170px;
+    height: 936px;
+    width: 100%;
+    background: url("../image/banner.jpg.jpg") top center;
+    display: table;
+}
+
+.banner h1 {
+    font-size: 83px;
+    color: #000000;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.banner h1 span {
+    color: #f66c27;
+}
+
+/*
+FOOTER CSS
+*/
+footer {
+    background: linear-gradient(to right, #f48146 50%, white 50%);
+
+}
+
+footer .contact-form {
+    background: #f48146;
+    box-sizing: border-box;
+    height: 700px;
+}
+
+.contact-form .content-form {
+    background: white;
+    padding: 60px;
+    margin-top: 138px;
+    margin-right: 100px;
+}
+
+.content-form input, textarea {
+    border: none;
+    border-bottom: 1px solid #c8c8c8;
+    width: 100%;
+    font-size: 15px;
+    color: #777777;
+}
+
+.first-row input {
+    width: 40%;
+}
+
+.first-row:after {
+    content: '';
+    clear: both;
+}
+
+.first-row input[name="email"] {
+    float: right;
+}
+
+.first-row input[type="text"] {
+    padding: 5px;
+}
+
+.content-form input:focus, textarea:focus {
+    outline: none;
+}
+
+.content-form-row {
+    margin-bottom: 20px;
+}
+
+.submit-row {
+    text-align: center;
+
+}
+.contact-form input[type="submit"] {
+    background: #f48146;
+    color: #fff;
+    display: inline-block;
+    width: auto;
+    padding: 6px 20px;
+    border-radius: 32px;
+    font-size: 18px;
+}
+
+footer .contact-info {
+    box-sizing: border-box;
+    height: 700px;
+    padding-left: 100px;
+}
+
+footer .contact-info h3 {
+    margin-top: 108px;
+    font-size: 45px;
+}
+
+.line-contact-info {
+    padding: 20px 0;
+}
+
+.line-contact-info h4 {
+    color: #333333;
+    font-size: 25px;
+}
+
+.line-contact-info p {
+    font-size: 15px;
+    max-width: 300px;
+}
+
+.line-contact-info p span {
+    color: #f48146;
+}
+
+footer .social-icon i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #bbbbbb;
+    text-align: center;
+    color: white;
+    margin-right: 20px;
+}
+
+footer .social-icon i:hover {
+    background: #f48146;
+}

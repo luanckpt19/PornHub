@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    //hàm alert :đưa ra thông báo
+
+    /*alert("hello world");*/
+
+    //hàm confirm : hỏi người dùng có thực hiện 1 cái gì đó hay ko
+
+    var result = confirm("thành luân có đẹp trai không vậy? ");
+    alert(result);
+    if (result == true){
+         alert("👉 bạn là người tốt 👈  ")
+    }
+    else if(result == false){
+        alert(" 😒 😒 😒 ")
+    }
+
+
+    //Hàm prompt(): có hiện thông báo lên nhưng mà ta có thể nhập dữ liệu vào trong hàm này
+
+    var name =  prompt("câu hỏi dành cho bạn", "what's up");
+    document.write(name);
+    //trả về giá trị nhập vào nết bạn chọn OK
+    // trả về Null nếu bạn nhấn CANCEL
+</script>
+</body>
+</html>

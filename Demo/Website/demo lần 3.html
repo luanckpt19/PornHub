@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            font-family: Arial sans-serif;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: #7abaff;
+        }
+        a:hover{
+            color: #005cbf;
+        }
+        #container{
+           padding-left: 150px;
+            width: 100%;
+            position: relative;
+        }
+        #menu{
+            position: fixed;
+            left: 0;
+            height: 100%;
+            width: 150px;
+            background: #333;
+        }
+        #menu ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #menu ul li{
+            height: 50px;
+            line-height: 50px;
+            position: relative;
+            transition: all 1s;
+            -moz-transition: all 1s;
+            -webkit-transition: all 1s;
+        ;
+        }
+        #menu ul li a{
+            padding: 0 1em;
+            color: white;
+            display: block;
+            border-bottom: 1px solid #95999c;
+        }
+        #menu ul li:hover > a{
+            background: #95999c;
+            color: white;
+        }
+        #menu ul li .sup-menu{
+            display: none;
+            position: absolute;
+        }
+        #menu ul li:hover>.sup-menu{
+            width: 150px;
+            display: block;
+            top: 0;
+            left: 150px;
+            background: #333;
+        }
+        #content{
+            text-align: center;
+        }
+        #content #slogan{
+            font-size: 13px;
+            font-style: inherit;
+            color: brown;
+        }
+        #call-to-action{
+            padding: 1.5em 20%;
+            background: #95999c;
+            border: 1px solid #95999c;
+        }
+        #row{
+            overflow: auto;
+            margin: 1.5em auto;
+        }
+        #row .col{
+            float: left;
+            width: 30.3%;
+            margin-right: 2.99%;
+        }
+        #row img{
+            float: left;
+        }
+        #footer{
+            color: violet;
+            padding-top: 65px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="menu">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li>
+                <a href="#">Wikipedia</a>
+                <ul class="sup-menu">
+                    <li><a href="#">Thông Tin</a></li>
+                    <li><a href="#">Nơi Sinh</a></li>
+                    <li><a href="#">Nguồn Gốc</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Liên Hệ</a>
+                <ul class="sup-menu">
+                    <li><a href="#">Call:0968842599</a></li>
+                    <li><a href="#">fb:Thành Luân</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Hỏi Đáp</a>
+                <ul class="sup-menu">
+                    <li><a href="#">Group:KimSoHyun</a></li>
+                    <li><a href="#">page:KimSoHyun</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Diễn Đàn</a>
+                <ul class="sup-menu">
+                    <li><a href="#">(--_--)</a></li>
+                    <li><a href="#">(--_--)</a></li>
+                    <li><a href="#">(--_--)</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="header">
+            <div id="logo">
+                <img src="free_horizontal_on_white_by_logaster.png">
+            </div>
+            <div id="slogan">
+                <p>website của tôi nhé</p>
+            </div>
+        </div>
+        <div id="call-to-action">
+            <h3>T L N G</h3>
+            <p>Project Things is graduating from its early experimental phase and from now on will
+                be known as Mozilla WebThings. This platform for monitoring and controlling devices
+                over the web consists of the WebThings Gateway, a software distribution for smart home
+                gateways focused on privacy, security and interoperability, and the WebThings ..</p>
+        </div>
+        <div id="row">
+            <div class="col" id="box1">
+                <img src="skype.png" alt="Sky">
+                <p>Pyodide is an experimental project from Mozilla to create a
+                    full Python data science stack that runs entirely in the browser.
+                    We think it’s worthwhile to work on moving the JavaScript data science
+                    ecosystem forward, and that's why we built and released Iodide earlier
+                    this year. In the meantime, we’re ...</p>
+            </div>
+            <div class="col" id="box2">
+                <img src="instagram%20(2).png" alt="IG">
+                <p>Pyodide is an experimental project from Mozilla to create a
+                    full Python data science stack that runs entirely in the browser.
+                    We think it’s worthwhile to work on moving the JavaScript data science
+                    ecosystem forward, and that's why we built and released Iodide earlier
+                    this year. In the meantime, we’re ...</p>
+            </div>
+            <div class="col" id="box3">
+                <img src="twitter%20(1).png" alt="TW">
+                <p>Pyodide is an experimental project from Mozilla to create a
+                    full Python data science stack that runs entirely in the browser.
+                    We think it’s worthwhile to work on moving the JavaScript data science
+                    ecosystem forward, and that's why we built and released Iodide earlier
+                    this year. In the meantime, we’re ...</p>
+            </div>
+        </div>
+        <div id="footer">
+            <p>wwww.&copy2010tluan.com.vnnnnnn</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

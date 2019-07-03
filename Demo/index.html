@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .container{
+            font-family: Arial,sans-serif;
+            font-weight: bold;
+            padding: 0;
+            margin: 0;
+            background: #333;
+        }
+        .container ul{
+            list-style: none;
+            text-align: center;
+        }
+        .container ul li{
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            float: left;
+            background: #333;
+            position: relative;
+            color: white;
+        }
+        .container ul li>a{
+            text-decoration: none;
+            color: white;
+            display: block;
+
+        }
+        .container ul li >a:hover{
+            background: #5a6268;
+            color: white;
+        }
+        .container ul li .col{
+            display: none;
+            position: absolute;
+        }
+        .container ul li:hover >.col{
+            display: block;
+            left: 0;
+            top: 42px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="nav">
+        <div class="row">
+            <ul>
+                <li>
+                    <a href="#">Trang chủ</a></li>
+                <li>
+                    <a href="#">Giới Thiệu</a>
+                     <ul class="col">
+                         <li><a href="#">Phần 1</a> </li>
+                         <li><a href="#">Phần 2</a> </li>
+                         <li><a href="#">Phần 3</a> </li>
+                     </ul>
+                </li>
+                <li>
+                    <a href="#">Sản phẩm</a>
+                    <ul class="col">
+                        <li><a href="#">Sản phẩm 1</a> </li>
+                        <li><a href="#">Sản phẩm 2</a> </li>
+                        <li><a href="#">Sản phẩm 2</a> </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Diễn đàn</a>
+                    <ul class="col">
+                        <li><a href="#">Group</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
+                        <li><a href="#">Khách hàng</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Hỏi Đáp</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>thao tác bằng jquery trên cây DOM</h1>
+
+<div class="container">
+    <nav>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Wikipedia</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Diễn đàn</a></li>
+            <li><a href="#">Hỏi đáp</a></li>
+        </ul>
+    </nav>
+</div>
+<div style="margin-top: 30px">
+    <button id="control">Tìm parents()</button>
+</div>
+
+<pre style="padding: 20px">
+    Các phương thức tìm tổ tiên
+    parents() : tìm kiếm các thẻ ở cấp cao hơn vd thẻ cha, thẻ ông ... cho đến html
+    là thẻ cao nhất
+    khi truyền filter (bộ lọc) selector class , selector id, selector thẻ html thì
+    parents (filter) tìm từ thẻ selector cho đến thẻ html nhưng mà phải phù hợp với
+    tham số filter mà mình đưa ra
+</pre>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#control").on("click", function () {
+            $("ul").parents(".container").css("border", "2px solid red").css("padding","20px");
+        });
+
+    });
+</script>
+</body>
+</html>

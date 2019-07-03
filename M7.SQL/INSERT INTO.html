@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre>INSERT INTO ( thêm bản ghi vào bảng trong CSDL )
+
+        cú pháp :
+        INSERT INTO tên bảng (cột1, cột2, cột3, ...)
+VALUES (value1, value2, value3, ...);
+
+        Không nhất thiết phải insert tất cả các cột trong bảng khi các cột đó
+        được đặt giá trị mặc định
+
+        Thực hành :
+        trong 1 bảng sẽ có 1 cột id và sẽ tự động sinh tăng dần
+        không cần insert cột id
+        thêm 1 bản ghi mới
+        INSERT INTO customers (company, last_name , first_name, job_title, business_phone, city)
+        VALUES ('cmc', 'tuan', 'nguyen', 'lap trinh vien', '+84 12345','ha noi')
+
+        Bài tập :
+        insert 1 bản ghi mới vào bảng employees
+    </pre>
+</body>
+</html>
