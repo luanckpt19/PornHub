@@ -1,0 +1,89 @@
+
+.header {
+    height: 10px;
+    max-height: 70px;
+    padding-left: 20px;
+    color: #7e8085;
+    margin-top: 0;
+}
+.header h3{
+    margin-top: 17px;
+    color: #56595f;
+}
+.header h6{
+    color: #9ea1a9;
+    margin-top: -10px;
+}
+.header .col-sm-9 img{
+    margin-top: 12px;
+    float: left;
+}
+.header .col-sm-3 img{
+    float: right;
+    margin-right: 20px;
+}
+.banner{
+    background: #f6f7f8;
+    height: 350px;
+    margin-top: 80px;
+}
+.content-form {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 60px;
+    margin-top: 0px;
+    margin-right: 28px;
+}  
+h6{
+    margin-right: 195px;
+    color: #56595f;
+}
+h7{
+    color:#9ea1a9 ;
+    margin-right: 90px;
+    margin-top: 20px;
+}
+h7 span{
+    color: #88afd4;
+}
+ input,textarea {
+    border: 20px solid #f6f7f8;
+    width: 157px;
+    padding: 10px;
+    resize: vertical;
+    outline: none;
+     margin-bottom: 10px;
+}
+.first-row input {
+    width: 25%;
+    border: 1px solid #ebeced;
+}
+button[type=submit] {
+    margin-top: 40px;
+    margin-right: 178px;
+    width: 100px;
+    height: 40px;
+    background: #256bb2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+
+}
+button[type=submit]:hover{
+    background: #6EB6F4;
+}
+/*-------------------------------------------------------------------footer*/
+footer .social-icon{
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+}
+.social-icon p{
+    color: #838383;
+}
+.social-icon p span{
+    color: #aeb1b7;
+    font-weight: bold;
+}
