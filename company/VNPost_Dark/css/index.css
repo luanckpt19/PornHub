@@ -1,0 +1,267 @@
+/* <style> */
+
+#wrapper {
+    background-color: #030E29;
+}
+
+input {
+    /* padding-left: 2.375rem; */
+    background: #030E29;
+    border: none;
+    color: #707070;
+    font-weight: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    line-height: 15px;
+    font-size: 14px;
+    padding: 5px;
+    /* padding-left: 50px; */
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    border: none;
+    color: #262626;
+    color: #E5E5E5;
+    font-size: 13px;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #838383;
+}
+
+.nav-item_ {
+    width: 120px;
+    border-top: 4px solid #4e73df;
+    border-bottom: none;
+}
+
+.navbar-nav>.nav-item:hover {
+    background-color: #162A5E;
+    background: #162A5E;
+    color: #4e73df;
+    border-left: .25rem solid #4e73df!important;
+}
+
+.nav>.nav-item:focus {
+    border-top: .25rem solid #4e73df!important;
+    color: #4674EB;
+}
+
+.span_order {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 137% */
+    display: flex;
+    align-items: center;
+    /* Color/Neutral/1 */
+    color: #1E1E1E;
+}
+
+.card-body {
+    text-align: center;
+}
+
+#form_step1 {
+    background: #FFFFFF;
+    /* Color/Neutral/4 */
+    border: 2px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 6px;
+    box-sizing: border-box;
+    /* height: 400px; */
+    /* padding: 30px; */
+    /* padding-top: 40px; */
+}
+
+.title_step {
+    float: left;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    /* Color/Primary/4 */
+    color: #4674EB;
+}
+
+.label_step {
+    float: left;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    /* identical to box height */
+    /* Color/Neutral/2 */
+    color: #707070;
+}
+
+p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    /* or 154% */
+    text-align: center;
+    /* Color/Neutral/3 */
+    color: #B4B4B4;
+}
+
+#image_step1 {
+    /* padding: 20px; */
+    border-left: 1px solid #E8E8E8;
+}
+
+#image_step1_ul {
+    margin: 30px;
+    padding-top: 80px;
+}
+
+.nav>.nav-item {
+    width: 100px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border: 1px solid #E8E8E8;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    width: 120px;
+    height: 50px;
+    padding-top: 15px;
+    /* text-align: center; */
+    color: #707070;
+    background: #F6F6F6;
+}
+
+.nav-item {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    /* identical to box height */
+    /* Primary color */
+    color: #3183FF;
+}
+
+sup {
+    position: absolute;
+    width: 22px;
+    height: 16px;
+    left: 120px;
+    right: 140px;
+    background-color: orange;
+    border-radius: 3px 3px 3px 0px;
+    top: 1px;
+    padding-top: 2px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 14px;
+    /* Color/Neutral/7 */
+    color: #FFFFFF;
+}
+span {
+    color: #707070;
+    font-weight: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    line-height: 15px;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.span_menu {
+    margin-left: 8%;
+    margin-right: 5%;
+}
+
+.form-control {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    color: #1E1E1E;
+}
+
+.input-group-prepend>.btn {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    background-color: white;
+    line-height: 20px;
+    color: black;
+}
+
+select.form-control {
+    color: black;
+    border-radius: 0;
+    border-color: #e4e6e8;
+    box-shadow: none;
+    color: black;
+    background-color: white;
+}
+
+select.form-control:focus {
+    background-color: white;
+    box-shadow: none;
+    border-color: #999;
+    color: black;
+}
+
+input.form-control,
+textarea.form-control {
+    border-color: #dbdbdb;
+    color: black;
+    background-color: white;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+    background-color: white;
+    box-shadow: none;
+    border: solid 1px #dbdbdb;
+}
+
+.card-body>.btn>p {
+    background-color: white;
+    color: #2347A5;
+    font-size: 13px;
+}
+
+.span_circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 60px;
+    border: 2px solid #2347A5;
+}
+
+
+/* span:hover {
+    color: dodgerblue;
+} */
+
+
+/* </style> */

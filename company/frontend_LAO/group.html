@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="css/group.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <title>Promotion</title>
+</head>
+
+<body style="background: #F2F2F2;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #02A2F2;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-6" type="search" placeholder="Search function" aria-label="Search" style="width: 270px;">
+                <a class="icon_nav" href="#" style=" margin-right: 30px; margin-top: 5px;"><i class="fas fa-flag" style="color: white;"></i></label>
+                <a class="icon_nav" href="#"  style="margin-right: 10px;margin-top: px;"><i class="fa fa-power-off" style="color: white;"></i></label>
+            </form>
+        </div>
+    </nav>
+    <aside style="background-color: black; width: 52px;height: 100%; left: 0;position: fixed;">
+    </aside>
+    <div class="content-wrapper" style="margin-left: 52px;background: #F2F2F2;">
+        
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12" style=" padding: 10px;">
+                        <!-- <div class="row"> -->
+                        <form>
+                            <!-- <form> -->
+                        
+                            <div style="background-color: white;padding-top: 5px;padding-left: 5px; margin-bottom: 5px; height: 35px;">   
+                                <img src="icon/home.png">
+                                    <P class="label_main" style="padding-top: 5px;">Promotion Tool - Group</P>
+                            </div>
+                            <div class="div_main">
+                                <div class="form-row" style="padding-left: 10px;padding-right: 10px;">
+                                    <div class="col-md-4 mb-3">
+                                        <P class="label_main">Search Information</P>
+                                    </div>
+                                </div>  
+                                <div class="form-row" style="padding-left: 10px;padding-right: 10px;" >
+                                    <div class="col-md-3 mb-3" >
+                                        <p class="label_login">Province</p>
+                                        <button type="button" class="form-control" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" style=" text-align: left;padding-top: 3px;">Select<i class="fas fa-caret-down"></i> </button>
+                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                                            <button class="dropdown-item" type="button">Tư nhân trong nước</button>
+                                            <button class="dropdown-item" type="button">Khác</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3" >
+                                        <p class="label_login">Group Code</p>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-3 mb-3" >
+                                        <p class="label_login">Group Name</p>
+                                        <button type="button" class="form-control" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" style=" text-align: left;padding-top: 3px;">All<i class="fas fa-caret-down"></i> </button>
+                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                                            <button class="dropdown-item" type="button">Active</button>
+                                            <button class="dropdown-item" type="button">InActive</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3" >
+                                        <p class="label_login">Organization Name</p>
+                                        <button type="button" class="form-control" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" style=" text-align: left;padding-top: 3px;">All<i class="fas fa-caret-down"></i> </button>
+                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                                            <button class="dropdown-item" type="button">Active</button>
+                                            <button class="dropdown-item" type="button">InActive</button>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <div class="form-row" style="padding-left: 10px;padding-right: 10px;">
+                                    <div class="col-md-3 mb-3">
+                                        <p class="label_login">From date</p>
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <p class="label_login">To date</p>
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <p class="label_login">Status</p>
+                                        <button type="button" class="form-control" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" style=" text-align: left;padding-top: 3px;">All<i class="fas fa-caret-down"></i> </button>
+                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                                            <button class="dropdown-item" type="button">Active</button>
+                                            <button class="dropdown-item" type="button">InActive</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3" style="text-align: right;">
+                                        <p class="label_login col-12">&nbsp;</p>
+                                        <button class="btn btn-primary" style="border-radius: 0px;background-color: #02A2F2;border: none; color: white;"><i class="fas fa-search pr-2" aria-hidden="true"></i></i>Search</button>
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="div_main">
+                                <div class="form-row" style="padding-left: 10px;padding-right: 10px;">
+                                    <div class="col-md-4 mb-3">
+                                        <P class="label_main">List of group</P>
+                                    </div>
+                                </div>  
+                                <div class="form-row" style="padding-left: 10px;padding-right: 10px;" >
+                                    <div class="card" style="padding: 0%;box-shadow: none; border: 1px solid #BABABA;width: 100%;">
+                                        <div class="card-header_main" style="padding: 0; padding-top: 10px; padding-left: 10px;width: 100%;">
+                                            <div class="form-row" style="padding: 0;">
+                                                <div class="col-md-4 mb-3" style="padding: 0;">
+                                        <button class="btn btn-primary" style="border-radius: 0px;background-color: #02A2F2;border: none; color: white;"><i class="fas fa-plus pr-2" aria-hidden="true"></i></i>Create</button>
+                                        <button class="btn btn-primary" style="border-radius: 0px;background: #F6B4C5;;border: none; color: white;"><i class="fas fa-times pr-2" aria-hidden="true"></i></i>Delete</button>
+                                             
+                                    </div>
+                                                <div class="col-md-3 mb-3" style="padding: 0;">
+
+                                                </div>
+                                                <div class="col-md-3 mb-3" style="padding: 0;">
+                                                    <input id="input_table" type="text" class="form-control" placeholder="-Nhập từ khóa-">
+                                                </div>
+                                                <div class="col-md-1 mb-3" style="padding: 0; padding-top: 1px;">
+    <button id="input_table" type="button" class="form-control" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" style=" text-align: left;padding-top: 3px;">5<i class="fas fa-caret-down"></i> </button>
+                                                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                                                        <button class="dropdown-item" type="button">10</button>
+                                                        <button class="dropdown-item" type="button">15</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-1 mb-3" >
+                                                    <img src="icon/icon update 3.png" style="height: 26px; width: 50px;">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- /.card-header -->
+                                        <div class="card-body" style="padding: 0;padding-bottom: 5px;background: #F4F4F4;width: 100%;">
+                                            <div class="table-responsive" style=" overflow-y: scroll; width: 100%;">
+                                                <table id="example2" style=" width: 100%;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col"></th>
+                                                            <th scope="col"></th>
+                                                            <th scope="col"></th>
+                                                            <th scope="col">Province</th>
+                                                            <th scope="col">Group Code</th>
+                                                            <th scope="col">Group Name</th>
+                                                            <th scope="col">Quantity</th>
+                                                            <th scope="col">Organization Name</th>
+                                                            <th scope="col">Create User</th>
+                                                            <th scope="col">Create Date</th>
+                                                            <th scope="col">Update User</th>
+                                                            <th scope="col">Update Date</th>
+                                                            <th scope="col">Status</th>
+
+
+
+
+
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+
+                                                            <td style="text-align: center;"><input type="checkbox"></td>
+                                                            <td><img src="icon/update.png"></td>
+                                                            <td><img src="icon/view.png"></td>
+                                                            <td>DAtaa</td>
+                                                            <td>DAtaa</td>
+                                                            <td>DAtaa</td>
+                                                            <td>DAtaa</td>
+                                                            <td>DAtaa</td>
+                                                            <td>DAtaa</td>
+                                                            <td>DAtaa</td>
+                                                            <td>DAtaa</td>
+                                                            <td>DAtaa</td>
+                                                            <td>DAtaa</td>
+                                                            
+                                                        </tr>
+
+
+                                                    </tbody>
+                                                </table>
+                                              <div style="height: 38px;"></div>
+
+                                            </div>
+                                        </div>
+                                        <!-- /.card-body -->
+                                    </div>
+                                </div>
+                               
+
+
+
+                            </div>
+                            
+                            
+
+                        </form>
+                    </div>
+
+
+
+
+                    <!-- </form> -->
+
+
+
+
+                    <!-- </div> -->
+                </div>
+            </div>
+        </section>
+
+        </div>
+
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+        <script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+        <script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+        <!-- AdminLTE App -->
+        <!-- example2 -->
+        <!-- page script -->
+        <script>
+            $(function() {
+                $("#example1").DataTable({
+                    "responsive": true,
+                    "autoWidth": false,
+                });
+                $('#example2').DataTable({
+                    "paging": true,
+                    "lengthChange": false,
+                    "searching": false,
+                    "ordering": false,
+                    "info": false,
+                    "autoWidth": false,
+                    "responsive": true,
+                });
+            });
+    
+        </script>
+
+
+    </body>
+
+</html>

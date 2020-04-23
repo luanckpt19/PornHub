@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="css_button_step/style.css" />
+    <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <ul class="navbar-nav background-color sidebar sidebar-dark accordion">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content" href="index.html">
+
+                <img src="img/ic_mbccs.png">
+
+                <div class="sidebar-brand-text mx-3" style="color: #4674EB; font-weight: bold; font-size: 26px;font-family: Nunito;font-style: normal; font-weight: 900;
+                font-size: 26px;
+                line-height: 35px;  padding-left: 10px;              
+                letter-spacing: 0.07em;">BCCS<sup>3.0</sup></div>
+            </a>
+
+
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li style="margin-top: 20px; ">
+                <!-- <div class="form-group has-search" style="margin-left: 8px;margin-right: 8px;">
+                    <span class="form-control-feedback"><img src="img/search.png"  style="padding-bottom: 10px;"></span>
+                    <input type="text" class="form-control" id="myInput" onkeyup="myFunction()" placeholder="Tìm kiếm chức năng">
+            
+                </div> -->
+                <form id="custom-search-form" class="form-search form-horizontal pull-right">
+                    <div class="form-group has-search" style="text-align: center; margin-right: 5px;margin-left:5px">
+                        <img src="img/search.png" style="margin-right: 6%;">
+                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Tìm kiếm chức năng" style="width: 74%;">
+
+                    </div>
+                </form>
+            </li>
+            <!-- Nav Item - Pages Collapse Menu -->
+            <ul class="navbar-nav background-color sidebar sidebar-dark accordion" id="myUL">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-home" style="color: #707070;"></i>
+                        <span class="span_menu">Dashboard</span>
+                    </a>
+                </li>
+                <!-- Nav Item - Utilities Collapse Menu -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <img src="img/notifi.png">
+                        <span class="span_menu">Thông báo</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cards.html">
+                        <img src="img/menu.png">
+                        <span class="span_menu">Chăm sóc KH -All in one</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <img src="img/change_network.png">
+                        <span class="span_menu">Chuyển mạng dữ số</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <img src="img/phone.png">
+                        <span class="span_menu">Phát triển di động</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <img src="img/affter_phone.png">
+                        <span class="span_menu">Sau bán di động</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <img src="img/fixed_dev.png">
+                        <span class="span_menu">Phát triển cố định</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <img src="img/contract_manage.png">
+
+                        <span class="span_menu">Quản lý hợp đồng</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <img src="img/group_manage.png">
+                        <span class="span_menu">Quản lý nhóm</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <img src="img/payment.png">
+                        <span class="span_menu">Thanh toán</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <img src="img/cart.png">
+                        <span class="span_menu">Quản lý bán hàng</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <img src="img/order.png">
+                        <span class="span_menu">Quản lý hóa đơn</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <img src="img/configuration.png">
+                        <span class="span_menu">Tiện ích</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <img src="img/category.png">
+                        <span class="span_menu">Danh mục</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <img src="img/dev_online.png">
+                        <span class="span_menu">Phát triển VC online</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content" style="background-color: white;">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+                    <!-- Topbar Search -->
+                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group" style="font-size: 13px;">
+                            <i class="fas fa-chevron-left"><span style="padding-left: 10px;">Phát triển di động</span></i>
+                        </div>
+                        <div class="input-group" style="margin-top: 10px;">
+                            <span style="color: black;font-weight: bold;font-size: 20px;">Đấu nối Mobile</span></i>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <div class="navbar-nav ml-auto">
+
+                        <div class="dropdown no-arrow d-sm-none" style="font-size: 20px;margin-top: 10px;color: black;">
+                            <span style="color: black;font-weight: bold;font-size: 20px;">Đấu nối Mobile</span></i>
+                            <!-- Dropdown - Messages -->
+                        </div>
+
+                    </div>
+                    <!-- Topbar Navbar -->
+
+                </nav>
+                <div class="container-fluid" style="background-color: white;">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-order1" role="tab" aria-controls="nav-home" aria-selected="true">Đơn hàng 1<img style="margin-left: 5px;" src="img/Vector.png"></a>
+                            <a class="nav-item  nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-order2" role="tab" aria-controls="nav-profile" aria-selected="false">Đơn hàng 2<img style="margin-left: 5px;" src="img/Vector.png"></a>
+                            <a class="nav-item  nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-order3" role="tab" aria-controls="nav-contact" aria-selected="false">Đơn hàng 3<img style="margin-left: 5px;" src="img/Vector.png"></a>
+                            <a class="nav-item  nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-order4" role="tab" aria-controls="nav-contact" aria-selected="false">Đơn hàng 4<img style="margin-left: 5px;" src="img/Vector.png"></a>
+                            <a class="nav-item  nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-order5" role="tab" aria-controls="nav-contact" aria-selected="false">Đơn hàng 5<img style="margin-left: 5px;" src="img/Vector.png"></a>
+                            <a class="nav-item  nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-order6" role="tab" aria-controls="nav-contact" aria-selected="false">Đơn hàng 6<img style="margin-left: 5px;" src="img/Vector.png"></a>
+
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-order1" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div id="container">
+                                <span class="span_order">Đấu nối di động</span>
+
+
+                                <!--Section: Contact v.2-->
+                                <section class="mb-4" style="margin: 10px;">
+
+                                    <!--Section heading-->
+                                    <form class="form-register">
+                                        <div id="form-total">
+                                            <!-- SECTION 1 -->
+                                            <h2 class="circle">1<span style="margin-left: 15px;font-size: 12px;color: #6B90EF;">Thông tin khách hàng</span>
+                                            </h2>
+
+                                            <section>
+                                            </section>
+                                            <!-- SECTION 2 -->
+                                            <h2 class="circle">2<span style="margin-left: 15px;font-size: 12px; margin-top: 10px; margin-bottom: 10px;color:  #6B90EF;">Thông tin thuê bao</span>
+
+                                            </h2>
+                                            <section>
+
+                                            </section>
+                                            <!-- SECTION 3 -->
+                                            <h2 class="circle">3<span style="margin-left: 15px; font-size: 12px;margin-top: 10px; margin-bottom: 10px;color:  #6B90EF;">Thông tin hồ sơ</span>
+
+                                            </h2>
+                                            <section>
+
+                                            </section>
+                                            <h2 class="circle">4<span style="margin-left: 15px;font-size: 12px; margin-top: 10px; margin-bottom: 10px;color:  #6B90EF;">Thông tin khách hàng</span>
+
+                                            </h2>
+                                            <section>
+
+                                            </section>
+                                        </div>
+                                    </form>
+
+
+                                    <h2 class="h1-responsive font-weight-bold text-center my-4">
+
+
+
+
+                                    </h2>
+                                    <!--Section description-->
+
+                                    <div class="row" id="form_step1">
+
+                                        <!--Grid column-->
+                                        <div class="col-md-8 mb-md-0 mb-5">
+                                            <form id="contact-form" name="contact-form" method="POST">
+                                                <div style="background-color: white; padding: 15px; margin-bottom: 10px;">
+                                                    <div class="form-row">
+                                                        <div class="col-md-4 mb-3">
+                                                            <P class="title_step">THÔNG TIN KHÁCH HÀNG</P>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col-md-6 mb-3">
+                                                            <p class="label_step">Loại khách hàng</p>
+                                                            <select id="country" name="country" class="form-control">
+                                                                <option value="a">Tư nhân trong nước</option>
+                                                                <option value="b">khác</option>
+                                                              </select>
+                                                        </div>
+                                                        <div class="col-md-6 mb-3">
+                                                            <p class="label_step">Số giấy tờ</p>
+                                                            <div class="input-group mb-3">
+                                                                <div class="input-group-prepend">
+                                                                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border: 1px solid #e0e0e0; border-radius: 0px; ">Chứng minh thư</button>
+                                                                    <!-- <div class="dropdown-menu">
+                                                                        <a class="dropdown-item" href="#">Căn cước công dân</a>
+                                                                    </div> -->
+                                                                </div>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col-md-6 mb-3">
+                                                            <p class="label_step">Tên khách hàng<span style="color: red">*</span></p>
+                                                            <div class="input-group mb-3">
+                                                                <div class="input-group-prepend">
+                                                                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border: 1px solid #e0e0e0;border-radius: 0px; ">Ông</button>
+                                                                    <!-- <div class="dropdown-menu">
+                                                                        <a class="dropdown-item" href="#">Bà</a>
+                                                                    </div> -->
+                                                                </div>
+                                                                <input type="text" class="form-control" placeholder="Họ tên khách hàng">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 mb-3">
+                                                            <p class="label_step">Ngày sinh<span style="color: red">*</span></p>
+                                                            <input type="date" class="form-control">
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="form-row">
+                                                        <div class="col-md-6 mb-3">
+                                                            <p class="label_step">Nơi cấp CMT<span style="color: red">*</span></p>
+                                                            <select id="country" name="country" class="form-control">
+                                                                <option value="a">Hà nội</option>
+                                                                <option value="b">khác</option>
+                                                              </select>
+                                                        </div>
+                                                        <div class="col-md-6 mb-3">
+                                                            <p class="label_step">Ngày cấp CMT<span style="color: red">*</span></p>
+                                                            <input type="date" class="form-control">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col-md-6 mb-3">
+                                                            <p class="label_step">Địa chỉ<span style="color: red">*</span></p>
+                                                            <input type="text" class="form-control" placeholder="Địa chỉ thường trú">
+                                                        </div>
+                                                        <div class="col-md-6 mb-3">
+                                                            <p class="label_step">Ngôn ngữ</p>
+                                                            <select id="country" name="country" class="form-control">
+                                                                <option value="a">Hà nội</option>
+                                                                <option value="b">khác</option>
+                                                              </select>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col-md-6 mb-3">
+                                                            <p class="label_step">Quốc tịch<span style="color: red">*</span></p>
+                                                            <select id="country" name="country" class="form-control">
+                                                                <option value="a">Việt nam</option>
+                                                                <option value="b">khác</option>
+                                                              </select>
+                                                        </div>
+                                                        <div class="col-md-6 mb-3">
+                                                            <p class="label_step">Ghi chú</p>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+
+                                                    </div>
+
+
+
+
+                                                </div>
+
+                                            </form>
+
+
+                                        </div>
+                                        <!--Grid column-->
+
+                                        <!--Grid column-->
+                                        <div class="col-md-4 text-center" id="image_step1">
+                                            <ul class="list-unstyled mb-0" id="image_step1_ul">
+                                                <li><img src="img/image_order1.png">
+                                                    <p style="margin-top: 20px;">Chưa có thông tin ảnh chứng minh thư và chân dung.<br>Vui lòng tải lên ở phần 3</p>
+                                                    <p style="font-weight: bold;">Thông tin hồ sơ</p>
+                                                </li>
+
+
+                                            </ul>
+                                        </div>
+                                        <!--Grid column-->
+
+                                    </div>
+
+                                </section>
+                                <!--Section: Contact v.2-->
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="tab-pane fade" id="nav-order2" role="tabpanel" aria-labelledby="nav-contact-tab">
+
+                            <div id="container">
+                                <span class="span_order">Đấu nối di động</span>
+
+
+                                <!--Section: Contact v.2-->
+                                <section class="mb-4" style="margin: 10px;">
+
+                                    <!--Section heading-->
+
+
+                                    <h2 class="h1-responsive font-weight-bold text-center my-4">
+
+
+
+
+                                    </h2>
+                                    <!--Section description-->
+
+                                    <div class="row" id="form_step1">
+
+                                        <!--Grid column-->
+                                        <div class="col-md-8 mb-md-0 mb-5">
+                                            <form id="contact-form" name="contact-form" method="POST">
+                                                <div style="background-color: white; padding: 15px; margin-bottom: 10px;">
+                                                    <div class="form-row">
+                                                        <div class="col-md-4 mb-3">
+                                                            <P class="title_step">THÔNG TIN KHÁCH HÀNG</P>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col-md-6 mb-3">
+                                                            <p class="label_step">Loại khách hàng</p>
+                                                            <select id="country" name="country" class="form-control">
+                                                                <option value="a">Tư nhân trong nước</option>
+                                                                <option value="b">khác</option>
+                                                              </select>
+                                                        </div>
+                                                        <div class="col-md-6 mb-3">
+                                                            <p class="label_step">Số giấy tờ</p>
+                                                            <div class="input-group mb-3">
+                                                                <div class="input-group-prepend">
+                                                                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border: 1px solid #e0e0e0; border-radius: 0px; ">Chứng minh thư</button>
+                                                                    <!-- <div class="dropdown-menu">
+                                                                        <a class="dropdown-item" href="#">Căn cước công dân</a>
+                                                                    </div> -->
+                                                                </div>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col-md-6 mb-3">
+                                                            <p class="label_step">Tên khách hàng<span style="color: red">*</span></p>
+                                                            <div class="input-group mb-3">
+                                                                <div class="input-group-prepend">
+                                                                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border: 1px solid #e0e0e0;border-radius: 0px; ">Ông</button>
+                                                                    <!-- <div class="dropdown-menu">
+                                                                        <a class="dropdown-item" href="#">Bà</a>
+                                                                    </div> -->
+                                                                </div>
+                                                                <input type="text" class="form-control" placeholder="Họ tên khách hàng">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 mb-3">
+                                                            <p class="label_step">Ngày sinh<span style="color: red">*</span></p>
+                                                            <input type="date" class="form-control">
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="form-row">
+                                                        <div class="col-md-6 mb-3">
+                                                            <p class="label_step">Nơi cấp CMT<span style="color: red">*</span></p>
+                                                            <select id="country" name="country" class="form-control">
+                                                                <option value="a">Hà nội</option>
+                                                                <option value="b">khác</option>
+                                                              </select>
+                                                        </div>
+                                                        <div class="col-md-6 mb-3">
+                                                            <p class="label_step">Ngày cấp CMT<span style="color: red">*</span></p>
+                                                            <input type="date" class="form-control">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col-md-6 mb-3">
+                                                            <p class="label_step">Địa chỉ<span style="color: red">*</span></p>
+                                                            <input type="text" class="form-control" placeholder="Địa chỉ thường trú">
+                                                        </div>
+                                                        <div class="col-md-6 mb-3">
+                                                            <p class="label_step">Ngôn ngữ</p>
+                                                            <select id="country" name="country" class="form-control">
+                                                                <option value="a">Hà nội</option>
+                                                                <option value="b">khác</option>
+                                                              </select>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col-md-6 mb-3">
+                                                            <p class="label_step">Quốc tịch<span style="color: red">*</span></p>
+                                                            <select id="country" name="country" class="form-control">
+                                                                <option value="a">Việt nam</option>
+                                                                <option value="b">khác</option>
+                                                              </select>
+                                                        </div>
+                                                        <div class="col-md-6 mb-3">
+                                                            <p class="label_step">Ghi chú</p>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+
+                                                    </div>
+
+
+
+
+                                                </div>
+
+                                            </form>
+
+
+                                        </div>
+                                        <!--Grid column-->
+
+                                        <!--Grid column-->
+                                        <div class="col-md-4 text-center" id="image_step1">
+                                            <ul class="list-unstyled mb-0" id="image_step1_ul">
+                                                <li><img src="img/image_order1.png">
+                                                    <p style="margin-top: 20px;">Chưa có thông tin ảnh chứng minh thư và chân dung.<br>Vui lòng tải lên ở phần 3</p>
+                                                    <p style="font-weight: bold;">Thông tin hồ sơ</p>
+                                                </li>
+
+
+                                            </ul>
+                                        </div>
+                                        <!--Grid column-->
+
+                                    </div>
+
+                                </section>
+                                <!--Section: Contact v.2-->
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="tab-pane fade" id="nav-order3" role="tabpanel" aria-labelledby="nav-contact-tab">23434</div>
+                        <div class="tab-pane fade" id="nav-order4" role="tabpanel" aria-labelledby="nav-contact-tab">c</div>
+                        <div class="tab-pane fade" id="nav-order5" role="tabpanel" aria-labelledby="nav-contact-tab">c</div>
+                        <div class="tab-pane fade" id="nav-order6" role="tabpanel" aria-labelledby="nav-contact-tab">g</div>
+                    </div>
+                    <!-- Content Row -->
+
+
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white shadow">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto" style="float: right;">
+                        <button type="button" class="btn btn-secondary" style="color: #4674EB; background-color: white; border: none; font-size: 13px;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        font-style: normal;
+                        font-weight: bold;">HỦY BỎ</button>
+                        <button type="button" class="btn btn-primary" style="background-color: #4674EB;font-size: 13px;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        font-style: normal;
+                        font-weight: bold;">TIẾP TỤC <span style="font-size: 13px;background-color: #E8E8E8;;color: #4674EB;padding-left: 5px;padding-right: 5px; border-radius: 50px;">Ctrl+Enter</span></button>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <!-- <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="js_button_step/jquery-3.3.1.min.js"></script>
+    <script src="js_button_step/jquery.steps.js"></script>
+    <script src="js_button_step/main.js"></script>
+</body>
+
+</html>

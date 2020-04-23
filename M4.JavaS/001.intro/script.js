@@ -1,1 +1,0 @@
-alert("load js từ file bên ngoài")

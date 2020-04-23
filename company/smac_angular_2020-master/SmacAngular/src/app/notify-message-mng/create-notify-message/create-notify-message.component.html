@@ -1,0 +1,290 @@
+<div class="wrapper">
+  <app-sidebar></app-sidebar>
+
+  <div class="main-panel">
+    <app-navbar></app-navbar>
+    <div class="content-wrapper">
+      <!-- day la phan from -->
+      <div class="container-fluid">
+        <div style="background-color: white; padding: 15px; margin-bottom: 5px;">
+          <div class="form-row">
+              <div class="col-md-4 mb-3">
+                  <P class="label_main">KHAI BÁO TIN</P>
+              </div>
+          </div>
+          <div class="form-row" style="margin-left: 5px;">
+              <div class="col-md-12 mb-3">
+                  <p class="label_login">Loại tin<span style="color: red">*</span></p>
+                  <button type="button" class="form-control" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" style=" text-align: left;">Loại tin<i class="fas fa-caret-down"></i> </button>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                      <button class="dropdown-item" type="button">Tư nhân trong nước</button>
+                      <button class="dropdown-item" type="button">Khác</button>
+                  </div>
+              </div>
+
+          </div>
+          <div class="form-row" style="margin-left: 5px;">
+              <div class="col-md-12 mb-3">
+                  <p class="label_login">Tiêu đề<span style="color: red">*</span></p>
+                  <input type="text" class="form-control">
+              </div>
+
+          </div>
+          <div class="form-row" style="margin-left: 5px;">
+              <div class="col-md-12 mb-3">
+                  <p class="label_login">Tóm tắt<span style="color: red">*</span></p>
+                  <textarea class="form-control" rows="3"></textarea>
+              </div>
+
+          </div>
+          <div class="form-row" style="margin-left: 5px;">
+              <div class="col-md-12 mb-3">
+                  <p class="label_login">Nội dung<span style="color: red">*</span></p>
+              <ckeditor>
+
+              </ckeditor>
+                </div>
+          </div>
+          <div class="form-row">
+              <div class="col-md-4 mb-3">
+                  <P class="label_main">DANH SÁCH CỦA LOẠI NHÓM</P>
+              </div>
+          </div>
+
+
+
+          <div class="form-row" style="margin-left: 5px;">
+              <div class="col-md-4 mb-3">
+                  <p class="label_login">Loại nhóm<span style="color: red">*</span></p>
+                  <button type="button" class="form-control" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" style=" text-align: left;">Loại tin<i class="fas fa-caret-down"></i> </button>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                      <button class="dropdown-item" type="button">Tư nhân trong nước</button>
+                      <button class="dropdown-item" type="button">Khác</button>
+                  </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                  <p class="label_login">Tên nhóm<span style="color: red">*</span></p>
+                  <button type="button" class="form-control" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" style=" text-align: left;">Loại tin<i class="fas fa-caret-down"></i> </button>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                      <button class="dropdown-item" type="button">Tư nhân trong nước</button>
+                      <button class="dropdown-item" type="button">Khác</button>
+                  </div>
+              </div>
+              <div class="col-md-2 mb-3">
+                  <p class="label_login">&nbsp;</p>
+                  <button class="btn btn-info" style="width: 100%;  background-color: #FCB71E;border: none;">Thêm</button>
+
+              </div>
+
+          </div>
+          <div class="form-row" style="margin-left: 5px;margin-right: 20px;">
+              <div class="col-12">
+                  <div class="card" style="padding: 0%;">
+                      <div class="card-header">
+                          <div class="form-row" style="margin-top: 5px;">
+                              <div class="col-md-4 mb-3">
+                                  <button class="btn btn-secondary"><i class="fas fa-times pr-2" aria-hidden="true"></i>Close</button>
+                              </div>
+                              <div class="col-md-3 mb-3">
+
+                              </div>
+                              <div class="col-md-3 mb-3">
+                                  <input type="text" class="form-control" placeholder="-Nhập từ khóa-">
+                              </div>
+                              <div class="col-md-1 mb-3">
+                                  <button type="button" class="form-control" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" style=" text-align: left;">5<i class="fas fa-caret-down"></i> </button>
+                                  <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                                      <button class="dropdown-item" type="button">10</button>
+                                      <button class="dropdown-item" type="button">15</button>
+                                  </div>
+                              </div>
+                              <div class="col-md-1 mb-3">
+                                  <img src="dist/img/icon update 3.png">
+                              </div>
+
+                          </div>
+                      </div>
+                      <!-- /.card-header -->
+                      <div class="card-body">
+                          <div class="table-responsive" style=" overflow-y: scroll;">
+                              <table id="example3">
+                                  <thead>
+                                      <tr>
+                                          <th scope="col"></th>
+                                          <th scope="col">Loại nhóm</th>
+                                          <th scope="col">Tên nhóm</th>
+
+
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+
+                                          <td style="text-align: center;"><input type="checkbox"></td>
+                                          <td>PSP browser</td>
+                                          <td>PSP browser</td>
+
+
+                                      </tr>
+
+
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                      <!-- /.card-body -->
+                  </div>
+                  <!-- /.card -->
+
+
+                  <!-- /.card -->
+              </div>
+          </div>
+          <div class="form-row">
+              <div class="col-md-4 mb-3">
+                  <P class="label_main">ĐẶT LỊCH THÔNG BÁO</P>
+              </div>
+          </div>
+
+          <div class="form-row" style="margin-left: 5px;">
+              <div class="col-md-6 mb-3">
+                  <p class="label_login">Ngày đăng<span style="color: red">*</span></p>
+
+                  <input type="datetime-local" class="form-control">
+              </div>
+              <div class="col-md-2 mb-3">
+                  <p class="label_login">&nbsp;</p>
+                  <button class="btn btn-info" style="width: 100%;  background-color: #FCB71E;border: none;">Thêm</button>
+              </div>
+              <div class="col-md-3 mb-3">
+              </div>
+
+          </div>
+          <div class="form-row" style="margin-left: 5px;margin-right: 20px;">
+              <div class="col-12">
+                  <div class="card" style="padding: 0%;">
+                      <div class="card-header">
+                          <div class="form-row" style="margin-top: 5px;">
+                              <div class="col-md-4 mb-3">
+                                  <button class="btn btn-secondary"><i class="fas fa-times pr-2" aria-hidden="true"></i>Close</button>
+                              </div>
+                              <div class="col-md-3 mb-3">
+
+                              </div>
+                              <div class="col-md-3 mb-3">
+                                  <input type="text" class="form-control" placeholder="-Nhập từ khóa-">
+                              </div>
+                              <div class="col-md-1 mb-3">
+                                  <button type="button" class="form-control" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" style=" text-align: left;">5<i class="fas fa-caret-down"></i> </button>
+                                  <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                                      <button class="dropdown-item" type="button">10</button>
+                                      <button class="dropdown-item" type="button">15</button>
+                                  </div>
+                              </div>
+                              <div class="col-md-1 mb-3">
+                                  <img src="dist/img/icon update 3.png">
+                              </div>
+
+                          </div>
+                      </div>
+                      <!-- /.card-header -->
+                      <div class="card-body">
+                          <div class="table-responsive" style=" overflow-y: scroll;">
+                              <table id="example4">
+                                  <thead>
+                                      <tr>
+                                          <th scope="col"></th>
+                                          <th scope="col">Ngày đăng</th>
+
+
+
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+
+                                          <td style="text-align: center;"><input type="checkbox"></td>
+                                          <td>PSP browser</td>
+
+                                      </tr>
+
+
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                      <!-- /.card-body -->
+                  </div>
+                  <!-- /.card -->
+
+
+                  <!-- /.card -->
+              </div>
+          </div>
+
+          <div class="form-row" style="margin-left: 5px;">
+              <div class="col-md-4 mb-3">
+                  <p class="label_login">Trạng thái<span style="color: red">*</span></p>
+
+              </div>
+              <div class="col-md-4 mb-3">
+
+              </div>
+              <div class="col-md-3 mb-3">
+              </div>
+
+          </div>
+          <div class="form-row" style="margin-left: 20px;">
+
+              <div class="col-md-2 mb-3">
+                  <div class="icheck-success d-inline">
+                      <input type="radio" name="r3" id="radioSuccess1">
+                      <label for="radioSuccess1" style="font-weight: normal;">
+                       Đã duyệt
+                      </label>
+                  </div>
+              </div>
+              <div class="col-md-2 mb-3">
+                  <div class="icheck-success d-inline">
+                      <input type="radio" name="r3" id="radioSuccess2">
+                      <label for="radioSuccess2" style="font-weight: normal;">
+                        Chờ duyệt
+                      </label>
+                  </div>
+              </div>
+              <div class="col-md-2 mb-3">
+                  <div class="icheck-success d-inline">
+                      <input type="radio" name="r3" id="radioSuccess3">
+                      <label for="radioSuccess3" style="font-weight: normal;">
+                        Đã đăng
+                      </label>
+                  </div>
+              </div>
+              <div class="col-md-2 mb-3">
+                  <div class="icheck-success d-inline">
+                      <input type="radio" name="r3" id="radioSuccess4">
+                      <label for="radioSuccess4" style="font-weight: normal;">
+                        Hẹn lịch đăng
+                      </label>
+                  </div>
+              </div>
+
+
+          </div>
+
+          <div class="form-row" style="margin-bottom: 10px;text-align: center; margin-top: 20px;">
+              <div class="col-md-12 mb-3">
+                  <a class="btn btn-info" href="#" routerLink="/notifyMessage" >Hủy</a>
+                  <a class="btn btn-info" href="#" role="button">Tạo mới</a>
+
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
+
+    <app-footer></app-footer>
+
+    <aside class="control-sidebar control-sidebar-dark"></aside>
+  </div>
+</div>

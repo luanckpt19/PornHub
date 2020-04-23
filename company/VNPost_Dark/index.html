@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <title>VNPost</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"/>
+    <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body id="page-top">
+<div id="wrapper">
+    <ul class="navbar-nav background-color sidebar sidebar-dark accordion">
+        <a class="sidebar-brand d-flex align-items-center justify-content" href="index.html">
+
+            <img src="img/ic_mbccs.png">
+
+            <div class="sidebar-brand-text mx-3" style="color: #4674EB; font-weight: bold; font-size: 26px;font-family: Nunito;font-style: normal; font-weight: 900;
+                font-size: 26px;
+                line-height: 35px;  padding-left: 10px;letter-spacing: 0.07em;">BCCS<sup>3.0</sup></div>
+        </a>
+        <li style="margin-top: 20px; ">
+
+            <form id="custom-search-form" class="form-search form-horizontal pull-right">
+                <div class="form-group has-search" style="text-align: center; margin-right: 5px;margin-left:5px">
+                    <img src="img/search.png" style="margin-right: 6%;">
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Tìm kiếm chức năng"
+                           style="width: 72%;">
+
+                </div>
+            </form>
+        </li>
+        <ul class="navbar-nav background-color sidebar sidebar-dark accordion" id="myUL">
+
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="fa fa-home icons" style="color: #707070;"></i>
+                    <span class="span_menu">Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img class="icons" src="img/notifi.png">
+                    <span class="span_menu">Thông báo</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cards.html">
+                    <img class="icons" src="img/menu.png">
+                    <span class="span_menu">Chăm sóc KH -All in one</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img class="icons" src="img/change_network.png">
+                    <span class="span_menu">Chuyển mạng dữ số</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img class="icons" src="img/phone.png">
+                    <span class="span_menu">Phát triển di động</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img class="icons" src="img/affter_phone.png">
+                    <span class="span_menu">Sau bán di động</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img class="icons" src="img/fixed_dev.png">
+                    <span class="span_menu">Phát triển cố định</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img class="icons" src="img/contract_manage.png">
+
+                    <span class="span_menu">Quản lý hợp đồng</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img class="icons" src="img/group_manage.png">
+                    <span class="span_menu">Quản lý nhóm</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img class="icons" src="img/payment.png">
+                    <span class="span_menu">Thanh toán</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img class="icons" src="img/cart.png">
+                    <span class="span_menu">Quản lý bán hàng</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img class="icons" src="img/order.png">
+                    <span class="span_menu">Quản lý hóa đơn</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img class="icons" src="img/configuration.png">
+                    <span class="span_menu">Tiện ích</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img class="icons" src="img/category.png">
+                    <span class="span_menu">Danh mục</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img class="icons" src="img/dev_online.png">
+                    <span class="span_menu">Phát triển VC online</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </ul>
+    <div id="content-wrapper" class="d-flex flex-column">
+
+        <div id="content" style="background-color: white;">
+
+            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top">
+
+                <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                    <div class="input-group" style="font-size: 13px;">
+                        <i class="fa fa-chevron-left"><span style="padding-left: 10px;">Phát triển di động</span></i>
+                    </div>
+                    <div class="input-group" style="margin-top: 10px;">
+                        <span style="color: black;font-weight: bold;font-size: 20px; position: relative;top: 20px;left: -90%;">Đấu nối Mobile</span></i>
+                    </div>
+                </form>
+                <div class="navbar-nav ml-auto">
+
+                    <div class="dropdown no-arrow d-sm-none" style="font-size: 20px;margin-top: 10px;color: black;">
+                        <span style="color: black;font-weight: bold;font-size: 20px;">Đấu nối Mobile</span></i>
+                    </div>
+
+                </div>
+            </nav>
+            <div class="container-fluid" style="background-color: white;">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-order1"
+                           role="tab" aria-controls="nav-home" aria-selected="true">Đơn hàng 1<img
+                                style="margin-left: 5px;" src="img/Vector.png"></a>
+                        <a class="nav-item  nav-link nav-profile-tab" data-toggle="tab" href="#nav-order2" role="tab"
+                           aria-controls="nav-profile" aria-selected="false">Đơn hàng 2<img style="margin-left: 5px;"
+                                                                                            src="img/Vector.png"></a>
+                        <a class="nav-item  nav-link nav-contact-tab" data-toggle="tab" href="#nav-order3" role="tab"
+                           aria-controls="nav-contact" aria-selected="false">Đơn hàng 3<img style="margin-left: 5px;"
+                                                                                            src="img/Vector.png"></a>
+                        <a class="nav-item  nav-link nav-contact-tab" data-toggle="tab" href="#nav-order4" role="tab"
+                           aria-controls="nav-contact" aria-selected="false">Đơn hàng 4<img style="margin-left: 5px;"
+                                                                                            src="img/Vector.png"></a>
+                        <a class="nav-item  nav-link nav-contact-tab" data-toggle="tab" href="#nav-order5" role="tab"
+                           aria-controls="nav-contact" aria-selected="false">Đơn hàng 5<img style="margin-left: 5px;"
+                                                                                            src="img/Vector.png"></a>
+                        <a class="nav-item  nav-link nav-contact-tab" data-toggle="tab" href="#nav-order6" role="tab"
+                           aria-controls="nav-contact" aria-selected="false">Đơn hàng 6<img style="margin-left: 5px;"
+                                                                                            src="img/Vector.png"></a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-order1" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <span class="span_order">Đấu nối di động</span>
+
+                        <section class="mb-4" style="margin: 10px;">
+
+                            <form class="form-register">
+                                <div id="form-total">
+                                  <section class="check-form">
+                                    <h2 class="circle"><span class="title"></span><span>Thông tin<br> khách hàng <span></h2>
+                                  </section>
+                                    <section class="check-form">
+                                        <h2 class="circle"><span class="title"></span><span>Thông tin <br>thuê bao</span></h2>
+                                    </section>
+                                    <section class="check-form">
+                                        <h2 class="circle circleK"><span class="title title_step"></span><span>Thông tin<br> hồ sơ</span></h2>
+                                    </section >
+                                    <section class="check-form">
+                                        <h2 class="circle circleK2"><span class="title title_step2"></span><span class="title_text">Thanh toán</span></h2>
+                                    </section>
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="nav-order2" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    </div>
+                    <div class="tab-pane fade" id="nav-order3" role="tabpanel" aria-labelledby="nav-contact-tab">23434</div>
+                    <div class="tab-pane fade" id="nav-order4" role="tabpanel" aria-labelledby="nav-contact-tab">c</div>
+                    <div class="tab-pane fade" id="nav-order5" role="tabpanel" aria-labelledby="nav-contact-tab">c</div>
+                    <div class="tab-pane fade" id="nav-order6" role="tabpanel" aria-labelledby="nav-contact-tab">g</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

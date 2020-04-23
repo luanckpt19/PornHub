@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Dashboard</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bbootstrap 4 -->
+    <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+
+
+
+
+    <script src='http://production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script>
+
+    <script src='http://production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script>
+    <script src='http://production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script>
+
+
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">Dashboard</a>
+                </li>
+
+            </ul>
+
+            <!-- SEARCH FORM -->
+            <form class="form-inline ml-3">
+                <div class="input-group input-group-sm">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-navbar" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Messages Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-comments"></i>
+                        <span class="badge badge-danger navbar-badge">3</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <a href="#" class="dropdown-item">
+                            <!-- Message Start -->
+                            <div class="media">
+                                <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        Brad Diesel
+                                        <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">Call me whenever you can...</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- Message End -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <!-- Message Start -->
+                            <div class="media">
+                                <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        John Pierce
+                                        <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">I got your message bro</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- Message End -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <!-- Message Start -->
+                            <div class="media">
+                                <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        Nora Silvester
+                                        <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">The subject goes here</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- Message End -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+                    </div>
+                </li>
+                <!-- Notifications Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-bell"></i>
+                        <span class="badge badge-warning navbar-badge">15</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <span class="dropdown-item dropdown-header">15 Notifications</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i> 4 new messages
+                            <span class="float-right text-muted text-sm">3 mins</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-users mr-2"></i> 8 friend requests
+                            <span class="float-right text-muted text-sm">12 hours</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-file mr-2"></i> 3 new reports
+                            <span class="float-right text-muted text-sm">2 days</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+                        <i class="fas fa-th-large"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="index3.html" class="brand-link">
+                <img src="dist/img/vnpost.png" alt="AdminLTE Logo" class="brand-image img-circle ">
+                <span class="brand-text font-weight-white">Hành Chính Công</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+
+                                <p class="title_main">
+                                    Tania Andrew
+                                    <i class="right fas fa-caret-down" style="margin-top: 8px; margin-right: 5px; "></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview" style="margin-left: 5px;">
+                                <li class="nav-item">
+                                    <a href="pages/layout/top-nav.html" class="nav-link">
+                                        <p class="title_icon" style="margin-right: 15px;">MP</p>
+                                        <p>My profile</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/layout/top-nav.html" class="nav-link">
+                                        <p class="title_icon" style="margin-right: 15px;">EP</p>
+                                        <p>Edit Profile</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/layout/top-nav.html" class="nav-link">
+                                        <p class="title_icon" style="margin-right: 15px;">S</p>
+                                        <p>Setting</p>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="dropdown-divider"></div>
+                <!-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="info">
+
+
+                        <a href="#" class="d-block">
+                                DUC LONG
+                                <i class="right fas fa-caret-down"></i>
+                             
+                        </a>
+
+                    </div>
+                </div> -->
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false" style="margin-bottom: 20px;">
+
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">
+                                <!-- <i class="nav-icon fas fa-th"></i> -->
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p class="title_nav">
+                                    DASHBOARD
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-copy"></i>
+                                <p class="title_nav">
+                                    COMPONENTS
+                                    <i class="right fas fa-caret-down" style="margin-top: 8px;"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview" style="margin-left: 5px;">
+                                <li class="nav-item">
+                                    <a href="pages/layout/top-nav.html" class="nav-link">
+                                        <p class="title_icon" style="margin-right: 15px;">BT</p>
+                                        <p>Buttons</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/layout/top-nav.html" class="nav-link">
+                                        <p class="title_icon" style="margin-right: 15px;">GS</p>
+                                        <p>Grid System</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/layout/top-nav.html" class="nav-link">
+                                        <p class="title_icon" style="margin-right: 15px;">PN</p>
+                                        <p>Panels</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/layout/top-nav.html" class="nav-link">
+                                        <p class="title_icon" style="margin-right: 15px;">SA</p>
+                                        <p>Sweet Alert</p>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-receipt"></i>
+                                <!-- <i class="nav-icon fas fa-copy"></i> -->
+                                <p class="title_nav">
+                                    FORMS
+                                    <i class="right fas fa-caret-down" style="margin-top: 8px;"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview" style="margin-left: 5px;">
+                                <li class="nav-item">
+                                    <a href="pages/layout/top-nav.html" class="nav-link">
+                                        <p class="title_icon" style="margin-right: 15px;">RF</p>
+                                        <p>Regular forms</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/layout/top-nav.html" class="nav-link">
+                                        <p class="title_icon" style="margin-right: 15px;">EF</p>
+                                        <p>Extended forms</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/layout/top-nav.html" class="nav-link">
+                                        <p class="title_icon" style="margin-right: 15px;">EF</p>
+                                        <p>Extended forms</p>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-scroll"></i>
+                                <!-- <i class="nav-icon fas fa-copy"></i> -->
+                                <p class="title_nav">
+                                    TABLES
+                                    <i class="right fas fa-caret-down" style="margin-top: 8px;"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview" style="margin-left: 5px;">
+                                <li class="nav-item">
+                                    <a href="pages/layout/top-nav.html" class="nav-link">
+                                        <p class="title_icon" style="margin-right: 15px;">RT</p>
+                                        <p>Regular Tables</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/layout/top-nav.html" class="nav-link">
+                                        <p class="title_icon" style="margin-right: 15px;">ET</p>
+                                        <p>Extended Table</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/layout/top-nav.html" class="nav-link">
+                                        <p class="title_icon" style="margin-right: 15px;">DT</p>
+                                        <p>Database Table</p>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-map-marker-alt"></i>
+                                <p class="title_nav">
+                                    MAPS
+                                    <i class="right fas fa-caret-down" style="margin-top: 8px;"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview" style="margin-left: 5px; ">
+                                <li class="nav-item">
+                                    <a href="pages/layout/top-nav.html" class="nav-link">
+                                        <p class="title_icon" style="margin-right: 15px;">RT</p>
+                                        <p>Regular Tables</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/layout/top-nav.html" class="nav-link">
+                                        <p class="title_icon" style="margin-right: 15px;">ET</p>
+                                        <p>Extended Table</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/layout/top-nav.html" class="nav-link">
+                                        <p class="title_icon" style="margin-right: 15px;">DT</p>
+                                        <p>Database Table</p>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/widgets.html" class="nav-link">
+                                <!-- <i class=" fas fa-th"></i> -->
+                                <i class="nav-icon fas fa-chart-line"></i>
+                                <p class="title_nav">
+                                    CHARTS
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/widgets.html" class="nav-link">
+                                <!-- <i class="nav-icon fas fa-th"></i> -->
+                                <!-- <i class="nav-icon fas fa-chart-line"></i> -->
+                                <i class="nav-icon fas fa-calendar-alt"></i>
+                                <p class="title_nav">
+                                    CALENTDAS
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <!-- <i class=" fas fa-copy"></i> -->
+                                <i class="nav-icon fas fa-gift"></i>
+                                <p class="title_nav">
+                                    PAGES
+                                    <i class="right fas fa-caret-down" style="margin-top: 8px;"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview" style="margin-left: 5px;">
+                                <li class="nav-item">
+                                    <a href="pages/layout/top-nav.html" class="nav-link">
+                                        <p class="title_icon" style="margin-right: 15px;">RT</p>
+                                        <p>Regular Tables</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/layout/top-nav.html" class="nav-link">
+                                        <p class="title_icon" style="margin-right: 15px;">ET</p>
+                                        <p>Extended Table</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/layout/top-nav.html" class="nav-link">
+                                        <p class="title_icon" style="margin-right: 15px;">DT</p>
+                                        <p>Database Table</p>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/widgets.html" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p class="title_nav">
+                                    DOCUMENTATIONS
+                                </p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <div class="dropdown"><a data-toggle="dropdown" href="#" aria-expanded="false"><i class="fa fa-cog fa-2x" style="color: white;font-size: 26px;"></i></a>
+                <ul class="dropdown-menu">
+                    <li>sdsds</li>
+                    <li>sdsds</li>
+                    <li>sdsds</li>
+                    <li>sdsds</li>
+                    <li>sdsds</li>
+                    <li>sdsds</li>
+                    <li>sdsds</li>
+                    <li>sdsds</li>
+                    <li>sdsds</li>
+                    <li>sdsds</li>
+
+                </ul>
+            </div>
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <div class="container-fluid">
+                    <!-- <h5 style="margin-top: 20px; text-align: center;font-weight: bold;">QUẢN LÝ TIN NHẮN</h5> -->
+                    <div class="row">
+                        <div class="col-md-12" style=" padding: 10px;">
+                            <!-- <div class="row"> -->
+                            <form>
+                                <!-- <form> -->
+                                <div style="background-color: white;padding-top: 15px;padding-left: 20px; margin-bottom: 5px;padding-bottom: 10px;">
+                                    <div class="form-row">
+                                        <P class="label_main"><i class="fas fa-home" style="font-size: 22px;"></i></P>
+                                        <P class="label_next">></P>
+                                        <P class="label_main">Message</P>
+
+                                    </div>
+                                </div>
+
+                                <div style="background-color: white;padding-top: 15px;padding-left: 20px; margin-bottom: 5px;">
+
+                                    <div class="form-row" style="margin-bottom: 10px; margin-right: 10px;">
+                                        <div class="col-md-4 mb-3">
+                                            <label class="label_login">Loại nhóm<span style="color: red">*</span></label>
+                                            <button type="button" class="form-control" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" style=" text-align: left;">Loại nhóm<i class="fas fa-caret-down"></i> </button>
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                                                <button class="dropdown-item" type="button">Tư nhân trong nước</button>
+                                                <button class="dropdown-item" type="button">Khác</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label class="label_login">Tên nhóm<span style="color: red">*</span></label>
+                                            <button type="button" class="form-control" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" style=" text-align: left;">Tên nhóm<i class="fas fa-caret-down"></i> </button>
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                                                <button class="dropdown-item" type="button">Tư nhân trong nước</button>
+                                                <button class="dropdown-item" type="button">Khác</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label class="label_login">Trạng thái</label>
+                                            <button type="button" class="form-control" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" style=" text-align: left;">Trạng thái<i class="fas fa-caret-down"></i> </button>
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                                                <button class="dropdown-item" type="button">Active</button>
+                                                <button class="dropdown-item" type="button">Khác</button>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <!-- <div class="form-row" style="margin-bottom: 10px;text-align: center;">
+                                        <div class="col-md-12 mb-3">
+                                            <a class="btn btn-info" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Tìm kiếm</a>
+
+
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <!-- <div class="collapse multi-collapse" id="multiCollapseExample1"> -->
+                                <div style="background-color: white;padding-top: 15px;padding: 10px; margin-bottom: 5px;">
+                                    <div class="form-row">
+                                        <div id="frame">
+                                            <div id="sidepanel">
+                                                <div id="profile">
+                                                    <div class="form-row">
+                                                        <div class="col-md-11"> <input class="form-control" type="text" placeholder="-Tìm kiếm-" style="border-radius: 13px;"></div>
+                                                        <div class="col-md-1"> <img class="img_chat" src="dist/img/ic_chat_search.png"></div>
+
+                                                        <!-- <p style="color: black;">Mike Ross</p>
+                                                        <i class="fa fa-chevron-down expand-button" aria-hidden="true"></i> -->
+                                                        <!-- <div id="status-options">
+                                                                <ul>
+                                                                    <li id="status-online" class="active"><span class="status-circle"></span>
+                                                                        <p>Online</p>
+                                                                    </li>
+                                                                    <li id="status-away"><span class="status-circle"></span>
+                                                                        <p>Away</p>
+                                                                    </li>
+                                                                    <li id="status-busy"><span class="status-circle"></span>
+                                                                        <p>Busy</p>
+                                                                    </li>
+                                                                    <li id="status-offline"><span class="status-circle"></span>
+                                                                        <p>Offline</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div> -->
+                                                    </div>
+                                                </div>
+
+                                                <div id="contacts">
+                                                    <ul>
+                                                        <li class="contact">
+                                                            <div class="wrap">
+                                                                <span class="contact-status online"></span>
+                                                                <img src="http://emilcarlsson.se/assets/louislitt.png" alt="" />
+                                                                <div class="meta">
+                                                                    <p class="name" style="color: black;">Louis Litt</p>
+                                                                    <p class="preview" style="color: black;">You just got LITT up, Mike.</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="contact active">
+                                                            <div class="wrap">
+                                                                <span class="contact-status busy"></span>
+                                                                <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                                                <div class="meta">
+                                                                    <p class="name" style="color: black;">Harvey Specter</p>
+                                                                    <p class="preview" style="color: black;">Wrong. You take the gun, or you pull out a bigger one. Or, you call their bluff. Or, you do any one of a hundred and forty six other things.</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="contact">
+                                                            <div class="wrap">
+                                                                <span class="contact-status away"></span>
+                                                                <img src="http://emilcarlsson.se/assets/rachelzane.png" alt="" />
+                                                                <div class="meta">
+                                                                    <p class="name" style="color: black;">Rachel Zane</p>
+                                                                    <p class="preview" style="color: black;">I was thinking that we could have chicken tonight, sounds good?</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="contact">
+                                                            <div class="wrap">
+                                                                <span class="contact-status away"></span>
+                                                                <img src="http://emilcarlsson.se/assets/rachelzane.png" alt="" />
+                                                                <div class="meta">
+                                                                    <p class="name" style="color: black;">Rachel Zane</p>
+                                                                    <p class="preview" style="color: black;">I was thinking that we could have chicken tonight, sounds good?</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="contact">
+                                                            <div class="wrap">
+                                                                <span class="contact-status online"></span>
+                                                                <img src="http://emilcarlsson.se/assets/donnapaulsen.png" alt="" />
+                                                                <div class="meta">
+                                                                    <p class="name" style="color: black;">Donna Paulsen</p>
+                                                                    <p class="preview" style="color: black;">Mike, I know everything! I'm Donna..</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="contact">
+                                                            <div class="wrap">
+                                                                <span class="contact-status busy"></span>
+                                                                <img src="http://emilcarlsson.se/assets/jessicapearson.png" alt="" />
+                                                                <div class="meta">
+                                                                    <p class="name" style="color: black;">Jessica Pearson</p>
+                                                                    <p class="preview" style="color: black;">Have you finished the draft on the Hinsenburg deal?</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="contact">
+                                                            <div class="wrap">
+                                                                <span class="contact-status"></span>
+                                                                <img src="http://emilcarlsson.se/assets/haroldgunderson.png" alt="" />
+                                                                <div class="meta">
+                                                                    <p class="name" style="color: black;">Harold Gunderson</p>
+                                                                    <p class="preview" style="color: black;">Thanks Mike! :)</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="contact">
+                                                            <div class="wrap">
+                                                                <span class="contact-status"></span>
+                                                                <img src="http://emilcarlsson.se/assets/jonathansidwell.png" alt="" />
+                                                                <div class="meta">
+                                                                    <p class="name" style="color: black;">Jonathan Sidwell</p>
+                                                                    <p class="preview" style="color: black;"><span>You:</span> That's bullshit. This deal is solid.</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div id="bottom-bar">
+
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="contact-profile">
+                                                    <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                                    <p style="color: black;">Harvey Specter</p>
+                                                    <!-- <div class="social-media">
+                                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                        </div> -->
+                                                </div>
+                                                <div class="messages">
+                                                    <ul>
+                                                        <li class="sent">
+                                                            <img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
+                                                            <p>How the hell am I supposed to get a jury to believe you when I am not even sure that I do?!</p>
+                                                        </li>
+                                                        <li class="replies">
+                                                            <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                                            <p>When you're backed against the wall, break the god damn thing down.</p>
+                                                        </li>
+                                                        <li class="replies">
+                                                            <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                                            <p>Excuses don't win championships.</p>
+                                                        </li>
+                                                        <li class="sent">
+                                                            <img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
+                                                            <p>Oh yeah, did Michael Jordan tell you that?</p>
+                                                        </li>
+                                                        <li class="replies">
+                                                            <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                                            <p>No, I told him that.</p>
+                                                        </li>
+                                                        <li class="replies">
+                                                            <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                                            <p>What are your choices when someone puts a gun to your head?</p>
+                                                        </li>
+                                                        <li class="sent">
+                                                            <img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
+                                                            <p>What are you talking about? You do what they say or they shoot you.</p>
+                                                        </li>
+                                                        <li class="replies">
+                                                            <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                                            <p>Wrong. You take the gun, or you pull out a bigger one. Or, you call their bluff. Or, you do any one of a hundred and forty six other things.</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="message-input">
+                                                    <div class="wrap">
+                                                        <input type="text" placeholder="Write your message..." />
+                                                        <i class="fa fa-paperclip attachment" style="margin-top: 15px; margin-left: 10px;" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <!-- </div> -->
+
+                            </form>
+                        </div>
+
+
+
+
+                        <!-- </form> -->
+
+
+
+
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+        <!-- /.content -->
+
+
+
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+            <div class="float-right d-none d-sm-inline-block">
+                <b>Version</b> 3.0.3-pre
+            </div>
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="plugins/moment/moment.min.js"></script>
+    <script src="plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="dist/js/pages/dashboard.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js"></script>
+
+    <script>
+        $(".messages").animate({
+            scrollTop: $(document).height()
+        }, "fast");
+
+        $("#profile-img").click(function() {
+            $("#status-options").toggleClass("active");
+        });
+
+        $(".expand-button").click(function() {
+            $("#profile").toggleClass("expanded");
+            $("#contacts").toggleClass("expanded");
+        });
+
+        $("#status-options ul li").click(function() {
+            $("#profile-img").removeClass();
+            $("#status-online").removeClass("active");
+            $("#status-away").removeClass("active");
+            $("#status-busy").removeClass("active");
+            $("#status-offline").removeClass("active");
+            $(this).addClass("active");
+
+            if ($("#status-online").hasClass("active")) {
+                $("#profile-img").addClass("online");
+            } else if ($("#status-away").hasClass("active")) {
+                $("#profile-img").addClass("away");
+            } else if ($("#status-busy").hasClass("active")) {
+                $("#profile-img").addClass("busy");
+            } else if ($("#status-offline").hasClass("active")) {
+                $("#profile-img").addClass("offline");
+            } else {
+                $("#profile-img").removeClass();
+            };
+
+            $("#status-options").removeClass("active");
+        });
+
+        function newMessage() {
+            message = $(".message-input input").val();
+            if ($.trim(message) == '') {
+                return false;
+            }
+            $('<li class="sent"><img src="http://emilcarlsson.se/assets/mikeross.png" alt="" /><p>' + message + '</p></li>').appendTo($('.messages ul'));
+            $('.message-input input').val(null);
+            $('.contact.active .preview').html('<span>You: </span>' + message);
+            $(".messages").animate({
+                scrollTop: $(document).height()
+            }, "fast");
+        };
+
+        $('.submit').click(function() {
+            newMessage();
+        });
+
+        $(window).on('keydown', function(e) {
+            if (e.which == 13) {
+                newMessage();
+                return false;
+            }
+        });
+        //# sourceURL=pen.js
+    </script>
+</body>
+
+</html>

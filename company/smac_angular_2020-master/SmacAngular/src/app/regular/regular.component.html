@@ -1,0 +1,180 @@
+<div class="wrapper">
+  <app-sidebar></app-sidebar>
+
+  <div class="main-panel">
+    <app-navbar></app-navbar>
+    <div class="content-wrapper" >
+      <!-- day la phan from -->
+        <div class="container-fluid" >
+          <div class="row" style="margin-top: 20px;">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="title">Search message information</div>
+                <div class="card-content">
+                  <form
+                    class="form-horizontal ng-untouched ng-pristine ng-valid"
+                    novalidate=""
+                  >
+                    <div class="row form-group">
+                      <label class="col-md-2 control-label text-right"
+                        >Message type</label
+                      >
+                      <div class="col-md-3">
+                        <input
+                          class="form-control"
+                          placeholder="Email"
+                          type="email"
+                        />
+                      </div>
+
+                      <label class="col-md-2 control-label text-right"
+                        >Group type</label
+                      >
+                      <div class="col-md-3">
+                        <input
+                          class="form-control"
+                          placeholder="Password"
+                          type="password"
+                        />
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <label class="col-md-2 control-label text-right"
+                        >Group name</label
+                      >
+                      <div class="col-md-3">
+                        <input
+                          class="form-control"
+                          placeholder="Email"
+                          type="email"
+                        />
+                      </div>
+
+                      <label class="col-md-2 control-label text-right"
+                        >From date</label
+                      >
+                      <div class="col-md-3">
+                        <input
+                          class="form-control"
+                          placeholder="Password"
+                          type="password"
+                        />
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <label class="col-md-2 control-label text-right"
+                        >To date</label
+                      >
+                      <div class="col-md-3">
+                        <input
+                          class="form-control"
+                          placeholder="Email"
+                          type="email"
+                        />
+                      </div>
+
+                      <label class="col-md-2 control-label text-right"
+                        >Status</label
+                      >
+                      <div class="col-md-3">
+                        <input
+                          class="form-control"
+                          placeholder="Password"
+                          type="password"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="row form-group">
+                      <label class="col-md-2"></label>
+                      <div class="col-md-9">
+                        <div
+                          class="checkbox custom-checkbox"
+                          style="margin-left: 24px;"
+                        >
+                          <input
+                            id="checkbox20"
+                            class="custom-control-input"
+                            type="checkbox"
+                            unchecked=""
+                          />
+                          <label for="checkbox20" class="custom-control-label">
+                            Remember Me
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <label class="col-md-2"></label>
+                      <div class="col-md-9">
+                        <button class="btn btn-fill btn-primary" type="submit" style="margin-right: 20px;">
+                          Search
+                        </button>
+
+                        <button class="btn btn-fill btn-primary" type="submit">
+                          Create
+                        </button>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="card">
+                <div class="title">
+                  <legend class="title-border-bottom">List of notify message</legend>
+                </div>
+                <div class="card-content" style="margin-top: 5px;">
+                  <form
+                    action="/"
+                    class="form-horizontal ng-untouched ng-pristine ng-valid"
+                    method="get"
+                    novalidate=""
+                  >
+                  <table class="table">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <app-footer></app-footer>
+
+    <aside class="control-sidebar control-sidebar-dark"></aside>
+  </div>
+</div>
+<router-outlet></router-outlet>
