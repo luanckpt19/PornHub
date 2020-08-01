@@ -6,7 +6,8 @@ a{
     -webkit-transition: all 0.5s;
 }
 .sidebar-brand{
-    position: relative;left: 15px;
+    position: relative;
+    left: 15px;
 }
 .navbar-nav ul li{
     position: relative;
@@ -78,6 +79,7 @@ a{
 }
 .title_step2{
     border: 2px solid #9DB4F0;
+
 }
 
 /* Responsive */

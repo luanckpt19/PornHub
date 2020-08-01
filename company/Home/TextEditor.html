@@ -1,10 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard Company</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/_all-skins.min.css">
+    <link rel="stylesheet" href="css/form.css">
+
 </head>
-<body>
-$END$
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <header class="main-header">
+        <a class="logo" href="index.html">Quirk</a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+            <div class="search-box">
+                <form class="input">
+                    <input class="sb-search-input input__field--madoka" placeholder="Search..." type="text" name="search"/>
+                    <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+                </form>
+            </div>
+            <div class="navbar-custom-menu ">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown profile_details_drop">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <div class="profile_img">
+                                <span class="prfil-img"><img src="images/avatar1.png"></span>
+                                <div class="user-name">
+                                    <p>Elen Adarna</p>
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu drp-mnu">
+                            <li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li>
+                            <li> <a href="#"><i class="fa fa-user"></i> My Account</a> </li>
+                            <li> <a href="#"><i class="fa fa-suitcase"></i> Profile</a> </li>
+                            <li> <a href="#"><i class="fa fa-sign-out"></i> Logout</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <aside class="main-sidebar">
+        <section class="sidebar">
+            <div class="user-panel">
+                <div class="pull-left image">
+                    <img src="images/avatar.png" class="img-circle" alt="User Image">
+                </div>
+                <div class="pull-left info">
+                    <h4>Elen Adarna <br><span>Software Engineer</span></h4>
+                </div>
+            </div>
+            <div class="profile-social-dtl">
+                <ul class="dtl-social">
+                    <li><a href="#"><i class="fa fa-ellipsis-h active"></i></a></li>
+                    <li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+                    <li><a href="#"><i class="fa fa-user"></i></a></li>
+                    <li><a href="#"><i class="fa fa-cog"></i></a></li>
+                    <li><a href="#"><i class="fa fa-sign-out"></i></a></li>
+                </ul>
+            </div>
+            <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+                <li class="header">FAVORITES</li>
+                <li class="treeview">
+                    <a href="index.html">
+                        <i class="fa fa-home" aria-hidden="true"></i><span>DASHBOARD</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-laptop"></i>
+                        <span>WIDGETS</span>
+                        <span class="label label-primary pull-right">10+</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-pie-chart"></i>
+                        <span>MAPS</span>
+                    </a>
+                </li>
+                <li class="header ">MAIN MENU</li>
+                <li class="treeview ">
+                    <a href="#" data-toggle="collapse">
+                        <i class="fa fa-laptop"></i>
+                        <span>FORM</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> General</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Icons</a></li>
+                        <li><a href="formWizards.html"><i class="fa fa-angle-double-right"></i>FormWizards</a></li>
+                        <li><a href="TextEditor.html"><i class="fa fa-angle-double-right"></i> Text Editor</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-edit"></i> <span>UI ELEMENTS</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> General Forms</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Form Validations</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-table"></i> <span>TABLES</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Simple tables</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-envelope"></i> <span>PAGES</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+
+                        <ul class="treeview-menu">
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> Mail Inbox </a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> Compose Mail </a></li>
+                        </ul>
+                </li>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+    <div class="content-wrapper">
+        <section class="mainpanel">
+
+            <div class="contentpanel">
+
+                <ol class="breadcrumb breadcrumb-quirk">
+                    <li><a href="index.html"><i class="fa fa-home mr5"></i> Home</a></li>
+                    <li><a href="general-forms.html">Forms</a></li>
+                    <li class="active">Form Editor</li>
+                </ol>
+
+                <div class="panel">
+
+                    <div class="panel-heading">
+                        <h4 class="panel-title">HTML 5 WYSIWYG Editor</h4>
+                        <p>Open source rich text editor based on HTML5 and the progressive-enhancement approach. Uses a sophisticated security concept and aims to generate fully valid HTML5 markup by preventing unmaintainable tag soups and inline styles. <a href="http://jhollingworth.github.io/bootstrap-wysihtml5/" target="_blank">http://jhollingworth.github.io/bootstrap-wysihtml5/</a></p>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="text-editor" style=""><li class="dropdown">
+                            <a class="btn btn-default dropdown-toggle " data-toggle="dropdown" aria-expanded="false">
+
+                                <span class="fa fa-font"></span>
+
+                                <span class="current-font">Normal text</span>
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="p" tabindex="-1" href="javascript:;" unselectable="on">Normal text</a></li>
+                                <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h1" tabindex="-1" href="javascript:;" unselectable="on">Heading 1</a></li>
+                                <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h2" tabindex="-1" href="javascript:;" unselectable="on">Heading 2</a></li>
+                                <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h3" tabindex="-1" href="javascript:;" unselectable="on">Heading 3</a></li>
+                                <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h4" tabindex="-1" href="javascript:;" unselectable="on">Heading 4</a></li>
+                                <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h5" tabindex="-1" href="javascript:;" unselectable="on">Heading 5</a></li>
+                                <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h6" tabindex="-1" href="javascript:;" unselectable="on">Heading 6</a></li>
+                            </ul>
+                        </li>
+                            <li>
+                                <div class="btn-group">
+                                    <a class="btn  btn-default" data-wysihtml5-command="bold" title="CTRL+B" tabindex="-1" href="javascript:;" unselectable="on">Bold</a>
+                                    <a class="btn  btn-default" data-wysihtml5-command="italic" title="CTRL+I" tabindex="-1" href="javascript:;" unselectable="on">Italic</a>
+                                    <a class="btn  btn-default" data-wysihtml5-command="underline" title="CTRL+U" tabindex="-1" href="javascript:;" unselectable="on">Underline</a>
+
+                                    <a class="btn  btn-default" data-wysihtml5-command="small" title="CTRL+S" tabindex="-1" href="javascript:;" unselectable="on">Small</a>
+
+                                </div>
+                            </li>
+                            <li>
+                                <a class="btn  btn-default" data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="blockquote" data-wysihtml5-display-format-name="false" tabindex="-1" href="javascript:;" unselectable="on">
+
+                                    <span class="fa fa-quote-left"></span>
+
+                                </a>
+                            </li>
+                            <li>
+                                <div class="btn-group">
+                                    <a class="btn  btn-default" data-wysihtml5-command="insertUnorderedList" title="Unordered list" tabindex="-1" href="javascript:;" unselectable="on">
+
+                                        <span class="fa fa-list-ul"></span>
+
+                                    </a>
+                                    <a class="btn  btn-default" data-wysihtml5-command="insertOrderedList" title="Ordered list" tabindex="-1" href="javascript:;" unselectable="on">
+
+                                        <span class="fa fa-list-ol"></span>
+
+                                    </a>
+                                    <a class="btn  btn-default" data-wysihtml5-command="Outdent" title="Outdent" tabindex="-1" href="javascript:;" unselectable="on">
+
+                                        <span class="fa fa-outdent"></span>
+
+                                    </a>
+                                    <a class="btn  btn-default" data-wysihtml5-command="Indent" title="Indent" tabindex="-1" href="javascript:;" unselectable="on">
+
+                                        <span class="fa fa-indent"></span>
+
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bootstrap-wysihtml5-insert-link-modal modal fade" data-wysihtml5-dialog="createLink">
+                                    <div class="modal-dialog ">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <a class="close" data-dismiss="modal">×</a>
+                                                <h3>Insert link</h3>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="form-group">
+                                                    <input value="http://" class="bootstrap-wysihtml5-insert-link-url form-control" data-wysihtml5-dialog-field="href">
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" class="bootstrap-wysihtml5-insert-link-target" checked="">Open link in new window
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="btn btn-default" data-dismiss="modal" data-wysihtml5-dialog-action="cancel" href="#">Cancel</a>
+                                                <a href="#" class="btn btn-primary" data-dismiss="modal" data-wysihtml5-dialog-action="save">Insert link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn  btn-default" data-wysihtml5-command="createLink" title="Insert link" tabindex="-1" href="javascript:;" unselectable="on">
+
+                                    <span class="fa fa-share-square-o"></span>
+
+                                </a>
+                            </li>
+                            <li>
+                                <div class="bootstrap-wysihtml5-insert-image-modal modal fade" data-wysihtml5-dialog="insertImage">
+                                    <div class="modal-dialog ">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <a class="close" data-dismiss="modal">×</a>
+                                                <h3>Insert image</h3>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="form-group">
+                                                    <input value="http://" class="bootstrap-wysihtml5-insert-image-url form-control">
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="btn btn-default" data-dismiss="modal" data-wysihtml5-dialog-action="cancel" href="#">Cancel</a>
+                                                <a class="btn btn-primary" data-dismiss="modal" data-wysihtml5-dialog-action="save" href="#">Insert image</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn  btn-default" data-wysihtml5-command="insertImage" title="Insert image" tabindex="-1" href="javascript:;" unselectable="on">
+
+                                    <span class="fa fa-file-image-o"></span>
+
+                                </a>
+                            </li>
+                        </ul>
+                        <textarea id="editor" placeholder="Enter text here..." class="form-control" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Summernote</h4>
+                        <p>Super Simple WYSIWYG Editor on Bootstrap. <a href="http://summernote.org/" target="_blank">http://summernote.org/</a></p>
+                    </div>
+                    <div class="panel-body">
+                        <div class="note-toolbar btn-toolbar">
+
+                        </div>
+                        <textarea id="summernote" placeholder="Hello Summernote..." class="form-control" ></textarea>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+</div>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script>
+</script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/app.min.js"></script>
+<script src="js/demo.js"></script>
 </body>
 </html>

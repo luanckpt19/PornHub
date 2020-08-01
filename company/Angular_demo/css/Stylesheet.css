@@ -18,7 +18,6 @@
         -webkit-transform: rotate(360deg)
     }
 }
-
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -2652,7 +2651,8 @@ a.fc-more:hover {
 }
 
 .ps-container.ps-active-x > .ps-scrollbar-x-rail, .ps-container.ps-active-y > .ps-scrollbar-y-rail {
-    display: block; /* background-color:transparent; */
+    display: block;
+    background-color: transparent
 }
 
 .ps-container.ps-in-scrolling {
@@ -2759,6 +2759,12 @@ a.fc-more:hover {
     background-color: #999
 }
 
+/*!
+ * Bootstrap-select v1.8.1 (http://silviomoreto.github.io/bootstrap-select)
+ *
+ * Copyright 2013-2015 bootstrap-select
+ * Licensed under MIT (https://github.com/silviomoreto/bootstrap-select/blob/master/LICENSE)
+ */
 .bootstrap-select {
     width: 220px \0
 }
@@ -3930,7 +3936,7 @@ h1 .subtitle {
     box-shadow: inset -1px 0 0 0 #cfcfca;
     position: relative;
     z-index: 4;
-    display: block;
+    display: block
 }
 
 .sidebar .logo a.logo-mini {
@@ -5944,7 +5950,7 @@ form label.checkbox, form label.radio {
 
 .navbar .navbar-minimize {
     float: left;
-    margin: 3px 15px;
+    margin: 3px 15px
 }
 
 .navbar .navbar-brand {
@@ -5957,7 +5963,7 @@ form label.checkbox, form label.radio {
 .navbar .navbar-nav > li > a {
     padding: 10px 15px;
     margin: 10px 3px;
-    position: relative;
+    position: relative
 }
 
 .navbar .navbar-nav > li > a.btn {
@@ -6008,7 +6014,6 @@ form label.checkbox, form label.radio {
 }
 
 .navbar.fixed {
-    width: calc(100% - $sidebar-width);
     right: 0;
     left: auto;
     border-radius: 0
@@ -6113,7 +6118,7 @@ form label.checkbox, form label.radio {
 }
 
 .navbar-default .navbar-nav > li > a:not(.btn) {
-    color: #9a9a9a;
+    color: #9a9a9a
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:not(.btn):focus, .navbar-default .navbar-nav > .active > a:not(.btn):hover, .navbar-default .navbar-nav > li > a:not(.btn):focus, .navbar-default .navbar-nav > li > a:not(.btn):hover {

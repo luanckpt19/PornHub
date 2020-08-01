@@ -1,0 +1,128 @@
+.header-black {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 10px 0 10px;
+}
+.header-black h1 {
+    font-family: 'Roboto-Bold';
+    font-size: 25px;
+    font-weight:bold;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+.search-box {
+    display: flex;
+    border:12px solid #FFFAD5;
+    background: #fffff;
+    padding: 10px 10px 10px 10px;
+    margin-right: 0px;
+}
+
+.search-box label {
+    font-weight: bold;
+    margin-top: 10px;
+    justify-content: flex-start !important;
+}
+.form-inline input {
+    margin-bottom: 0px !important;
+    border: 2px solid #D0D0D0;
+}
+.form-inline label {
+    justify-content: flex-start !important;
+    padding:2px 2px 2px 0;
+}
+.btn-search-branch {
+    position:relative;
+    left:1000;
+    bottom:100;
+}
+
+.list-post .list-office {
+    font-size: 16px;
+    padding: 10px;
+    height: 225px;
+    overflow-y: auto;
+    background: #FFF;
+    justify-content: flex-start;
+
+}.list-posted .list-office {
+     font-size: 16px;
+     padding: 10px;
+     height: 225px;
+     overflow-y: auto;
+     background: #FFF;
+     justify-content: flex-start;
+
+ }
+.list-post {
+    border:12px solid #FFFAD5;
+    border-top:none;
+    padding: 10px;
+    margin-right: 0px;
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+}.list-posted {
+     border:12px solid #FFFAD5;
+     border-top:none;
+     padding: 10px;
+     margin-right: 0px;
+     font-family: "Roboto-Regular";
+     font-size: 14px;
+ }
+select.form-control {
+    width:266px;
+    height:31px;
+    background:#fffff;
+    border: 2px solid #D0D0D0;
+    box-shadow: none;
+}
+input.form-control {
+    width:266px;
+    height:31px;
+    box-shadow: none;
+}
+.list-posted .list-office {
+    padding: 10px;
+    height: 225px;
+    overflow-y: auto;
+    background: #FFF;
+
+}
+.list-posted {
+    border:12px solid #FFFAD5;
+    border-top:none;
+    border-bottom:60px solid #FFFAD5;
+    padding: 10px;
+    margin-right: 0px;
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    margin-bottom:50px;
+}
+.search-box .form-inline .row2{
+    left:100px;
+}
+.list-post .form-inline .row2{
+    left:100px;
+}
+.list-post .form-inline .row3{
+    left:200px;
+}
+
+.list-posted .form-inline .row2{
+    left:100px;
+}
+.list-posted .form-inline .row3{
+    left:200px;
+}
+
+btn-primary {
+    background: #FCB71E;
+}
+.btn-primary:focus {
+    background: #FCB71E;
+    outline: none;
+    border: none;
+}

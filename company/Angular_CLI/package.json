@@ -1,7 +1,7 @@
 {
-  "name": "$package_name$",
+  "name": "Angular_CLI",
   "version": "0.0.1",
   "dependencies": {
-    $END$
+    
   }
 }

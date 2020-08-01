@@ -5,8 +5,7 @@
 }
 
 input {
-    /* padding-left: 2.375rem; */
-    background: #030E29;
+    background: #041133;
     border: none;
     color: #707070;
     font-weight: normal;
@@ -15,7 +14,6 @@ input {
     line-height: 15px;
     font-size: 14px;
     padding: 5px;
-    /* padding-left: 50px; */
 }
 
 .has-search .form-control-feedback {
@@ -163,7 +161,7 @@ sup {
     position: absolute;
     width: 22px;
     height: 16px;
-    left: 120px;
+    left: 5px;
     right: 140px;
     background-color: orange;
     border-radius: 3px 3px 3px 0px;
@@ -189,7 +187,6 @@ span {
 
 .span_menu {
     margin-left: 8%;
-    margin-right: 5%;
 }
 
 .form-control {

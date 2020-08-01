@@ -1,0 +1,8 @@
+$color-blue: blue;
+$bg-color: #f1f1f1;
+section {
+  background-color: $bg-color;
+  h2 {
+    color: $color-blue;
+  }
+}

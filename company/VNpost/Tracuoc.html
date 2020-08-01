@@ -1,10 +1,719 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="vi-VN">
+<head id="Head">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <title>VNPost</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/TraCuu.css">
 </head>
-<body>
-$END$
+<body id="Body">
+<header class="row header">
+    <div class="container-fluid">
+        <div class="left-col">
+            <div class="logo-block">
+                <a href="home.html" id="Home" class="site-logo">
+                    <img src="images/Post.png" alt="VnPost">
+                </a>
+            </div>
+
+        </div>
+        <div class="right-col">
+            <div class="top-menu">
+                <div class="hotline-header">
+                    <div class="icon">
+                        <img src="http://ipostal.vnpost.vn/Portals/_default/Skins/VNPost.Skins.FrontEnd//img/hotline-icon.png"
+                             alt="Hotline">
+                    </div>
+                    <div class="text">
+                        <span class="email-address">Đường dây nóng hỗ trợ</span>
+                        <span class="hotline-number">1900 54 54 81</span>
+                    </div>
+                </div>
+                <div class="top-right-menu">
+                    <nav class="navbar">
+                        <ul class="ul-top-menu">
+                            <li class="search-main-menu">
+
+                                <div id="searh" class="row">
+                                    <input name="Search" type="text" id="Search" class="search-form-index"
+                                           placeholder="Tìm kiếm"/>
+                                </div>
+                            </li>
+                            <li id="Anonymous">
+                                <a href="login.html">Đăng nhập</a>
+                            </li>
+
+                            <li>
+
+                                <span class="language-box">
+                                    <a href="#">EN</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="main-menu">
+                <nav class="navbar">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </div>
+                    <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse main-menu">
+                        <ul class="ul-main-menu">
+                            <li class="tracking-mainmenu-label">
+                                <a href="#">Định vị</a>
+                            </li>
+
+                            <li><a onclick="return false">Tra cứu nhanh</a>
+
+                                <div class="child-menu">
+                                    <ul class="lst-dropdown">
+
+                                        <li><a href="mangluoibuucuc.html">Mạng lưới bưu cục</a></li>
+
+                                        <li><a href="Tracuoc.html">Tra cứu giá cước</a></li>
+
+                                        <li><a href="#">Tra cứu HSCode</a></li>
+
+                                        <li><a href="#">Mã bưu chính quốc gia</a></li>
+
+                                    </ul>
+                                </div>
+
+                            </li>
+
+                            <li><a href="#">Dịch vụ</a>
+
+                                <div class="child-menu">
+                                    <ul class="lst-dropdown">
+
+                                        <li><a onclick="return false">Dịch vụ chuyển phát tiết kiệm</a>
+
+                                            <div class="sub-menu">
+
+                                                <ul>
+                                                    <li><a onclick="return false">Tài liệu</a></li>
+
+                                                    <li><a href="#">Tài liệu thường</a></li>
+
+                                                    <li><a href="#">Tài liệu bảo đảm</a></li>
+
+                                                    <li><a href="#">Tài liệu ePacket</a></li>
+
+                                                    <li><a href="#">Tài liệu Prime Tracked</a></li>
+
+                                                </ul>
+
+                                                <ul>
+                                                    <li><a onclick="return false">Hàng hóa</a></li>
+
+                                                    <li><a href="#">Gói nhỏ thường</a></li>
+
+                                                    <li><a href="#">Gói nhỏ bảo đảm</a></li>
+
+                                                    <li><a href="#">Gói nhỏ TMDT ePacket</a></li>
+
+                                                    <li><a href="#">Gói nhỏ Prime Tracked</a></li>
+
+                                                    <li><a href="#">Bưu kiện bay và thủy bộ</a></li>
+
+                                                    <li><a href="#">Bưu kiện TMĐT eBORDER đi Trung Quốc</a></li>
+
+                                                    <li><a href="#">Bưu kiện tiết kiệm chuyển tuyến Hàn Quốc</a></li>
+
+                                                    <li><a href="#">Vận chuyển hàng nặng</a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </li>
+
+                                        <li><a onclick="return false">Dịch vụ chuyển phát nhanh</a>
+
+                                            <div class="sub-menu">
+
+                                                <ul>
+
+                                                    <li><a href="#">EMS</a></li>
+
+                                                    <li><a href="#">VNQuickPost</a></li>
+
+                                                    <li><a href="#">Dịch vụ đại lý</a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </li>
+
+                            <li><a onclick="return false">Thủ tục hải quan</a>
+
+                                <div class="child-menu">
+                                    <ul class="lst-dropdown">
+
+                                        <li><a onclick="return false">Những điều cần biết về thủ tục XNK</a>
+
+                                            <div class="sub-menu">
+
+                                                <ul>
+                                                    <li><a onclick="return false">Cơ sở pháp lý</a></li>
+
+                                                    <li><a href="#">Hệ thống văn bản</a></li>
+
+                                                    <li><a href="#">chính sách thuế</a></li>
+
+                                                </ul>
+
+                                                <ul>
+                                                    <li><a onclick="return false">Thủ tục và quy trình thông quan</a>
+                                                    </li>
+
+                                                    <li><a href="#">Xuất khẩu</a></li>
+
+                                                    <li><a href="#">Nhập khẩu</a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </li>
+
+                                        <li><a href="#">Hàng cấm gửi, gửi có điều kiện đi quốc tế</a>
+
+                                        </li>
+
+                                        <li><a href="#">Tra cứu HSCode</a>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </li>
+
+                            <li><a onclick="return false">Điều kiện vận chuyển</a>
+
+                                <div class="child-menu">
+                                    <ul class="lst-dropdown">
+
+                                        <li>
+                                            <a href="#">VB pháp quy, hạ tầng pháp lý quy đường hàng không</a>
+
+                                        </li>
+
+                                        <li>
+                                            <a href="#">Những điều cần biết về hàng nguy hiểm</a>
+
+                                        </li>
+
+                                        <li>
+                                            <a href="#">Những mặt hàng được vận chuyển</a>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </li>
+
+                            <li><a>Cẩm nang</a>
+
+                                <div class="child-menu">
+                                    <ul class="lst-dropdown">
+
+                                        <li>
+                                            <a href="#">Cẩm nang khách hàng</a>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="tracking-block">
+            <label class="quick-access-label">
+                <span class="quick-access-title">
+                    Tra cứu nhanh
+                </span>
+                <i class="fa fa-bars"></i>
+            </label>
+            <div id="tracking" class="collapse navbar-collapse main-menu">
+                <ul class="quick-tool-menu">
+
+                    <li class="tracking-item">
+                        <a href="#">Mạng lưới bưu cục</a>
+                    </li>
+
+                    <li class="tracking-item">
+                        <a href="#">Tra cứu giá cước</a>
+                    </li>
+
+                    <li class="tracking-item">
+                        <a href="#">Tra cứu HSCode</a>
+                    </li>
+
+                    <li class="tracking-item">
+                        <a href="#">Mã bưu chính quốc gia</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- BEGIN SLIDER -->
+<div class="row main-content">
+    <div class="container">
+        <div id="dnn_ContentPane">
+            <div class="header-black">
+                <h1>
+                    Tính cước vận chuyển
+                </h1>
+            </div>
+            <div class="clearfix col-sm-12">
+                <div class="tracking-select-wrapper">
+                    <div class="clearfix" style="text-align: center">
+                        <h2 class="header-track-form">
+                            Thông tin chuyển phát
+                        </h2>
+                        <div class="col-sm-9">
+                            <div class="col-sm-12">
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">
+                                            Gửi đến
+                                        </label>
+                                        <div class="col-md-9">
+                                            <select name="Locality" class="form-control">
+                                                <option value="4">Afghanistan</option>
+                                                <option value="16">Aland Islands</option>
+                                                <option value="7">Albania</option>
+                                                <option value="64">Algeria</option>
+                                                <option value="12">American Samoa</option>
+                                                <option value="2">Andorra</option>
+                                                <option value="10">Antarctica</option>
+                                                <option value="5">Antigua and Barbuda</option>
+                                                <option value="9">Angola</option>
+                                                <option value="6">Anguilla</option>
+                                                <option value="11">Argentina</option>
+                                                <option value="8">Armenia</option>
+                                                <option value="15">Aruba</option>
+                                                <option value="1">ASCENSION ISLAND</option>
+                                                <option value="14">Australia</option>
+                                                <option value="13">Austria</option>
+                                                <option value="17">Azerbaijan</option>
+                                                <option value="33">Bahamas (the)</option>
+                                                <option value="24">Bahrain</option>
+                                                <option value="20">Bangladesh</option>
+                                                <option value="19">Barbados</option>
+                                                <option value="37">Belarus</option>
+                                                <option value="21">Belgium</option>
+                                                <option value="38">Belize</option>
+                                                <option value="26">Benin</option>
+                                                <option value="28">Bermuda</option>
+                                                <option value="34">Bhutan</option>
+                                                <option value="30">Bolivia (Plurinational State of)</option>
+                                                <option value="31">Bonaire, Sint Eustatius and Saba</option>
+                                                <option value="191">BOSNIA</option>
+                                                <option value="18">Bosnia and Herzegovina</option>
+                                                <option value="190">BOSNIA REP SRPSKA</option>
+                                                <option value="36">Botswana</option>
+                                                <option value="35">Bouvet Island</option>
+                                                <option value="32">Brazil</option>
+                                                <option value="108">British Indian Ocean Territory (the)</option>
+                                                <option value="29">Brunei Darussalam</option>
+                                                <option value="23">Bulgaria</option>
+                                                <option value="22">Burkina Faso</option>
+                                                <option value="25">Burundi</option>
+                                                <option value="54">Cabo Verde</option>
+                                                <option value="119">Cambodia</option>
+                                                <option value="48">Cameroon</option>
+                                                <option value="39">Canada</option>
+                                                <option value="126">Cayman Islands (the)</option>
+                                                <option value="42">Central African Republic (the)</option>
+                                                <option value="40">Cocos (Keeling) Islands (the)</option>
+                                                <option value="51">Colombia</option>
+                                                <option value="121">Comoros (the)</option>
+                                                <option value="41">Congo (the Democratic Republic of the)</option>
+                                                <option value="43">Congo (the)</option>
+                                                <option value="46">Cook Islands (the)</option>
+                                                <option value="52">Costa Rica</option>
+                                                <option value="45">Cote d&#39;Ivoire</option>
+                                                <option value="100">Croatia</option>
+                                                <option value="53">Cuba</option>
+                                                <option value="55">Curacao</option>
+                                                <option value="57">Cyprus</option>
+                                                <option value="58">Czech Republic (the)</option>
+                                                <option value="220">Chad</option>
+                                                <option value="47">Chile</option>
+                                                <option value="49">China</option>
+                                                <option value="56">Christmas Island</option>
+                                                <option value="61">Denmark</option>
+                                                <option value="60">Djibouti</option>
+                                                <option value="62">Dominica</option>
+                                                <option value="63">Dominican Republic (the)</option>
+                                                <option value="65">Ecuador</option>
+                                                <option value="67">Egypt</option>
+                                                <option value="214">El Salvador</option>
+                                                <option value="90">Equatorial Guinea</option>
+                                                <option value="69">Eritrea</option>
+                                                <option value="66">Estonia</option>
+                                                <option value="71">Ethiopia</option>
+                                                <option value="74">Falkland Islands (the) [Malvinas]</option>
+                                                <option value="76">Faroe Islands (the)</option>
+                                                <option value="73">Fiji</option>
+                                                <option value="72">Finland</option>
+                                                <option value="77">France</option>
+                                                <option value="82">French Guiana</option>
+                                                <option value="177">French Polynesia</option>
+                                                <option value="221">French Southern Territories (the)</option>
+                                                <option value="78">Gabon</option>
+                                                <option value="87">Gambia (the)</option>
+                                                <option value="81">Georgia</option>
+                                                <option value="59">Germany</option>
+                                                <option value="84">Ghana</option>
+                                                <option value="91">Greece</option>
+                                                <option value="86">Greenland</option>
+                                                <option value="80">Grenada</option>
+                                                <option value="89">Guadeloupe</option>
+                                                <option value="94">Guam</option>
+                                                <option value="93">Guatemala</option>
+                                                <option value="83">Guernsey</option>
+                                                <option value="88">Guinea</option>
+                                                <option value="95">Guinea-Bissau</option>
+                                                <option value="96">Guyana</option>
+                                                <option value="85">Gibraltar</option>
+                                                <option value="101">Haiti</option>
+                                                <option value="98">Heard Island and McDonald Islands</option>
+                                                <option value="241">Holy See (the)</option>
+                                                <option value="99">Honduras</option>
+                                                <option value="97">Hong Kong</option>
+                                                <option value="102">Hungary</option>
+                                                <option value="111">Iceland</option>
+                                                <option value="107">India</option>
+                                                <option value="103">Indonesia</option>
+                                                <option value="110">Iran (Islamic Republic of)</option>
+                                                <option value="109">Iraq</option>
+                                                <option value="104">Ireland</option>
+                                                <option value="106">Isle of Man</option>
+                                                <option value="105">Israel</option>
+                                                <option value="112">Italy</option>
+                                                <option value="114">Jamaica</option>
+                                                <option value="116">Japan</option>
+                                                <option value="113">Jersey</option>
+                                                <option value="115">Jordan</option>
+                                                <option value="127">Kazakhstan</option>
+                                                <option value="117">Kenya</option>
+                                                <option value="120">Kiribati</option>
+                                                <option value="123">Korea (the Democratic Peoples Republic of)</option>
+                                                <option value="124">Korea (the Republic of)</option>
+                                                <option value="250">KOSOVO -temporary-</option>
+                                                <option value="125">Kuwait</option>
+                                                <option value="118">Kyrgyzstan</option>
+                                                <option value="128">Lao Peoples Democratic Republic (the)</option>
+                                                <option value="137">Latvia</option>
+                                                <option value="129">Lebanon</option>
+                                                <option value="134">Lesotho</option>
+                                                <option value="133">Liberia</option>
+                                                <option value="138">Libya</option>
+                                                <option value="131">Liechtenstein</option>
+                                                <option value="135">Lithuania</option>
+                                                <option value="136">Luxembourg</option>
+                                                <option value="150">Macao</option>
+                                                <option value="144">Madagascar</option>
+                                                <option value="158">Malawi</option>
+                                                <option value="160">Malaysia</option>
+                                                <option value="157">Maldives</option>
+                                                <option value="147">Mali</option>
+                                                <option value="155">Malta</option>
+                                                <option value="145">Marshall Islands (the)</option>
+                                                <option value="152">Martinique</option>
+                                                <option value="153">Mauritania</option>
+                                                <option value="156">Mauritius</option>
+                                                <option value="252">Mayotte</option>
+                                                <option value="159">Mexico</option>
+                                                <option value="75">Micronesia (Federated States of)</option>
+                                                <option value="141">Moldova (the Republic of)</option>
+                                                <option value="140">Monaco</option>
+                                                <option value="142">Montenegro</option>
+                                                <option value="154">Montserrat</option>
+                                                <option value="149">Mongolia</option>
+                                                <option value="139">Morocco</option>
+                                                <option value="161">Mozambique</option>
+                                                <option value="148">Myanmar</option>
+                                                <option value="162">Namibia</option>
+                                                <option value="171">Nauru</option>
+                                                <option value="170">Nepal</option>
+                                                <option value="168">Netherlands (the)</option>
+                                                <option value="163">New Caledonia</option>
+                                                <option value="173">New Zealand</option>
+                                                <option value="167">Nicaragua</option>
+                                                <option value="164">Niger (the)</option>
+                                                <option value="166">Nigeria</option>
+                                                <option value="172">Niue</option>
+                                                <option value="165">Norfolk Island</option>
+                                                <option value="151">Northern Mariana Islands (the)</option>
+                                                <option value="169">Norway</option>
+                                                <option value="174">Oman</option>
+                                                <option value="180">Pakistan</option>
+                                                <option value="187">Palau</option>
+                                                <option value="185">Palestine, State of</option>
+                                                <option value="175">Panama</option>
+                                                <option value="178">Papua New Guinea</option>
+                                                <option value="188">Paraguay</option>
+                                                <option value="176">Peru</option>
+                                                <option value="183">Pitcairn</option>
+                                                <option value="181">Poland</option>
+                                                <option value="186">Portugal</option>
+                                                <option value="184">Puerto Rico</option>
+                                                <option value="179">Philippines (the)</option>
+                                                <option value="189">Qatar</option>
+                                                <option value="146">Republic of North Macedonia</option>
+                                                <option value="192">Reunion</option>
+                                                <option value="193">Romania</option>
+                                                <option value="195">Russian Federation (the)</option>
+                                                <option value="196">Rwanda</option>
+                                                <option value="27">Saint Barthelemy</option>
+                                                <option value="203">Saint Helena, Ascension and Tristan da Cunha
+                                                </option>
+                                                <option value="122">Saint Kitts and Nevis</option>
+                                                <option value="130">Saint Lucia</option>
+                                                <option value="143">Saint Martin (French part)</option>
+                                                <option value="182">Saint Pierre and Miquelon</option>
+                                                <option value="242">Saint Vincent and the Grenadines</option>
+                                                <option value="249">Samoa</option>
+                                                <option value="208">San Marino</option>
+                                                <option value="213">Sao Tome and Principe</option>
+                                                <option value="197">Saudi Arabia</option>
+                                                <option value="209">Senegal</option>
+                                                <option value="194">Serbia</option>
+                                                <option value="199">Seychelles</option>
+                                                <option value="207">Sierra Leone</option>
+                                                <option value="215">Sint Maarten (Dutch part)</option>
+                                                <option value="202">Singapore</option>
+                                                <option value="206">Slovakia</option>
+                                                <option value="204">Slovenia</option>
+                                                <option value="198">Solomon Islands</option>
+                                                <option value="210">Somalia</option>
+                                                <option value="253">South Africa</option>
+                                                <option value="92">South Georgia and the South Sandwich Islands</option>
+                                                <option value="212">South Sudan</option>
+                                                <option value="70">Spain</option>
+                                                <option value="132">Sri Lanka</option>
+                                                <option value="200">Sudan (the)</option>
+                                                <option value="211">Suriname</option>
+                                                <option value="205">Svalbard and Jan Mayen</option>
+                                                <option value="201">Sweden</option>
+                                                <option value="44">Switzerland</option>
+                                                <option value="216">Syrian Arab Republic</option>
+                                                <option value="233">Taiwan (Province of China)</option>
+                                                <option value="224">Tajikistan</option>
+                                                <option value="234">Tanzania, United Republic of</option>
+                                                <option value="226">Timor-Leste</option>
+                                                <option value="222">Togo</option>
+                                                <option value="225">Tokelau</option>
+                                                <option value="229">Tonga</option>
+                                                <option value="228">Tunisia</option>
+                                                <option value="230">Turkey</option>
+                                                <option value="227">Turkmenistan</option>
+                                                <option value="219">Turks and Caicos Islands (the)</option>
+                                                <option value="232">Tuvalu</option>
+                                                <option value="223">Thailand</option>
+                                                <option value="217">the Kingdom of Eswatini</option>
+                                                <option value="231">Trinidad and Tobago</option>
+                                                <option value="218">TRISTAN DA CUNHA</option>
+                                                <option value="236">Uganda</option>
+                                                <option value="235">Ukraine</option>
+                                                <option value="3">United Arab Emirates (the)</option>
+                                                <option value="79">United Kingdom of Great Britain and Northern Irela
+                                                </option>
+                                                <option value="237">United States Minor Outlying Islands (the)</option>
+                                                <option value="238">United States of America (the)</option>
+                                                <option value="239">Uruguay</option>
+                                                <option value="240">Uzbekistan</option>
+                                                <option value="247">Vanuatu</option>
+                                                <option value="243">Venezuela (Bolivarian Republic of)</option>
+                                                <option value="244">Virgin Islands (British)</option>
+                                                <option value="245">Virgin Islands (U.S.)</option>
+                                                <option value="248">Wallis and Futuna</option>
+                                                <option value="68">Western Sahara*</option>
+                                                <option value="251">Yemen</option>
+                                                <option value="254">Zambia</option>
+                                                <option value="255">Zimbabwe</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">
+                                            Khối lượng (gram)
+                                        </label>
+                                        <div class="col-md-9">
+                                            <input name="Weight" type="text" class="form-control"
+                                                   onblur="allowNumber(this, 1, 1000000);"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">
+                                            Kích thước (cm)
+                                        </label>
+                                        <div class="col-md-3">
+                                            <input name="Long" type="text" class="form-control"
+                                                   onblur="allowNumber(this, 1, 1000);" placeholder="Dài"/>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input name="Width" type="text" class="form-control"
+                                                   onblur="allowNumber(this, 1, 1000);" placeholder="Rộng"/>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input name="Height" type="text" class="form-control"
+                                                   onblur="allowNumber(this, 1, 1000);" placeholder="Cao"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">
+                                            Dịch vụ
+                                        </label>
+                                        <div class="col-md-9">
+                                            <select name="Type" class="form-control">
+                                                <option value=""></option>
+                                                <option value="834">Hàng hóa</option>
+                                                <option value="20">Tài liệu</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">
+                                            Phương thức vận chuyển
+                                        </label>
+                                        <div class="col-md-6">
+                                            <select name="ShipmentMode" class="form-control">
+                                                <option value=""></option>
+                                                <option value="21">Máy bay</option>
+                                                <option value="854">Thủy/Bộ</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-actions right">
+                                                <button type="button" class="btn-blue">Tra cứu</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <table class="table-multi-tracking table table-bordered">
+                        <tr>
+                            <th style="text-align: center;">
+                                STT
+                            </th>
+                            <th style="text-align: center;">
+                                Sản phẩm
+                            </th>
+                            <th style="text-align: center;">
+                                Dịch vụ
+                            </th>
+                            <th style="text-align: center;">
+                                Phương thức vận chuyển
+                            </th>
+                            <th style="text-align: center;">
+                                Cước cơ bản
+                            </th>
+
+                            <th style="text-align: center;">
+                                Ghi chú
+                            </th>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--footer-->
+<div class="row footer">
+    <div class="container">
+        <div class="col-md-7 col-sm-7 footer-info">
+            <label class="copyright">
+                TỔNG CÔNG TY BƯU ĐIỆN VIỆT NAM - VIETNAM POST
+            </label>
+            <span>
+                Địa chỉ: Số 05 đường Phạm Hùng - Mỹ Đình 2 - Nam Từ Liêm - Hà Nội - Việt Nam
+            </span>
+            <span>
+                Ghi rõ nguồn "vnpost.vn" khi phát hành lại thông tin từ website này
+            </span>
+        </div>
+        <div class="col-md-5 col-sm-5">
+            <ul class="social-footer list-unstyled list-inline pull-right">
+                <li><a href="https://www.facebook.com/vnpost.vn" target="_blank"><i class="fa fa-facebook">
+                </i></a>
+                </li>
+                <li><a href="https://plus.google.com/+vnpost/posts" target="_blank"><i class="fa fa-google-plus">
+                </i>
+                </a></li>
+                <li><a href="/desktopmodules/vnp_webapi/rssfeed.aspx" target="_blank"><i class="fa fa-rss">
+                </i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 </body>
 </html>

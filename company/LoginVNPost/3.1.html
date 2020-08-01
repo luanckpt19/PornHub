@@ -1,10 +1,282 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="vi-VN">
+<head id="Head">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <title>VNPost</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/3.1.css">
 </head>
-<body>
-$END$
+<body id="Body">
+<header class="row header">
+    <div class="container-fluid">
+        <div class="left-col">
+            <div class="logo-block">
+                <a href="home.html" id="Home" class="site-logo">
+                    <img src="images/Post.png" alt="VnPost">
+                </a>
+            </div>
+
+        </div>
+        <div class="right-col">
+            <div class="top-menu">
+                <div class="hotline-header">
+                    <div class="icon">
+                        <img src="http://ipostal.vnpost.vn/Portals/_default/Skins/VNPost.Skins.FrontEnd//img/hotline-icon.png" alt="Hotline">
+                    </div>
+                    <div class="text">
+                        <span class="email-address">Đường dây nóng hỗ trợ</span>
+                        <span class="hotline-number">1900 54 54 81</span>
+                    </div>
+                </div>
+                <div class="top-right-menu">
+                    <nav class="navbar">
+                        <ul class="ul-top-menu">
+                            <li class="search-main-menu">
+
+                                <div id="searh" class="row">
+                                    <input name="Search" type="text" id="Search" class="search-form-index" placeholder="Tìm kiếm"/>
+                                </div>
+                            </li>
+                            <li >
+                                <a href="#">Đăng ký</a>
+                            </li>
+                            <li id="Anonymous">
+                                <a href="#">Đăng nhập</a>
+                            </li>
+
+                            <li>
+
+                                <span class="language-box">
+                                    <a href="#">EN</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="main-menu">
+                <nav class="navbar">
+                    <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse main-menu">
+                        <ul class="ul-main-menu">
+                            <li class="tracking-mainmenu-label">
+                                <a href="#">Tạo yêu cầu</a>
+                            </li>
+
+                            <li><a onclick="return false">Tra cứu hồ sơ</a>
+
+                                <div class="child-menu">
+                                    <ul class="lst-dropdown">
+
+                                        <li><a href="mangluoibuucuc.html">Mạng lưới bưu cục</a></li>
+
+                                        <li><a href="#">Tra cứu giá cước</a></li>
+
+                                        <li><a href="#">Tra cứu HSCode</a></li>
+
+                                        <li><a href="#">Mã bưu chính quốc gia</a></li>
+
+                                    </ul>
+                                </div>
+
+                            </li>
+
+                            <li><a href="#">Thông tin khách hàng</a>
+
+                                <div class="child-menu">
+                                    <ul class="lst-dropdown">
+
+                                        <li><a onclick="return false">Dịch vụ chuyển phát tiết kiệm</a></li>
+
+                                        <li><a onclick="return false">Dịch vụ chuyển phát nhanh</a></li>
+
+                                    </ul>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="tracking-block">
+            <label class="quick-access-label">
+                <span class="quick-access-title">
+                    Tra cứu nhanh
+                </span>
+                <i class="fa fa-bars"></i>
+            </label>
+            <div id="tracking" class="collapse navbar-collapse main-menu">
+                <ul class="quick-tool-menu">
+
+                    <li class="tracking-item">
+                        <a  href="#">Mạng lưới bưu cục</a>
+                    </li>
+
+                    <li class="tracking-item">
+                        <a href="#">Tra cứu giá cước</a>
+                    </li>
+
+                    <li class="tracking-item">
+                        <a href="#">Tra cứu HSCode</a>
+                    </li>
+
+                    <li class="tracking-item">
+                        <a href="#">Mã bưu chính quốc gia</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- BEGIN SLIDER -->
+<div class="row main-content">
+    <div class="container">
+        <div id="dnn_ContentPane">
+            <div class="DnnModule DnnModule-VNP_FrontEndDynamicViews DnnModule-722"><a name="722"></a>
+                <div class="DNNContainer_noTitle">
+                    <div id="dnn_ctr722_ContentPane"><!-- Start_Module_722 --><div class="DNNModuleContent ModVNPFrontEndDynamicViewsC">
+
+                        <div class="header-black">
+                            <h1>QUẢN LÝ THÔNG TIN</h1>
+                        </div>
+                        <div class="col-sm-12 list-col col-sm-push-12">
+                            <div class="row search-box">
+                                <h7>THÔNG TIN CẬP NHẬT</h7>
+                                <div class="col-sm-12 form-inline">
+                                    <div class="col-sm-3">
+                                        <label>Ngày đăng ký</label>
+                                        <input type="date" name="bday" class="form-control" style="width:100%;">
+                                    </div>
+                                    <div class="col-sm-3 row2">
+                                        <label>Ngày cập nhật</label>
+                                        <input type="date" name="bday" class="form-control " style="width:100%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row list-post">
+                                <div class="list-office" style="width: 100%;">
+                                    <h7>THÔNG TIN CÁ NHÂN</h7>
+                                    <div class="col-sm-12 form-inline">
+                                        <div class="col-sm-3">
+                                            <label>Họ tên <span style="color: red">*</span></label>
+                                            <input class="form-control" style="width:100%;"></input>
+                                        </div>
+                                        <div class="col-sm-3 row2">
+                                            <label>Ngày sinh <span style="color: red">*</span></label>
+                                            <input type="date" name="bday" class="form-control " style="width:100%;">
+                                        </div>
+                                        <div class="col-sm-3 row3">
+                                            <label>Giới tính <span style="color: red">*</span></label>
+                                            <select name="Service" class="form-control" style="width:100%;">
+                                                <option selected="selected" value=""></option>
+                                                <option value="">Nam</option>
+                                                <option value="">Nữ</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 form-inline">
+                                        <div class="col-sm-3">
+                                            <label>Mail <span style="color: red">*</span></label>
+                                            <input class="form-control" style="width:100%;"></input>
+                                        </div>
+                                        <div class="col-sm-3 row2">
+                                            <label>Số điện thoại <span style="color: red">*</span></label>
+                                            <input name="District" class="form-control " style="width:100%;"></input>
+                                        </div>
+                                        <div class="col-sm-3 row3">
+                                            <label>Địa chỉ <span style="color: red">*</span></label>
+                                            <input name="Service" class="form-control " style="width:100%;"></input>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 form-inline">
+                                        <div class="col-sm-3">
+                                            <label>Loại giấy tờ <span style="color: red">*</span></label>
+                                            <select class="form-control" style="width:100%;"></select>
+                                        </div>
+                                        <div class="col-sm-3 row2">
+                                            <label>Số giấy tờ <span style="color: red">*</span></label>
+                                            <input name="District" class="form-control " style="width:100%;"></input>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row list-posted">
+                                <div class="list-office" style="width: 100%;">
+                                    <h7>THÔNG TIN THÊM</h7>
+                                    <div class="col-sm-12 form-inline">
+                                        <div class="col-sm-3">
+                                            <label>Mã số thuế<span style="color: red">*</span></label>
+                                            <input class="form-control" style="width:100%;"></input>
+                                        </div>
+                                        <div class="col-sm-3 row2">
+                                            <label>Mã số bảo hiểm <span style="color: red">*</span></label>
+                                            <input class="form-control " style="width:100%;">
+                                        </div>
+                                        <div class="col-sm-3 row3">
+                                            <label>Quốc tịch<span style="color: red">*</span></label>
+                                            <select name="nationality" class="form-control" style="width:100%;">
+                                                <option selected="selected" value=""></option>
+                                                <option value=""></option>
+                                                <option value="">N</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 form-inline">
+                                        <div class="col-sm-3">
+                                            <label>Dân tộc<span style="color: red">*</span></label>
+                                            <input name="nation" class="form-control" style="width:100%;"></input>
+                                        </div>
+                                        <div class="col-sm-3 row2">
+                                            <label>Hộ khẩu<span style="color: red">*</span></label>
+                                            <input name="Household" class="form-control " style="width:100%;"></input>
+                                        </div>
+                                        <div class="col-sm-3 row3">
+                                            <label>Tình trạng hôn nhân<span style="color: red">*</span></label>
+                                            <select name="marital status" class="form-control" style="width:100%;">
+                                                <option selected="selected" value=""></option>
+                                                <option value="">Đã kết hôn</option>
+                                                <option value="">Độc thân</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 form-inline">
+                                        <div class="col-sm-3">
+                                            <label>Đơn vị công tác<span style="color: red">*</span></label>
+                                            <input name="comapny" class="form-control" style="width:100%;"></input>
+                                        </div>
+                                        <div class="col-sm-3 row2">
+                                            <label>Nơi sinh<span style="color: red">*</span></label>
+                                            <input name="birthplace" class="form-control " style="width:100%;"></input>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-1">
+                                <input type="button" value="Cập nhật" class="btn btn-primary btn-search-branch"/>
+                            </div>
+                        </div>
+                    </div><!-- End_Module_722 --></div>
+                    <div class="clear"></div>
+                </div>
+            </div></div>
+    </div>
+</div>
 </body>
 </html>

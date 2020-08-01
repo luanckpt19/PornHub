@@ -1,10 +1,317 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Angular</title>
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/demo.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="css/Stylesheet.css" rel="stylesheet">
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NKDMSK6');</script>
+    <style type="text/css">iframe#_hjRemoteVarsFrame {
+        display: none !important;
+        width: 1px !important;
+        height: 1px !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }</style>
+    <style></style>
+    <script charset="utf-8" src="js/09.js"></script>
+    <script charset="utf-8" src="js/13.js"></script>
+    <style>#_hjRemoteVarsFrame {
+        opacity: 1 !important;
+        overflow: visible !important
+    }</style>
+    <style>#_hjRemoteVarsFrame {
+        opacity: 1 !important;
+        overflow: visible !important
+    }</style>
+    <style>#_hjRemoteVarsFrame {
+        opacity: 1 !important;
+        overflow: visible !important
+    }</style>
 </head>
-<body>
+<body class="off-canvas-sidebar">
+<app-root _nghost-c0="" ng-version="6.1.6">
+    <app-layout>
+        <div class="wrapper">
+            <div class="sidebar" data-color="red" data-image="">
+                <sidebar-cmp>
+                    <div class="logo"><a class="simple-text logo-mini" href="https://www.creative-tim.com">
+                        <div class="logo-img"><img src="https://demos.creative-tim.com/light-bootstrap-dashboard-pro-angular2/assets/img/angular2-logo-white.png"></div>
+                    </a><a class="simple-text logo-normal" href="https://www.creative-tim.com"> Creative Tim </a></div>
+                    <div class="sidebar-wrapper ps-container ps-theme-default ps-active-y"
+                         data-ps-id="12bb2178-77d1-f491-4622-66f7cb1fc6d1">
+                        <div class="user">
+                            <div class="info">
+                                <div class="photo"><img src="https://demos.creative-tim.com/light-bootstrap-dashboard-pro-angular2/assets/img/default-avatar.png"></div>
+                                <a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true"><span> Tania Andrew <b
+                                        class="caret"></b></span></a>
+                                <div class="collapse in" id="collapseExample" aria-expanded="true" style="">
+                                    <ul class="nav">
+                                        <li><a href="#"><span class="sidebar-mini">MP</span><span
+                                                class="sidebar-normal">My Profile</span></a></li>
+                                        <li><a href="#"><span class="sidebar-mini">EP</span><span
+                                                class="sidebar-normal">Edit Profile</span></a></li>
+                                        <li><a href="#"><span class="sidebar-mini">S</span><span class="sidebar-normal">Settings</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!---->
+                        <ul class="nav"><!---->
+                            <li routerlinkactive="active" class="active"><!----><a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i>
+                                <p>Dashboard</p></a><!----><!----></li>
+                            <li routerlinkactive="active"><!----><!----><a data-toggle="collapse" href="#Components"
+                                                                           class="" aria-expanded="true"><i class="fa fa-folder-open-o" aria-hidden="true"></i>
+                                <p>Components<b class="caret"></b></p></a>
+                                <div class="collapse in" id="Components" aria-expanded="true" style="">
+                                    <ul class="nav"><!---->
+                                        <li routerlinkactive="active"><a href="#"><span
+                                                class="sidebar-mini">B</span><span class="sidebar-normal">Buttons</span></a>
+                                        </li>
+                                        <li routerlinkactive="active"><a href="#"><span
+                                                class="sidebar-mini">GS</span><span
+                                                class="sidebar-normal">Grid System</span></a></li>
+                                        <li routerlinkactive="active"><a href="#"><span
+                                                class="sidebar-mini">P</span><span class="sidebar-normal">Panels</span></a>
+                                        </li>
+                                        <li routerlinkactive="active"><a href="#"><span
+                                                class="sidebar-mini">SA</span><span
+                                                class="sidebar-normal">Sweet Alert</span></a></li>
+                                        <li routerlinkactive="active"><a href="#"><span
+                                                class="sidebar-mini">N</span><span
+                                                class="sidebar-normal">Notifications</span></a></li>
+                                        <li routerlinkactive="active"><a href="#"><span
+                                                class="sidebar-mini">I</span><span
+                                                class="sidebar-normal">Icons</span></a></li>
+                                        <li routerlinkactive="active"><a href="#"><span
+                                                class="sidebar-mini">T</span><span
+                                                class="sidebar-normal">Typography</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li routerlinkactive="active"><!----><!----><a data-toggle="collapse" href="#Forms"><i class="fa fa-address-card-o" aria-hidden="true"></i>
+                                <p>Forms<b class="caret"></b></p></a><!---->
+                                <div class="collapse" id="Forms">
+                                    <ul class="nav"><!---->
+                                        <li routerlinkactive="active"><a href="#"><span
+                                                class="sidebar-mini">RF</span><span
+                                                class="sidebar-normal">Regular Forms</span></a></li>
+                                        <li routerlinkactive="active"><a href="#"><span
+                                                class="sidebar-mini">EF</span><span class="sidebar-normal">Extended Forms</span></a>
+                                        </li>
+                                        <li routerlinkactive="active"><a href="#"><span
+                                                class="sidebar-mini">VF</span><span class="sidebar-normal">Validation Forms</span></a>
+                                        </li>
+                                        <li routerlinkactive="active"><a href="#"><span
+                                                class="sidebar-mini">W</span><span class="sidebar-normal">Wizard</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li routerlinkactive="active"><!----><!----><a data-toggle="collapse" href="#Tables"><i class="fa fa-indent" aria-hidden="true"></i>
+                                <p>Tables<b class="caret"></b></p></a><!---->
+                                <div class="collapse" id="Tables">
+                                    <ul class="nav"><!---->
+                                        <li routerlinkactive="active"><a href="#"><span
+                                                class="sidebar-mini">RT</span><span class="sidebar-normal">Regular Tables</span></a>
+                                        </li>
+                                        <li routerlinkactive="active"><a href="#"><span
+                                                class="sidebar-mini">ET</span><span class="sidebar-normal">Extended Tables</span></a>
+                                        </li>
+                                        <li routerlinkactive="active"><a href="#"><span
+                                                class="sidebar-mini">DT</span><span class="sidebar-normal">Datatables.net</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li routerlinkactive="active"><!----><!----><a data-toggle="collapse" href="#Maps"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>Maps<b class="caret"></b></p></a><!---->
+                                <div class="collapse" id="Maps">
+                                    <ul class="nav"><!---->
+                                        <li routerlinkactive="active"><a href="#"><span
+                                                class="sidebar-mini">GM</span><span
+                                                class="sidebar-normal">Google Maps</span></a></li>
+                                        <li routerlinkactive="active"><a href="#"><span
+                                                class="sidebar-mini">FSM</span><span class="sidebar-normal">Full Screen Map</span></a>
+                                        </li>
+                                        <li routerlinkactive="active"><a href="#"><span
+                                                class="sidebar-mini">VM</span><span
+                                                class="sidebar-normal">Vector Map</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li routerlinkactive="active"><!----><a href="#"><i class="fa fa-line-chart" aria-hidden="true"></i>
+                                <p>Charts</p></a><!----><!----></li>
+                            <li routerlinkactive="active"><!----><a href="#"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i>
+                                <p>Calendar</p></a><!----><!----></li>
+                            <li routerlinkactive="active"><!----><!----><a data-toggle="collapse" href="#Pages"><i class="fa fa-gift" aria-hidden="true"></i>
+                                <p>Pages<b class="caret"></b></p></a><!---->
+                                <div class="collapse" id="Pages">
+                                    <ul class="nav"><!---->
+                                        <li routerlinkactive="active"><a href="#"><span class="sidebar-mini">UP</span><span
+                                                class="sidebar-normal">User Page</span></a></li>
+                                        <li routerlinkactive="active"><a href="#"><span
+                                                class="sidebar-mini">LP</span><span
+                                                class="sidebar-normal">Login Page</span></a></li>
+                                        <li routerlinkactive="active"><a href="#"><span
+                                                class="sidebar-mini">RP</span><span
+                                                class="sidebar-normal">Register Page</span></a></li>
+                                        <li routerlinkactive="active"><a href="#"><span class="sidebar-mini">LSP</span><span
+                                                class="sidebar-normal">Lock Screen Page</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li routerlinkactive="active"><!----><a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                <p>Documentation</p></a><!----><!----></li>
+                        </ul>
+                        <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: -725px;">
+                            <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                        </div>
+                        <div class="ps-scrollbar-y-rail" style="top: 728px; right: 3px; height: 282px;">
+                            <div class="ps-scrollbar-y" tabindex="0" style="top: 204px; height: 78px;"></div>
+                        </div>
+                    </div>
+                </sidebar-cmp>
+            </div>
+            <div class="main-panel ps-container ps-theme-default ps-active-y"
+                 data-ps-id="e6045df3-0386-8ce9-4b8a-4b9b3fb24b64">
+                <navbar-cmp>
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <div class="navbar-minimize">
+                                <button class="btn btn-danger btn-fill btn-round btn-icon" id="minimizeSidebar"><i
+                                        class="fa fa-ellipsis-v visible-on-sidebar-regular"></i><i
+                                        class="fa fa-navicon visible-on-sidebar-mini"></i></button>
+                            </div>
+                            <div class="navbar-header">
+                                <button class="navbar-toggle" data-toggle="collapse" type="button"><span
+                                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                                        class="icon-bar"></span><span class="icon-bar"></span></button>
+                                <a class="navbar-brand">Dashboard</a></div>
+                            <div class="collapse navbar-collapse"><!---->
+                                <div class="">
+                                    <form class="navbar-form navbar-left navbar-search-form" role="search">
+                                        <div class="input-group"><span class="input-group-addon"><i
+                                                class="fa fa-search"></i></span><input class="form-control"
+                                                                                       placeholder="Search..."
+                                                                                       type="text" value=""></div>
+                                    </form>
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a ruterlinkactive="active" href="#/charts"><i class="fa fa-line-chart"></i>
+                                            <p>Stats</p></a></li>
+                                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i
+                                                class="fa fa-gavel"></i>
+                                            <p class="hidden-md hidden-lg"> Actions <b class="caret"></b></p></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Create New Post</a></li>
+                                                <li><a href="#">Manage Something</a></li>
+                                                <li><a href="#">Do Nothing</a></li>
+                                                <li><a href="#">Submit to live</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Another Action</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i
+                                                class="fa fa-bell-o"></i><span class="notification">5</span>
+                                            <p class="hidden-md hidden-lg"> Notifications <b class="caret"></b></p></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Notification 1</a></li>
+                                                <li><a href="#">Notification 2</a></li>
+                                                <li><a href="#">Notification 3</a></li>
+                                                <li><a href="#">Notification 4</a></li>
+                                                <li><a href="#">Another notification</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown dropdown-with-icons"><a class="dropdown-toggle"
+                                                                                    data-toggle="dropdown" href="#"><i
+                                                class="fa fa-list"></i>
+                                            <p class="hidden-md hidden-lg"> More <b class="caret"></b></p></a>
+                                            <ul class="dropdown-menu dropdown-with-icons">
+                                                <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Messages </a></li>
+                                                <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> Help Center </a></li>
+                                                <li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i> Settings </a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#"><i class="fa fa-lock" aria-hidden="true"></i> Lock Screen </a></li>
+                                                <li><a class="text-danger" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i></i>
+                                                    Log out </a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </navbar-cmp>
+                <div>
+                    <footer-cmp>
+                        <footer class="footer">
+                            <div class="container-fluid">
+                                <nav class="pull-left">
+                                    <ul>
+                                        <li><a href="#"> Home </a></li>
+                                        <li><a href="#"> Company </a></li>
+                                        <li><a href="#"> Portfolio </a></li>
+                                        <li><a href="#"> Blog </a></li>
+                                    </ul>
+                                </nav>
+                                <p class="copyright pull-right"> © 2020 <a href="https://www.creative-tim.com">Creative
+                                    Tim</a>, made with love for a better web </p></div>
+                        </footer>
+                    </footer-cmp>
+                </div>
+            </div>
+        </div>
+    </app-layout>
+</app-root>
+<script>
+    // Facebook Pixel Code Don't Delete
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window,
+        document, 'script', '//connect.facebook.net/en_US/fbevents.js');
 
+    try {
+        fbq('init', '111649226022273');
+        fbq('track', "PageView");
+
+    } catch (err) {
+        console.log('Facebook Track Error:', err);
+    }
+</script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/runtime.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="js/poly.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,315 @@
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):hover,
+a:not([href]):not([tabindex]):focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+.title_nav {
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+button {
+    height: 34px;
+    background-color: #02A2F2;
+    border-radius: 0px;
+}
+
+.bnt {
+    background-color: #02A2F2;
+    border-radius: 0px;
+}
+
+.form-inline > input::-webkit-input-placeholder {
+    color: white !important;
+}
+
+.form-inline > input::-moz-placeholder {
+    color: wheat !important;
+}
+
+.form-inline > input:-moz-placeholder {
+    /* Older versions of Firefox */
+    color: white !important;
+}
+
+.form-inline > input:-ms-input-placeholder {
+    color: white !important;
+}
+
+.form-inline > .form-control {
+    margin-right: 20px;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    height: 34px;
+    background-color: #63B8FF;
+}
+
+.form-inline > ::placeholder {
+    color: white;
+}
+
+.form-inline > .form-control:focus {
+    margin-right: 20px;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    height: 34px;
+    background-color: #63B8FF;
+}
+
+#search {
+    border-radius: 40px;
+}
+
+.content-wrapper > .dropdown {
+    right: 0px;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 48px;
+    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: auto;
+    background: rgba(0, 0, 0, .3);
+    z-index: 1031;
+}
+
+.label_next {
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: gray;
+}
+
+.label_login {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin: 0px;
+}
+
+.div_main {
+    background-color: white;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+
+.label_main {
+    color: #0F7BCD;
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.content-wrapper > .dropdown > .dropdown-menu {
+    margin-right: 80px;
+}
+
+.title_main {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-seri;
+    font-size: 14px;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.d-block {
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.main-sidebar {
+    background: #FCB71E;
+}
+
+p {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.nav-icon {
+    color: #FFFFFF;
+}
+
+.col-md-12 > .btn {
+    width: 120px;
+    background-color: #FCB71E;
+    border: none;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+button.form-control {
+    color: #5f6d7b;
+    border-color: #e4e6e8;
+    height: 31px;
+    box-shadow: none;
+    display: inline-block;
+    border-radius: 0px;
+    border: solid 2px #dbdbdb;
+    background-color: white;
+}
+
+button.form-control:focus {
+    background-color: white;
+    box-shadow: none;
+    border-radius: 0px;
+    border: solid 2px #dbdbdb;
+    border-color: #999;
+    display: inline-block;
+    height: 31px;
+}
+
+.dropdown-menu {
+    margin-left: 5px;
+}
+
+.form-control > .fas {
+    float: right;
+    height: 31px;
+    margin-top: 3px;
+}
+
+input.form-control,
+textarea.form-control,
+select.form-control {
+    border-color: #dbdbdb;
+    display: inline-block;
+    height: 31px;
+    border-radius: 0px;
+    border: solid 2px #dbdbdb;
+    color: #777;
+    background-color: white;
+    font-size: 14px;
+    font-family: Roboto-Regular;
+    box-shadow: none;
+}
+
+input.form-control:focus,
+textarea.form-control:focus,
+select.form-control:focus {
+    display: inline-block;
+    background-color: white;
+    height: 31px;
+    box-shadow: none;
+    border-radius: 0px;
+    border: solid 2px #dbdbdb;
+}
+
+#example2 {
+    background-color: white;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+
+#button_table {
+    width: 113px;
+    height: 37px;
+    background: #979797;
+    box-shadow: 0px 8px 16px #E0E2E4;
+    border-radius: 5px;
+}
+
+#input_table {
+    height: 35px;
+}
+
+#example2 td,
+#example2 th {
+    border: 2px solid #BABABA;
+    padding: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+#example2 th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+#input_table {
+    border: 1px solid #BABABA;
+    height: 26px;
+}
+
+#input_table2 {
+    border: 1px solid #BABABA;
+    height: 26px;
+    position: relative;
+    top: 0.4px;
+}
+
+.card {
+    border: 1px solid #979797;
+}
+
+@media (max-width: 767px) {
+    #input_table {
+        width: 90%;
+    }
+
+    #input_table2 {
+        width: 90%;
+    }
+    .search-box{
+        position:relative;
+        top:-20px;
+        text-align: right;
+    }
+
+}

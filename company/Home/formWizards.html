@@ -1,10 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard Company</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/_all-skins.min.css">
+    <link rel="stylesheet" href="css/form.css">
+
 </head>
-<body>
-$END$
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <header class="main-header">
+        <a class="logo" href="index.html">Quirk</a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+            <div class="search-box">
+                <form class="input">
+                    <input class="sb-search-input input__field--madoka" placeholder="Search..." type="text" name="search"/>
+                    <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+                </form>
+            </div>
+            <div class="navbar-custom-menu ">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown profile_details_drop">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <div class="profile_img">
+                                <span class="prfil-img"><img src="images/avatar1.png"></span>
+                                <div class="user-name">
+                                    <p>Elen Adarna</p>
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu drp-mnu">
+                            <li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li>
+                            <li> <a href="#"><i class="fa fa-user"></i> My Account</a> </li>
+                            <li> <a href="#"><i class="fa fa-suitcase"></i> Profile</a> </li>
+                            <li> <a href="#"><i class="fa fa-sign-out"></i> Logout</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <aside class="main-sidebar">
+        <section class="sidebar">
+            <div class="user-panel">
+                <div class="pull-left image">
+                    <img src="images/avatar.png" class="img-circle" alt="User Image">
+                </div>
+                <div class="pull-left info">
+                    <h4>Elen Adarna <br><span>Software Engineer</span></h4>
+                </div>
+            </div>
+            <div class="profile-social-dtl">
+                <ul class="dtl-social">
+                    <li><a href="#"><i class="fa fa-ellipsis-h active"></i></a></li>
+                    <li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+                    <li><a href="#"><i class="fa fa-user"></i></a></li>
+                    <li><a href="#"><i class="fa fa-cog"></i></a></li>
+                    <li><a href="#"><i class="fa fa-sign-out"></i></a></li>
+                </ul>
+            </div>
+            <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+                <li class="header">FAVORITES</li>
+                <li class="treeview">
+                    <a href="index.html">
+                        <i class="fa fa-home" aria-hidden="true"></i><span>DASHBOARD</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-laptop"></i>
+                        <span>WIDGETS</span>
+                        <span class="label label-primary pull-right">10+</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-pie-chart"></i>
+                        <span>MAPS</span>
+                    </a>
+                </li>
+                <li class="header ">MAIN MENU</li>
+                <li class="treeview ">
+                    <a href="#" data-toggle="collapse">
+                        <i class="fa fa-laptop"></i>
+                        <span>FORM</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> General</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Icons</a></li>
+                        <li><a href="formWizards.html"><i class="fa fa-angle-double-right"></i>FormWizards</a></li>
+                        <li><a href="TextEditor.html"><i class="fa fa-angle-double-right"></i> Text Editor</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-edit"></i> <span>UI ELEMENTS</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> General Forms</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Form Validations</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-table"></i> <span>TABLES</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Simple tables</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-envelope"></i> <span>PAGES</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+
+                        <ul class="treeview-menu">
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> Mail Inbox </a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> Compose Mail </a></li>
+                        </ul>
+                </li>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+    <div class="content-wrapper">
+        <section class="mainpanel">
+
+            <div class="contentpanel">
+
+                <ol class="breadcrumb breadcrumb-quirk">
+                    <li><a href="index.html"><i class="fa fa-home mr5"></i> Home</a></li>
+                    <li><a href="general-forms.html">Forms</a></li>
+                    <li class="active">Form Wizards</li>
+                </ol>
+
+            </div>
+
+        </section>
+    </div>
+</div>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script>
+</script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/app.min.js"></script>
+<script src="js/demo.js"></script>
 </body>
 </html>

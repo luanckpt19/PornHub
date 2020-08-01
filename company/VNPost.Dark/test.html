@@ -20,7 +20,9 @@
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
     <script>
         // Initialize tooltip component
         $(function () {
@@ -39,24 +41,112 @@
         <ul class="treeview">
             <li><a href="#"><i class="fa fa-align-right" aria-hidden="true"></i><span>BCCS</span></a></li>
         </ul>
-        <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i><span>Tìm kiếm chức năng</span></a></li>
-            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i><span>Dashboard</span></a></li>
-            <li><a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i><span>Thông báo</span></a></li>
-            <li><a href="#"><i class="fa fa-th-large" aria-hidden="true"></i><span>Chăm sóc KH-All In One</span></a></li>
-            <li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i><span>Chuyển mạng dữ số</span></a></li>
-            <li><a href="#"><i class="fa fa-mobile" aria-hidden="true"></i><span>Phát triển di động</span></a></li>
-            <li><a href="#"><span>Sau bán di động</span></a></li>
-            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i><span>Phát triển cố định</span></a></li>
-            <li><a href="#"><span>Sau bán cố định</span></a></li>
-            <li><a href="#"><i class="fa fa-book" aria-hidden="true"></i><span>Quản lý hợp đồng</span></a></li>
-            <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i><span>Quản lý nhóm</span></a></li>
-            <li><a href="#"><i class="fa fa-credit-card-alt" aria-hidden="true"></i><span>Thanh toán</span></a></li>
-            <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Quản lý bán hàng</span></a></li>
-            <li><a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i><span>Quản lý hóa đơn</span></a></li>
-            <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i><span>Tiện ích</span></a></li>
-            <li><a href="#"><i class="fa fa-list" aria-hidden="true"></i><span>Danh mục</span></a></li>
-            <li><a href="#"><i class="fa fa-headphones" aria-hidden="true"></i><span>Phát triển YC Hotline</span></a></li>
+        <li style="margin-top: 20px; ">
+
+            <form id="custom-search-form" class="form-search form-horizontal pull-right">
+                <div class="form-group has-search" style="text-align: center; margin-right: 5px;margin-left:5px">
+                    <img src="img/search.png" style="margin-right: 6%;">
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Tìm kiếm chức năng" style="width: 74%;">
+
+                </div>
+            </form>
+        </li>
+        <!-- Nav Item - Pages Collapse Menu -->
+        <ul class="navbar-nav background-color sidebar sidebar-dark accordion" id="myUL">
+
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="fa fa-home" style="color: #707070;"></i>
+                    <span class="span_menu">Dashboard</span>
+                </a>
+            </li>
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img src="img/notifi.png">
+                    <span class="span_menu">Thông báo</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cards.html">
+                    <img src="img/menu.png">
+                    <span class="span_menu">Chăm sóc KH -All in one</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img src="img/change_network.png">
+                    <span class="span_menu">Chuyển mạng dữ số</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img src="img/phone.png">
+                    <span class="span_menu">Phát triển di động</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img src="img/affter_phone.png">
+                    <span class="span_menu">Sau bán di động</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img src="img/fixed_dev.png">
+                    <span class="span_menu">Phát triển cố định</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img src="img/contract_manage.png">
+
+                    <span class="span_menu">Quản lý hợp đồng</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img src="img/group_manage.png">
+                    <span class="span_menu">Quản lý nhóm</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img src="img/payment.png">
+                    <span class="span_menu">Thanh toán</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img src="img/cart.png">
+                    <span class="span_menu">Quản lý bán hàng</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img src="img/order.png">
+                    <span class="span_menu">Quản lý hóa đơn</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img src="img/configuration.png">
+                    <span class="span_menu">Tiện ích</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img src="img/category.png">
+                    <span class="span_menu">Danh mục</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img src="img/dev_online.png">
+                    <span class="span_menu">Phát triển VC online</span>
+                </a>
+            </li>
+
         </ul>
     </div>
 </div>

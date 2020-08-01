@@ -1,10 +1,183 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="vi-VN">
+<head id="Head">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <title>VNPost</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/2.2.css">
 </head>
-<body>
-$END$
+<body id="Body">
+<header class="row header">
+    <div class="container-fluid">
+        <div class="left-col">
+            <div class="logo-block">
+                <a href="home.html" id="Home" class="site-logo">
+                    <img src="images/Post.png" alt="VnPost">
+                </a>
+            </div>
+
+        </div>
+        <div class="right-col">
+            <div class="top-menu">
+                <div class="hotline-header">
+                    <div class="icon">
+                        <img src="http://ipostal.vnpost.vn/Portals/_default/Skins/VNPost.Skins.FrontEnd//img/hotline-icon.png" alt="Hotline">
+                    </div>
+                    <div class="text">
+                        <span class="email-address">Đường dây nóng hỗ trợ</span>
+                        <span class="hotline-number">1900 54 54 81</span>
+                    </div>
+                </div>
+                <div class="top-right-menu">
+                    <nav class="navbar">
+                        <ul class="ul-top-menu">
+                            <li class="search-main-menu">
+
+                                <div id="searh" class="row">
+                                    <input name="Search" type="text" id="Search" class="search-form-index" placeholder="Tìm kiếm"/>
+                                </div>
+                            </li>
+                            <li >
+                                <a href="#">Đăng ký</a>
+                            </li>
+                            <li id="Anonymous">
+                                <a href="#">Đăng nhập</a>
+                            </li>
+
+                            <li>
+
+                                <span class="language-box">
+                                    <a href="#">EN</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="main-menu">
+                <nav class="navbar">
+                    <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse main-menu">
+                        <ul class="ul-main-menu">
+                            <li class="tracking-mainmenu-label">
+                                <a href="#">Tạo yêu cầu</a>
+                            </li>
+
+                            <li><a onclick="return false">Tra cứu hồ sơ</a>
+
+                                <div class="child-menu">
+                                    <ul class="lst-dropdown">
+
+                                        <li><a href="mangluoibuucuc.html">Mạng lưới bưu cục</a></li>
+
+                                        <li><a href="#">Tra cứu giá cước</a></li>
+
+                                        <li><a href="#">Tra cứu HSCode</a></li>
+
+                                        <li><a href="#">Mã bưu chính quốc gia</a></li>
+
+                                    </ul>
+                                </div>
+
+                            </li>
+
+                            <li><a href="#">Thông tin khách hàng</a>
+
+                                <div class="child-menu">
+                                    <ul class="lst-dropdown">
+
+                                        <li><a onclick="return false">Dịch vụ chuyển phát tiết kiệm</a></li>
+
+                                        <li><a onclick="return false">Dịch vụ chuyển phát nhanh</a></li>
+
+                                    </ul>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="tracking-block">
+            <label class="quick-access-label">
+                <span class="quick-access-title">
+                    Tra cứu nhanh
+                </span>
+                <i class="fa fa-bars"></i>
+            </label>
+            <div id="tracking" class="collapse navbar-collapse main-menu">
+                <ul class="quick-tool-menu">
+
+                    <li class="tracking-item">
+                        <a  href="#">Mạng lưới bưu cục</a>
+                    </li>
+
+                    <li class="tracking-item">
+                        <a href="#">Tra cứu giá cước</a>
+                    </li>
+
+                    <li class="tracking-item">
+                        <a href="#">Tra cứu HSCode</a>
+                    </li>
+
+                    <li class="tracking-item">
+                        <a href="#">Mã bưu chính quốc gia</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- BEGIN SLIDER -->
+<h1>Tạo mới tài khoản</h1>
+<div class="page-slider">
+    <div class="container">
+        <div class="login-wrapper">
+            <div class="row">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                    </div>
+                    <div class="form-group">
+                      <h5>Hãy nhập OTP vừa gửi được gửi tới số điện thoại <span>+848112948292</span></h5>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-9">
+                            <input name="Password" type="password" id="OTP1" class="form-control" autocomplete="off"/>
+                            <input name="Password" type="password" id="OTP2" class="form-control" autocomplete="off"/>
+                            <input name="Password" type="password" id="OTP3" class="form-control" autocomplete="off"/>
+                            <input name="Password" type="password" id="OTP4" class="form-control" autocomplete="off"/>
+                            <input name="Password" type="password" id="OTP5" class="form-control" autocomplete="off"/>
+                            <input name="Password" type="password" id="OTP6" class="form-control" autocomplete="off"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">
+                            <a href="OTP">Bạn chưa nhận được OTP ?</a>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-5">
+                            <input type="submit" name="Login" value="Xác nhận" id="Login" class="btn btn-primary"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

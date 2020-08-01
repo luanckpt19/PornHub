@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    font-family: Arial,sans-serif;
+    font-weight: 300;
+    color: #333333;
+    line-height: 1.254;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #3b8bba;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+a:hover{
+    color:  #3183FF;
+}
+
+/*Chia cột website*/
+#container{
+    padding-left: 150px;
+    position: relative;
+    left: 0;
+    width: 100%;
+}
+#menu{
+    position: fixed;
+    background: #041133;
+    height: 110%;
+    width: 212px;
+    left: 0;
+}
+#menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#menu ul li{
+    line-height: 2.9em;
+    height: 2.9em;
+    position: relative;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+#menu ul li a {
+    position:relative;
+    color: #707070;
+    display: block;
+    left:50px;
+}
+#menu ul li:hover{
+    background:#081B4B;
+}#menu ul li a:hover{
+     color: #3183FF;
+ }
+#menu ul li .sub-menu{
+    display: none;
+    position: absolute;
+}
+#menu ul li:hover .sub-menu{
+    width: 150px;
+    display: block;
+    left: 150px;
+    top: 0;
+    background: #333333;
+}
+#menu .treeview li{
+    border-bottom: 1px solid #707070;
+}
+#menu .treeview li a span{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 35px;
+    color: #4674EB;
+}
+.form-register .steps {
+    margin-bottom: 33px;
+    margin-top: 40px;
+}
+
+.form-register .steps ul {
+    display: flex;
+    display: -webkit-flex;
+    list-style: none;
+    padding-left: 0;
+    justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.form-register .steps li,
+.form-register .steps li.current {
+    outline: none;
+    -o-outline: none;
+    -ms-outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+}
+
+.form-register .steps li a {
+    display: inline-block;
+    width: 140px;
+    height: 60px;
+    background: #DBE2F3;
+    border-radius: 50px;
+    margin-right: 50px;
+    position: relative;
+    outline: none;
+}
+
+.form-register .steps li a::before {
+    position: absolute;
+    content: "";
+    background: #e5e5e5;
+    width: 143px;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-40%);
+    -o-transform: translateY(-40%);
+    -ms-transform: translateY(-40%);
+    -moz-transform: translateY(-40%);
+    -webkit-transform: translateY(-40%);
+    left: 100%;
+}
+
+.form-register .steps li.last a {
+    margin-right: 0;
+}
+
+.form-register .steps li.last a::before {
+    content: none;
+}
+
+.form-register .steps li.current a,
+.form-register .steps li.current a:active,
+.form-register .steps li.done a::before,
+.form-register .steps li.done a,
+.form-register .steps li.done a:active {
+    background: #3760e5;
+}
+
+.form-register .steps li .current-info {
+    display: none;
+}
+
+.circle {
+    margin: 5px;
+}
+
+.title {
+    margin: 5px;
+    height: 25px;
+    width: 25px;
+    padding-left: 8px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 60px;
+    border: 2px solid #6B90EF;
+}
+
+.form-register .steps li .title {
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    /* width: 100%; */
+    /* text-align: center; */
+    transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    /* identical to box height, or 138% */
+    display: flex;
+    align-items: center;
+    /* Color/Primary/3 */
+    color: #2347A5;
+}
+
+.form-register .content {
+    padding: 0 80px;
+}
+
+.form-register .content h2 {
+    display: none;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1199px) {
+    .wizard-v10-content {
+        margin: 180px 20px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .inner .form-row {
+        flex-direction: column;
+        -o-flex-direction: column;
+        -ms-flex-direction: column;
+        -moz-flex-direction: column;
+        -webkit-flex-direction: column;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .inner .form-row .form-holder.form-holder-2 {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .wizard-v10-content {
+        width: 10px;
+    }
+    .form-register .content {
+        padding: 0 2px;
+    }
+    .form-register .steps li a {
+        width: 80px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    .form-register .steps li a::before {
+        width: 50px;
+    }
+}

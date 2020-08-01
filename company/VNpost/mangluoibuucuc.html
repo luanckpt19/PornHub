@@ -1,10 +1,457 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="vi-VN">
+<head id="Head">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <title>VNPost</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/TraCuu.css">
 </head>
-<body>
-$END$
+<body id="Body">
+<header class="row header">
+    <div class="container-fluid">
+        <div class="left-col">
+            <div class="logo-block">
+                <a href="home.html" id="Home" class="site-logo">
+                    <img src="images/Post.png" alt="VnPost">
+                </a>
+            </div>
+
+        </div>
+        <div class="right-col">
+            <div class="top-menu">
+                <div class="hotline-header">
+                    <div class="icon">
+                        <img src="http://ipostal.vnpost.vn/Portals/_default/Skins/VNPost.Skins.FrontEnd//img/hotline-icon.png" alt="Hotline">
+                    </div>
+                    <div class="text">
+                        <span class="email-address">Đường dây nóng hỗ trợ</span>
+                        <span class="hotline-number">1900 54 54 81</span>
+                    </div>
+                </div>
+                <div class="top-right-menu">
+                    <nav class="navbar">
+                        <ul class="ul-top-menu">
+                            <li class="search-main-menu">
+
+                                <div id="searh" class="row">
+                                    <input name="Search" type="text" id="Search" class="search-form-index" placeholder="Tìm kiếm"/>
+                                </div>
+                            </li>
+                            <li id="Anonymous">
+                                <a href="login.html">Đăng nhập</a>
+                            </li>
+
+                            <li>
+
+                                <span class="language-box">
+                                    <a href="#">EN</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="main-menu">
+                <nav class="navbar">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </div>
+                    <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse main-menu">
+                        <ul class="ul-main-menu">
+                            <li class="tracking-mainmenu-label">
+                                <a href="#">Định vị</a>
+                            </li>
+
+                            <li><a onclick="return false">Tra cứu nhanh</a>
+
+                                <div class="child-menu">
+                                    <ul class="lst-dropdown">
+
+                                        <li><a href="mangluoibuucuc.html">Mạng lưới bưu cục</a></li>
+
+                                        <li><a href="Tracuoc.html">Tra cứu giá cước</a></li>
+
+                                        <li><a href="#">Tra cứu HSCode</a></li>
+
+                                        <li><a href="#">Mã bưu chính quốc gia</a></li>
+
+                                    </ul>
+                                </div>
+
+                            </li>
+
+                            <li><a href="#">Dịch vụ</a>
+
+                                <div class="child-menu">
+                                    <ul class="lst-dropdown">
+
+                                        <li><a onclick="return false">Dịch vụ chuyển phát tiết kiệm</a>
+
+                                            <div class="sub-menu">
+
+                                                <ul>
+                                                    <li><a onclick="return false">Tài liệu</a></li>
+
+                                                    <li><a href="#">Tài liệu thường</a></li>
+
+                                                    <li><a href="#">Tài liệu bảo đảm</a></li>
+
+                                                    <li><a href="#">Tài liệu ePacket</a></li>
+
+                                                    <li><a href="#">Tài liệu Prime Tracked</a></li>
+
+                                                </ul>
+
+                                                <ul>
+                                                    <li><a  onclick="return false">Hàng hóa</a></li>
+
+                                                    <li><a href="#">Gói nhỏ thường</a></li>
+
+                                                    <li><a href="#">Gói nhỏ bảo đảm</a></li>
+
+                                                    <li><a href="#">Gói nhỏ TMDT ePacket</a></li>
+
+                                                    <li><a href="#">Gói nhỏ Prime Tracked</a></li>
+
+                                                    <li><a href="#">Bưu kiện bay và thủy bộ</a></li>
+
+                                                    <li><a href="#">Bưu kiện TMĐT eBORDER đi Trung Quốc</a></li>
+
+                                                    <li><a href="#">Bưu kiện tiết kiệm chuyển tuyến Hàn Quốc</a></li>
+
+                                                    <li><a href="#">Vận chuyển hàng nặng</a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </li>
+
+                                        <li><a onclick="return false">Dịch vụ chuyển phát nhanh</a>
+
+                                            <div class="sub-menu">
+
+                                                <ul>
+
+                                                    <li><a href="#">EMS</a></li>
+
+                                                    <li><a href="#">VNQuickPost</a></li>
+
+                                                    <li><a href="#">Dịch vụ đại lý</a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </li>
+
+                            <li><a onclick="return false">Thủ tục hải quan</a>
+
+                                <div class="child-menu">
+                                    <ul class="lst-dropdown">
+
+                                        <li><a onclick="return false">Những điều cần biết về thủ tục XNK</a>
+
+                                            <div class="sub-menu">
+
+                                                <ul>
+                                                    <li><a onclick="return false">Cơ sở pháp lý</a></li>
+
+                                                    <li><a href="#">Hệ thống văn bản</a></li>
+
+                                                    <li><a href="#">chính sách thuế</a></li>
+
+                                                </ul>
+
+                                                <ul>
+                                                    <li><a onclick="return false">Thủ tục và quy trình thông quan</a></li>
+
+                                                    <li><a href="#">Xuất khẩu</a></li>
+
+                                                    <li><a href="#">Nhập khẩu</a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </li>
+
+                                        <li><a href="#">Hàng cấm gửi, gửi có điều kiện đi quốc tế</a>
+
+                                        </li>
+
+                                        <li><a href="#">Tra cứu HSCode</a>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </li>
+
+                            <li><a onclick="return false">Điều kiện vận chuyển</a>
+
+                                <div class="child-menu">
+                                    <ul class="lst-dropdown">
+
+                                        <li>
+                                            <a href="#">VB pháp quy, hạ tầng pháp lý quy đường hàng không</a>
+
+                                        </li>
+
+                                        <li>
+                                            <a href="#">Những điều cần biết về hàng nguy hiểm</a>
+
+                                        </li>
+
+                                        <li>
+                                            <a href="#">Những mặt hàng được vận chuyển</a>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </li>
+
+                            <li><a>Cẩm nang</a>
+
+                                <div class="child-menu">
+                                    <ul class="lst-dropdown">
+
+                                        <li>
+                                            <a href="#">Cẩm nang khách hàng</a>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="tracking-block">
+            <label class="quick-access-label">
+                <span class="quick-access-title">
+                    Tra cứu nhanh
+                </span>
+                <i class="fa fa-bars"></i>
+            </label>
+            <div id="tracking" class="collapse navbar-collapse main-menu">
+                <ul class="quick-tool-menu">
+
+                    <li class="tracking-item">
+                        <a  href="#">Mạng lưới bưu cục</a>
+                    </li>
+
+                    <li class="tracking-item">
+                        <a href="#">Tra cứu giá cước</a>
+                    </li>
+
+                    <li class="tracking-item">
+                        <a href="#">Tra cứu HSCode</a>
+                    </li>
+
+                    <li class="tracking-item">
+                        <a href="#">Mã bưu chính quốc gia</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- BEGIN SLIDER -->
+<div class="row main-content">
+    <div class="container">
+        <div id="dnn_ContentPane">
+            <div class="DnnModule DnnModule-VNP_FrontEndDynamicViews DnnModule-722"><a name="722"></a>
+                <div class="DNNContainer_noTitle">
+                    <div id="dnn_ctr722_ContentPane"><!-- Start_Module_722 --><div class="DNNModuleContent ModVNPFrontEndDynamicViewsC">
+
+                        <div class="header-black">
+                            <h1>Mạng lưới dịch vụ bưu điện</h1>
+                        </div>
+                        <div class="col-sm-12 list-col col-sm-push-12">
+                            <div class="row search-box">
+                                <div class="col-sm-12 form-inline">
+                                    <div class="col-sm-3">
+                                        <label>Tỉnh/Thành phố</label>
+                                        <select name="dnn$ctr722$View$uc$dropProvince" class="form-control" onchange="postOfficeChangeProvince(722, &#39;dnn_ctr722_View_uc_dropProvince&#39;, &#39;dnn_ctr722_View_uc_dropDistrict&#39;)" style="width:100%;">
+                                            <option value="-1"></option>
+                                            <option value="59">An Giang                      </option>
+                                            <option value="48">Bà Rịa Vũng Tàu               </option>
+                                            <option value="9">Bắc Giang                      </option>
+                                            <option value="12">Bắc Kạn                       </option>
+                                            <option value="62">Bạc Liêu                      </option>
+                                            <option value="8">Bắc Ninh                       </option>
+                                            <option value="54">Bến Tre                       </option>
+                                            <option value="37">Bình Định                     </option>
+                                            <option value="49">Bình Dương                    </option>
+                                            <option value="50">Bình Phước                    </option>
+                                            <option value="45">Bình Thuận                    </option>
+                                            <option value="63">Cà Mau                        </option>
+                                            <option value="58">Cần Thơ                       </option>
+                                            <option value="13">Cao Bằng                      </option>
+                                            <option value="34">Đà Nẵng                       </option>
+                                            <option value="42">Đắk Lăk                       </option>
+                                            <option value="69">Đắk Nông                      </option>
+                                            <option value="67">Điên Biên                     </option>
+                                            <option value="46">Đồng Nai                      </option>
+                                            <option value="55">Đồng Tháp                     </option>
+                                            <option value="38">Gia Lai                       </option>
+                                            <option value="17">Hà Giang                      </option>
+                                            <option value="24">Hà Nam                        </option>
+                                            <option value="66">Hà Nội                        </option>
+                                            <option value="30">Hà Tĩnh                       </option>
+                                            <option value="5">Hải Dương                      </option>
+                                            <option value="6">Hải Phòng                      </option>
+                                            <option value="68">Hậu Giang                     </option>
+                                            <option value="47">Hồ Chí Minh                   </option>
+                                            <option value="21">Hoà Bình                      </option>
+                                            <option value="3">Hưng Yên                       </option>
+                                            <option value="41">Khánh Hoà                     </option>
+                                            <option value="60">Kiên Giang                    </option>
+                                            <option value="39">Kon Tum                       </option>
+                                            <option value="23">Lai Châu                      </option>
+                                            <option value="44">Lâm Đồng                      </option>
+                                            <option value="10">Lạng Sơn                      </option>
+                                            <option value="19">Lào Cai                       </option>
+                                            <option value="52">Long An                       </option>
+                                            <option value="25">Nam Định                      </option>
+                                            <option value="28">Nghệ An                       </option>
+                                            <option value="26">Ninh Bình                     </option>
+                                            <option value="43">Ninh Thuận                    </option>
+                                            <option value="15">Phú Thọ                       </option>
+                                            <option value="40">Phú Yên                       </option>
+                                            <option value="31">Quảng Bình                    </option>
+                                            <option value="35">Quảng Nam                     </option>
+                                            <option value="36">Quảng Ngãi                    </option>
+                                            <option value="7">Quảng Ninh                     </option>
+                                            <option value="32">Quảng Trị                     </option>
+                                            <option value="61">Sóc Trăng                     </option>
+                                            <option value="22">Sơn La                        </option>
+                                            <option value="51">Tây Ninh                      </option>
+                                            <option value="4">Thái Bình                      </option>
+                                            <option value="11">Thái Nguyên                   </option>
+                                            <option value="27">Thanh Hoá                     </option>
+                                            <option value="33">Thừa Thiên Huế                </option>
+                                            <option value="53">Tiền Giang                    </option>
+                                            <option value="56">Trà Vinh                      </option>
+                                            <option value="16">Tuyên Quang                   </option>
+                                            <option value="57">Vĩnh Long                     </option>
+                                            <option value="14">Vĩnh Phúc                     </option>
+                                            <option value="18">Yên Bái                       </option>
+
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label>Quận/Huyện</label>
+                                        <select name="District" class="form-control" style="width:100%;">
+
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label>Tìm dịch vụ</label>
+                                        <select name="Service" class="form-control" style="width:100%;">
+                                            <option selected="selected" value=""></option>
+                                            <option value="">Bưu kiện bay và thủy bộ</option>
+                                            <option value="">Bưu kiện tiết kiệm chuyên tuyến Hàm Quốc</option>
+                                            <option value="">Bưu kiện TMĐT eBORDER đi Trung Quốc</option>
+                                            <option value="">Dịch vụ EMS</option>
+                                            <option value="">Dịch vụ PUD DHL</option>
+                                            <option value="">Dịch vụ Speedlink</option>
+                                            <option value="">Dịch vụ UPS</option>
+                                            <option value="">Dịch vụ VNQuickPost</option>
+                                            <option value="">Gói nhỏ bảo đảm</option>
+                                            <option value="">Gói nhỏ Prime Tracked</option>
+                                            <option value="">Gói nhỏ TMĐT ePacket</option>
+                                            <option value="">Gói nhỏ thường</option>
+                                            <option value="">Logistics Quốc tế</option>
+                                            <option value="">Tài liệu - TMDT ePacket</option>
+                                            <option value="">Tài liệu bảo đảm</option>
+                                            <option value="">Tài liệu Prime Tracked</option>
+                                            <option value="">Tài liệu túi M bảo đảm</option>
+                                            <option value="">Tài liệu tui M thường</option>
+                                            <option value="">Tài liệu thường</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <input type="button" value="Tìm" class="btn btn-primary btn-search-branch"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row list-post">
+                                <div class="list-office" style="width: 100%;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End_Module_722 --></div>
+                    <div class="clear"></div>
+                </div>
+            </div></div>
+    </div>
+</div>
+
+
+
+<div class="row footer">
+        <div class="container">
+            <div class="col-md-7 col-sm-7 footer-info">
+                <label class="copyright">
+                    TỔNG CÔNG TY BƯU ĐIỆN VIỆT NAM - VIETNAM POST
+                </label>
+                <span>
+                Địa chỉ: Số 05 đường Phạm Hùng - Mỹ Đình 2 - Nam Từ Liêm - Hà Nội - Việt Nam
+            </span>
+                <span>
+                Ghi rõ nguồn "vnpost.vn" khi phát hành lại thông tin từ website này
+            </span>
+            </div>
+            <div class="col-md-5 col-sm-5">
+                <ul class="social-footer list-unstyled list-inline pull-right">
+                    <li><a href="https://www.facebook.com/vnpost.vn" target="_blank"><i class="fa fa-facebook">
+                    </i></a>
+                    </li>
+                    <li><a href="https://plus.google.com/+vnpost/posts" target="_blank"><i class="fa fa-google-plus">
+                    </i>
+                    </a></li>
+                    <li><a href="/desktopmodules/vnp_webapi/rssfeed.aspx" target="_blank"><i class="fa fa-rss">
+                    </i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,45 @@
+h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 27px;
+}
+.login-wrapper .form-horizontal .control-label {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: flex-start;
+}
+.navbar-toggle.collapsed {
+    display: none;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #f7a81b;
+    border: none;
+    margin-left:100%;
+}
+@media(max-width:767px){
+    h1{
+        position:relative;
+        top:100px;
+    }
+    .btn-primary {
+        color: #fff;
+        background-color: #f7a81b;
+        border: none;
+        margin-left:0;
+    }
+    .navbar-toggle{
+        position:relative;
+        left:300;
+    }
+}
+@media(max-width:678px){
+    .search-form-index {
+        display:none;
+    }
+}
+
